@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+$font-stack: Roboto, sans-serif;
+$background-color: #e3e3e3;
+$secondary-background-color: white;
+$secondary-color: #DD8964;
+$tertiary-color: #008CBA;
+$text-color: #575656;
+
+html {
+  background-color: $background-color;
+}
+
+.logo {
+  max-width: 50px;
+  padding: 5px;
+}
+
+.column {
+  padding: 6px 3px;
+}
+
+.recently-added {
+  margin-top: 20px;
+  border: 1px solid $background-color;
+  padding-bottom: 8px;
+  background-color: $secondary-background-color;
+  letter-spacing: 2px;
+}
+
+.genres {
+  margin-top: 15px;
+}
+
+.show-content {
+  background-color: $secondary-background-color;
+  padding: 5px;
+  border-radius: 4px;
+  border-top: 1px solid $secondary-color;
+}
+
+.show-tracklisting{
+  margin-top: 10px;
+}
+
+.show-content-video, .show-content-comments {
+  background-color: $secondary-background-color;
+  padding: 5px;
+  border-radius: 4px;
+  border-top: 1px solid $secondary-color;
+  margin-top: 10px;
+}
+
+#vinyl-show {
+  margin-top: 20px;
+  background-color: $background-color;
+}
+
+.show {
+  color: $text-color;
+}
+
+.subheading-show {
+  color: $tertiary-color;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+
+.similar-show {
+  background-color: $secondary-background-color;
+  padding: 5px;
+  border-radius: 4px;
+  border-top: 1px solid $secondary-color;
+}
+
+.similar-artist-image {
+  padding: 4px;
+}
+
+.formBox {
+  border-top: 2px solid $tertiary-color;
+  background-color: $secondary-background-color;
+  padding: 20px;
+
+    input {
+      width: 360px;
+    }
+}
+
+#artist-show {
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: bold;
+  color: $secondary-color;
+}
+
+#title-show {
+  letter-spacing: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#index-page {
+  margin-top: 20px;
+}
+
+span {
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+audio {
+  background-color: $secondary-color;
+  height: 30px;
+  margin-bottom: 5px;
+  width: 550px;
+}
+
+.input {
+  width: 300px;
+}
+
+nav {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.control {
+  margin-top: 14px;
+  margin-left: 10px;
+}
+
+.hero-body{
+  background-image: url('https://dancingastronaut.com/wp-content/uploads/2018/04/vinyl.jpg');
+  background-size: cover;
+}
+
+.title-home{
+  color: $text-color;
+  font-size: 72px;
+  color: #FFFFFF;
+}
+
+.section {
+  padding-top: 60px;
+}
+
+.profile {
+  color: $text-color;
+}
+
+.flashMessage {
+  margin-top: 50px;
+}
+
+.folder img:last-child {
+   display: none;
+ }
+
+.folder:hover img:last-child {
+  display: inline;
+}
+
+.folder:hover img:first-child {
+  display: none;
+}
+
+.footer {
+  height: 5px;
+}
+
+.commentText {
+  font-size: 1rem;
+  color: $text-color;
+  font-weight: 400;
+  line-height: 1.25;
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  text-transform: none;
+  letter-spacing: 1px;
+}
+
+.index-control {
+  margin-left: 0;
+  flex-grow: 0;
+}
+
+.buttons {
+  margin-top: 10px;
+}
+
+.edit2 {
+  margin-left: 10px;
+}
+
+.editpage {
+  margin-top: 35px;
+}
+.edit {
+  .e1 {
+  border-top: solid 1px $secondary-color;
+  background-color: $secondary-background-color;
+  text-transform: uppercase;
+  font-size: 15px;
+  }
+  .d2 {
+    border-top: solid 1px $secondary-color;
+    background-color: $secondary-background-color;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+  .a1 {
+    border-top: solid 1px $secondary-color;
+    background-color: $secondary-background-color;
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+}
+
+.teamContainer {
+  margin-top: 100px;
+}
