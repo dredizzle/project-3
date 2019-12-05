@@ -69,17 +69,19 @@ const Form = ({ handleChange, handleSubmit, data, errors }) => {
                     value={data.genre || ''}
                   >
                     <option value="" disabled>Please choose...</option>
-                    <option value="Rock">Fantasy</option>
-                    <option value="Jazz">Adventure</option>
-                    <option value="Hip-Hop">Romance</option>
-                    <option value="Country">Mystery</option>
-                    <option value="Alternative">Horror</option>
-                    <option value="Pop">Science Fiction</option>
-                    <option value="Electronic">Cooking</option>
-                    <option value="Reggae">Art</option>
-                    <option value="Folk">History</option>
-                    <option value="RnB">Travel</option>
-                    <option value="Metal">Motivational</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Adventure">Adventure</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Mystery">Mystery</option>
+                    <option value="Horror">Horror</option>
+                    <option value="ScienceFiction">ScienceFiction</option>
+                    <option value="Cookings">Cooking</option>
+                    <option value="Art">Art</option>
+                    <option value="History">History</option>
+                    <option value="Travel">Travel</option>
+                    <option value="Motivational">Motivational</option>
+                    <option value="Biography">Biography</option>
+                    <option value="Nonfiction">Nonfiction</option>
                   </select>
                 </div>
                 {errors.genre && <div className="help is-danger">{errors.genre}</div>}

@@ -35,7 +35,7 @@ class Home extends React.Component {
       <section className="hero is-large">
         <div className="hero-body">
           <div className="container">
-            <h1 className="title display title-home">Project Black</h1>
+            <h1 className="title display title-home">BAMBOOK</h1>
             <h2 className="subtitle"></h2>
           </div>
         </div>
@@ -70,7 +70,7 @@ class Home extends React.Component {
         <footer className="footer">
           <div className="content has-text-centered">
             <p>
-              <strong>Project black </strong> by <Link to={'/team'}>Team Black</Link>
+              <strong>BamBook</strong> by <Link to={'/team'}>4 0f a K1nd</Link>
             </p>
           </div>
         </footer>
