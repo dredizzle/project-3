@@ -5,7 +5,7 @@ import Flash from '../../lib/Flash'
 
 const SecureRoute = ({ component: Component, ...otherProps }) => {
 
-  if(Auth.isAuthenticated()) return <Route {...otherProps} component={Component} />
+  if (Auth.isAuthenticated()) return <Route {...otherProps} component={Component} />
 
   Flash.setMessage('danger', 'You are not authorised to do that')
   return <Redirect to="/login" />

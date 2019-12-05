@@ -23,9 +23,9 @@ const commentSchema = new mongoose.Schema({
 })
 
 const bookSchema = new mongoose.Schema({
-  artist: {
+  author: {
     type: String,
-    required: 'Please enter a name'
+    required: 'Please enter an author name'
   },
   title: {
     type: String,
@@ -43,47 +43,15 @@ const bookSchema = new mongoose.Schema({
   genre: {
     type: String,
     required: true,
-    enum: ['Rock', 'Jazz', 'Hip-Hop', 'Country', 'Alternative', 'Pop', 'Electronic', 'Reggae', 'Folk', 'Metal', 'Classical', 'RnB']
+    enum: ['Fantasy', 'Adventure', 'Romance', 'Mystery', 'Horror', 'ScienceFiction', 'Cooking', 'Art', 'History', 'Travel', 'Motivational', 'Biography', 'Nonfiction']
   },
-  condition: {
-    type: String,
-    required: true,
-    enum: ['Mint', 'Near-Mint', 'Very Good', 'Good', 'Fair']
-  },
-  length: {
+  pages: {
     type: String
   },
-  notes: {
-    type: String,
-    maxlength: 700
-  },
-  label: {
-    type: String,
-    required: 'Add a label'
-  },
-  size: {
-    type: String,
-    required: true,
-    enum: ['7', '10', '12']
-  },
-  format: {
-    type: String,
-    required: true,
-    enum: ['1LP', '2LP', '3LP', '4LP', 'Box Set']
-  },
-  speed: {
-    type: String,
-    required: true,
-    enum: ['33 1/3 RPM', '45 RPM', '78 RPM']
-  },
   catalogueNumber: {
-    type: String,
-    required: 'Catalogue No.',
+    isbn: String,
+    required: 'ISBN no.',
     unique: 'That number is already in the database'
-  },
-  barcode: {
-    type: Number,
-    required: 'Enter barcode'
   },
   createdBy: {
     type: mongoose.Schema.ObjectId,
