@@ -46,7 +46,7 @@ class Home extends React.Component {
             <div className="columns is-multiline">
               {recentFour.map(book =>
                 <div key={book._id} className="column is-2 is-one-third-tablet">
-                  <Link to={`/book/${book._id}`}>
+                  <Link to={`/books/${book._id}`}>
                     <Card {...book} />
                   </Link>
                 </div>
