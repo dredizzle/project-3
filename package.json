@@ -3,11 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/dredizzle/project-3.git",
-<<<<<<< HEAD
-  "author": "dredizzle <dredizzle@live.co.uk>",
-=======
   "author": "Ustin Vaskin <ustin.vaskin2011@gmail.com>",
->>>>>>> development
   "license": "MIT",
   "scripts": {
     "run:client": "webpack-dev-server",
