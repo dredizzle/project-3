@@ -31,7 +31,7 @@ class Navbar extends React.Component {
       <nav className="navbar is-fixed-top">
         <div className="navbar-brand">
           <Link to="/" >
-            <img className="logo" src="https://i.imgur.com/2MdZJ7h.png" />
+            <img className="logo" src="https://i.imgur.com/9xyKNK8.png" />
           </Link>
 
           <a role="button" className={`navbar-burger${this.state.active ? ' is-active' : ''}`}
@@ -49,8 +49,8 @@ class Navbar extends React.Component {
         <div className={`navbar-menu${this.state.active ? ' is-active' : ''}`}>
 
           <div className="navbar-start">
-            <Link to="/books" className="navbar-item">Vinyl collection</Link>
-            {Auth.isAuthenticated() && <Link to="/books/new" className="navbar-item">Add new vinyl</Link>}
+            <Link to="/books" className="navbar-item">Book collection</Link>
+            {Auth.isAuthenticated() && <Link to="/books/new" className="navbar-item">Add a new book</Link>}
           </div>
 
           <div className="navbar-end">
