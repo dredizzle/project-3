@@ -28,11 +28,11 @@ class Home extends React.Component {
     console.log(this.state.books, 'BOOK HOME')
     recentFour = recentFour.slice(0, 6)
     return (
-      <section className="hero is-large">
-        <div className="hero-body">
+      <section className="hero is-medium">
+        <div className="hero-body parallax">
           <div className="container">
-            <h1 className="title display title-home">BAMBOOK</h1>
-            <h2 className="subtitle"></h2>
+            <h1 className="title display title-home">UNFOLD PAGES</h1>
+            <h2 className="subtitle">BamBook</h2>
           </div>
         </div>
         <div className="recently-added">
@@ -40,7 +40,7 @@ class Home extends React.Component {
             <h2 className="subtitle is-6 home-recent">RECENTLY ADDED</h2>
             <div className="columns is-multiline">
               {recentFour.map(book =>
-                <div key={book._id} className="column is-2 is-one-third-tablet">
+                <div key={book._id} className="column is-half-tablet is-2-desktop ">
                   <Link to={`/books/${book._id}`}>
                     <Card {...book} />
                   </Link>
