@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import Card from '../books/Card'
 import axios from 'axios'
 import genres from '../../lib/genres'
-
 function orderByDate(arr) {
   return arr.slice().sort(function (a, b) {
     const aDate = new Date(a.createdAt)
@@ -11,7 +10,6 @@ function orderByDate(arr) {
     return bDate - aDate
   })
 }
-
 class Home extends React.Component {
   constructor() {
     super()
@@ -20,12 +18,10 @@ class Home extends React.Component {
       genre: {}
     }
   }
-
   componentDidMount() {
     axios('/api/books')
       .then(res => this.setState({ books: res.data }))
   }
-
   render() {
     if (!this.state.books.length === 0) return null
     let recentFour = orderByDate(this.state.books, this.state.books.createdAt)
@@ -39,23 +35,20 @@ class Home extends React.Component {
             <h2 className="subtitle"></h2>
           </div>
         </div>
-
         <div className="recently-added">
           <div className="notification is-white">
             <h2 className="subtitle is-6 home-recent">RECENTLY ADDED</h2>
             <div className="columns is-multiline">
               {recentFour.map(book =>
                 <div key={book._id} className="column is-2 is-one-third-tablet">
-                  <Link to={`/book/${book._id}`}>
+                  <Link to={`/books/${book._id}`}>
                     <Card {...book} />
                   </Link>
                 </div>
               )}
-
             </div>
           </div>
         </div>
-
         <div className="columns is-multiline is-centered genres">
           {genres.map(genre =>
             <div key={genre} className="column is-one-quarter-desktop  blues is-one-third-tablet has-text-centered folder">
@@ -66,7 +59,6 @@ class Home extends React.Component {
             </div>
           )}
         </div>
-
         <footer className="footer">
           <div className="content has-text-centered">
             <p>
@@ -78,5 +70,4 @@ class Home extends React.Component {
     )
   }
 }
-
 export default Home

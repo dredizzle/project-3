@@ -7,6 +7,11 @@ $secondary-color: #DD8964;
 $tertiary-color: #008CBA;
 $text-color: #575656;
 
+html, body {
+  width:100%;
+  height: 100%;
+}
+
 html {
   background-color: $background-color;
 }
@@ -14,6 +19,7 @@ html {
 .logo {
   max-width: 50px;
   padding: 5px;
+  margin-left: 25px;
 }
 
 .column {
@@ -136,6 +142,9 @@ nav {
   background-image: url('https://www.qualtrics.com/m/assets/blog/wp-content/uploads/2018/08/shutterstock_1068141515.jpg');
   background-size: cover;
 }
+body{
+  background-color: #719192;
+}
 
 .title-home{
   color: $text-color;
@@ -168,7 +177,24 @@ nav {
 }
 
 .footer {
-  height: 5px;
+  height: 3px;
+  background-color: #dfcdc3;
+}
+
+.notification.is-white, .recently-added {
+background-color: #5f6769;
+}
+
+.subtitle.is-6 {
+  color: #fff;
+  font-size: 25px;
+}
+
+.section{
+  background-color: #719192;
+}
+.TopDown {
+  padding-top: 50px;
 }
 
 .commentText {

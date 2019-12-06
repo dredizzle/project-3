@@ -101,14 +101,14 @@ const Form = ({ handleChange, handleSubmit, data, errors }) => {
               {errors.pg && <div className="help is-danger">{errors.pg}</div>}
             </div>
             <div className="field">
-              <label className="label">Label</label>
+              <label className="label">Description</label>
               <div className="control">
                 <input
                   className="input"
-                  name="label"
-                  placeholder="eg: Pye"
+                  name="description"
+                  placeholder="eg: description"
                   onChange={handleChange}
-                  value={data.label || ''}
+                  value={data.description || ''}
                 />
               </div>
               {errors.label && <div className="help is-danger">{errors.label}</div>}
