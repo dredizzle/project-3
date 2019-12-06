@@ -2,19 +2,20 @@
   "name": "SEI-pj-3",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "",
-  "author": "",
+  "repository": "https://github.com/dredizzle/project-3.git",
+  "author": "dredizzle <dredizzle@live.co.uk>",
   "license": "MIT",
   "scripts": {
     "run:client": "webpack-dev-server",
     "run:server": "nodemon",
     "seed": "node seeds",
     "build": "webpack -p",
-    "start": "node index"
+    "start": "node index",
+    "serve": "webpack-dev-server --mode=development"
   },
   "dependencies": {
-    "@babel/core": "^7.4.4",
-    "@babel/preset-env": "^7.4.4",
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
     "@babel/preset-react": "^7.0.0",
     "axios": "^0.18.1",
     "babel-loader": "^8.0.6",
@@ -44,6 +45,6 @@
     "style-loader": "^0.23.1",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.2",
-    "webpack-dev-server": "^3.3.1"
+    "webpack-dev-server": "^3.9.0"
   }
 }
