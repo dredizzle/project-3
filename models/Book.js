@@ -45,13 +45,17 @@ const bookSchema = new mongoose.Schema({
     required: true,
     enum: ['Fantasy', 'Adventure', 'Romance', 'Mystery', 'Horror', 'ScienceFiction', 'Cooking', 'Art', 'History', 'Travel', 'Motivational', 'Biography', 'Nonfiction']
   },
-  pages: {
+
+  pg: {
     type: String
   },
-  catalogueNumber: {
-    isbn: String,
-    required: 'ISBN no.',
-    unique: 'That number is already in the database'
+  ISBN: {
+    type: String,
+    required: 'Add ISBN'
+  },
+  Descriotion: {
+    type: String,
+    required: true
   },
   createdBy: {
     type: mongoose.Schema.ObjectId,
