@@ -1,8 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
+
 import SecureRoute from './components/common/SecureRoute'
-import FlashMessages from './components/common/FlashMessages'
+
 import Home from './components/common/Home'
 import Navbar from './components/common/Navbar'
 import Team from './components/common/Team'
@@ -23,8 +24,8 @@ class App extends React.Component {
   render() {
     return (
       <BrowserRouter>
+
         <Navbar />
-        <FlashMessages />
         <Switch>
           <SecureRoute path="/users/:id/edit" component={UsersEdit} />
           <SecureRoute path="/users/:id" component={UsersShow} />

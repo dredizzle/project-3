@@ -40,7 +40,7 @@ const Form = ({ handleChange, handleSubmit, data, errors }) => {
                 <input
                   className="input"
                   name="image"
-                  placeholder="eg: https://upload.wikimedia.org/wikipedia/en/thumb/c/cb/theKinks.jpg"
+                  placeholder="eg: https://upload.wikimedia.uk/wikipedia/en.jpg"
                   onChange={handleChange}
                   value={data.image || ''}
                 />
