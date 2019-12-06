@@ -478,6 +478,71 @@ mongoose.connect(dbURI, (err, db) => {
         description:"Hungry is a book about not only the hunger for food, but for risk, for reinvention, for creative breakthroughs, and for connection. Feeling stuck in his work and home life, writer Jeff Gordinier happened into a fateful meeting with Danish chef Ren Redzepi, whose restaurant, Noma, has been called the best in the world. A restless perfectionist, Redzepi was at the top of his",
         createdBy: emma
         
+      },{
+        author: "Maggie Stiefvater",
+        title: "Call Down the Hawk",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1550860945l/31373184.jpg",
+        releaseYear: 2019,
+        genre: "Fantasy",
+        pg: 472,
+        ISBN: "1338188321",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B07YV6G8TH",
+      
+        description:"The dreamers walk among us . . . and so do the dreamed. Those who dream cannot stop dreaming – they can only try to control it. Those who are dreamed cannot have their own lives – they will sleep forever if their dreamers die.",
+        createdBy: emma
+        
+      },{
+        author: "Sara Wolf ",
+        title: "Find Me Their Bones",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1558372949l/41085224.jpg",
+        releaseYear: 2019,
+        genre: "Fantasy",
+        pg: 400,
+        ISBN: "1640633758",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B07K6D7LVD",
+      
+        description:"In order to protect Prince Lucien d’Malvane’s heart, Zera had to betray him. Now, he hates the sight of her. Trapped in Cavanos as a prisoner of the king, she awaits the inevitable moment her witch severs their magical connection and finally ends her life.",
+        createdBy: emma
+        
+      },{
+        author: "Renée Ahdieh",
+        title: "The Beautiful",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1547578763l/42265183.jpg",
+        releaseYear: 2019,
+        genre: "Fantasy",
+        pg: 448,
+        ISBN: "1524738174",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B07THR7F9R",
+      
+        description:"In 1872, New Orleans is a city ruled by the dead. But to seventeen-year-old Celine Rousseau, New Orleans provides her a refuge after she's forced to flee her life as a dressmaker in Paris. Taken in by the sisters of the Ursuline convent along with six other girls, Celine quickly becomes enamored with the vibrant city from the music to the food to the soirées and—especially...",
+        createdBy: emma
+        
+      },{
+        author: "Elizabeth Hunter",
+        title: "Night's Reckoning",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1571622770l/47795122._SY475_.jpg",
+        releaseYear: 2019,
+        genre: "Fantasy",
+        pg:368 ,
+        ISBN: "B07Z9KMPCV",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B07Z9KMPCV",
+      
+        description:"Darkness comes for everyone, and some fates are inescapable.For over a thousand years, the legendary sword Laylat al Hisab—the Night’s Reckoning—has been lost in the waters of the East China Sea. Forged as a peace offering between two ancient vampires, the sword has eluded treasure hunters, human and immortal alike.",
+        createdBy: emma
+        
+      },{
+        author: "Brian Naslund",
+        title: "Blood of an Exile",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1542063962l/41555916.jpg",
+        releaseYear: 2019,
+        genre: "Fantasy",
+        pg: 416,
+        ISBN: "0316251305",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B07NLDZ5GS",
+      
+        description:"Bershad stands apart from the world, the most legendary dragonslayer in history, both revered and reviled.Once, he was Lord Silas Bershad, but after a disastrous failure on the battlefield he was stripped of his titles and sentenced to one violent, perilous hunt after another. Now he lives only to stalk dragons, slaughter them, collect their precious oil, and head back",
+        createdBy: emma
+        
       },
       
       ])
