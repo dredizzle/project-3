@@ -214,6 +214,72 @@ mongoose.connect(dbURI, (err, db) => {
         createdBy: emma
         
       },
+      {
+        author: "America's Test Kitchen",
+        title: "The Side Dish Bible: 1001 Perfect Recipes for Every Vegetable, Rice, Grain, and Bean Dish You Will Ever Need",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1573121632l/44291121._SX318_.jpg",
+        releaseYear: 2019,
+        genre: "Cooking",
+        pg: 574,
+        ISBN: "B07NKRJZ7X",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B07NKRJZ7X",
+      
+        description:"A roadmap to help home cooks round out and enhance any meal, for any occasion with 1001 recipes for every type of side dish imaginable.Every cook struggles over making side dishes, from choosing what goes best with the main course to getting stuck in a rut making the same tired green beans and rice. But this destined-to-be-dog-ear'd compendium of side dishes changes all",
+        createdBy: emma
+        
+      },{
+        author: "The Good Place",
+        title: "Forking Good: A Cookbook Inspired",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1561637216l/46131607.jpg",
+        releaseYear: 2019,
+        genre: "Cooking",
+        pg: 160,
+        ISBN: "9781683691556",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B07NKNX6RL",
+      
+        description:"A fun, lively, and fully illustrated cookbook of 30 original and practical recipes inspired by NBC's hit sitcom The Good Place, filled with the absurd, pun-driven food humor and accessible philosophy that makes the show so popular with fans.With its high concept, exceptional writing, eye-popping set design, stellar cast, meaningful explorations of what it means to be a..",
+        createdBy: emma
+        
+      },{
+        author: "Samin Nosrat",
+        title: "Salt, Fat, Acid, Heat: Mastering the Elements of Good Cooking",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1475460859l/30753841._SX318_.jpg",
+        releaseYear: 2019,
+        genre: "Cooking",
+        pg: 480,
+        ISBN: "1476753830",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B01MQCCXPW",
+      
+        description:"A visionary new master class in cooking that distills decades of professional experience into just four simple elements, from the woman declared “America’s next great cooking teacher” by Alice Waters",
+        createdBy: emma
+        
+      },{
+        author: "Suzanne Lenzer",
+        title: "Graze: Inspiration for Small Plates and Meandering Meals",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1492920730l/31450748._SX318_.jpg",
+        releaseYear: 2017,
+        genre: "Cooking",
+        pg: 205,
+        ISBN: "ISBN1623367530",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B01MYZ3IPA",
+      
+        description:"Grazing is an enchanting way to eat. It means skipping from dish to dish, tasting different things without committing to a single one. It’s about creating multiple dishes that work together as a meal, that all share a theme, an aesthetic. When she entertains, or even pulls together a quick dinner for just two, food stylist Suzanne Lenzer enjoys this tapas-style of eating—",
+        createdBy: emma
+        
+      },{
+        author: " Yotam Ottolenghi, Helen Goh",
+        title: "Sweet",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1510017230l/34063669._SX318_.jpg",
+        releaseYear: 2017,
+        genre: "Cooking",
+        pg: 368,
+        ISBN: "1607749149",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B07521VCHD",
+      
+        description:"In his stunning new baking and desserts cookbook Yotam Ottolenghi and his long-time collaborator Helen Goh bring the Ottolenghi hallmarks of fresh, evocative ingredients, exotic spices and complex flavourings - including fig, rose petal, saffron, aniseed, orange blossom, pistachio and cardamom - to indulgent cakes, biscuits, tarts, puddings, cheesecakes and ice cream.",
+        createdBy: emma
+        
+      },
       ])
     })
 
@@ -222,4 +288,5 @@ mongoose.connect(dbURI, (err, db) => {
       console.log(err) // log any errors
       mongoose.connection.close() // disconnect from the database
     })
+    
 })
