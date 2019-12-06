@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
-// import Promise from 'bluebird'
-import Card from './Card'
+import Promise from 'bluebird'
+// import Card from './Card'
 import Auth from '../../lib/Auth'
 import Loading from '../common/Loading'
 class Show extends React.Component {
@@ -10,7 +10,7 @@ class Show extends React.Component {
     super(props)
     this.state = {
       book: null,
-      books: null,
+      // books: null,
       errors: null,
       data: null
     }
@@ -78,8 +78,8 @@ class Show extends React.Component {
     console.log(this.state.books)
     if (!this.state.book) return <Loading />
     const [{ author, title, image, releaseYear, notes, genre, ISBN, pg }] = this.state.book
-    let similar = this.state.books.filter(book => book.genre === this.state.book.genre && book.title !== this.state.book.title)
-    similar = similar.slice(0, 5)
+    // let similar = this.state.books.filter(book => book.genre === this.state.book.genre && book.title !== this.state.book.title)
+    // similar = similar.slice(0, 5)
     return (
       <section className="section" id="book-show">
         <div className="columns">
@@ -180,7 +180,7 @@ class Show extends React.Component {
               )} */}
             </div>
           </div>
-          <div className="column is-one-fifth-desktop is-half-tablet is-full-mobile">
+          {/* <div className="column is-one-fifth-desktop is-half-tablet is-full-mobile">
             <div className="similar-show">
               <h2 className="subtitle is-6 subheading-show">You might also like</h2>
               <div>
@@ -193,7 +193,7 @@ class Show extends React.Component {
                 )}
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     )
