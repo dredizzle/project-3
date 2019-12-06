@@ -2,7 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
+
 import SecureRoute from './components/common/SecureRoute'
+import FlashMessages from './components/common/FlashMessages'
 
 import Home from './components/common/Home'
 import Navbar from './components/common/Navbar'
@@ -17,6 +19,7 @@ import UsersShow from './components/users/Show'
 import UsersEdit from './components/users/Edit'
 import 'bulma'
 import './style.scss'
+
 class App extends React.Component {
   constructor() {
     super()
@@ -26,6 +29,7 @@ class App extends React.Component {
       <BrowserRouter>
 
         <Navbar />
+        <FlashMessages />
         <Switch>
           <SecureRoute path="/users/:id/edit" component={UsersEdit} />
           <SecureRoute path="/users/:id" component={UsersShow} />

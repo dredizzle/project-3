@@ -11,6 +11,7 @@ class Register extends React.Component {
       errors: {}
     }
 
+
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
   }
