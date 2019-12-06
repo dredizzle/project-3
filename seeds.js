@@ -280,6 +280,75 @@ mongoose.connect(dbURI, (err, db) => {
         createdBy: emma
         
       },
+      {
+        author: "Catherine McCormack",
+        title: "The Art of Looking Up",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1571688503l/43885165._SX318_.jpg",
+        releaseYear: 2019,
+        genre: "Art",
+        pg: 240,
+        ISBN: "0711242178 ",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B07ZWC2H86",
+      
+        description:"The Art of Looking Up surveys 40 spectacular ceilings around the globe that have been graced by the brushes of great artists including Michelangelo, Marc Chagall and Cy Twombly.From the floating women and lotus flowers of the Senso-ji Temple in Japan, to the religious iconography that adorns places of worship from Vienna to Istanbul, all the way to bold displays like the Chihuly glass flora suspended from the lobby of the Bellagio Hotel in Las Vegas: this book takes you on a tour of the extraordinary artworks that demand an alternative viewpoint.",
+        createdBy: emma
+        
+      },
+      {
+        author: "John Berger",
+        title: "Ways of Seeing",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1464018308l/2784._SY475_.jpg",
+        releaseYear: 1990,
+        genre: "Art",
+        pg: 176,
+        ISBN: "0140135154",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B002ZJSV78",
+      
+        description:"John Berger's Ways of Seeing is one of the most stimulating and the most influential books on art in any language. First published in 1972, it was based on the BBC television series about which the (London) Sunday Times critic commented: 'This is an eye-opener in more ways than one: by concentrating on how we look at paintings ",
+        createdBy: emma
+        
+      },
+      {
+        author: "Leo Tolstoy, Aylmer Maude",
+        title: "What Is Art?",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1171944592l/127963._SY475_.jpg",
+        releaseYear: 2000,
+        genre: "Art",
+        pg: 252,
+        ISBN: "0735102937",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B00FVE9WMW",
+      
+        description:"During the decades of his world fame as sage & preacher as well as author of War & Peace & Anna Karenina, Tolstoy wrote prolifically in a series of essays & polemics on issues of morality, social justice & religion. These culminated in What is Art?, published in 1898. Although Tolstoy perceived the question of art to be a religious one, he considered...",
+        createdBy: emma
+        
+      },{
+        author: "David Airey",
+        title: "Logo Design Love: A Guide to Creating Iconic Brand Identities",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1347407513l/6728983.jpg",
+        releaseYear: 2011,
+        genre: "Art",
+        pg: 216,
+        ISBN: "0321660765",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B00MTUNHDG",
+      
+        description:"There are a lot of books out there that show collections of logos. But David Airey’s “Logo Design Love” is something different: it’s a guide for designers (and clients) who want to understand what this mysterious business is all about. Written in reader-friendly, concise language, with a minimum of designer jargon, Airey gives a surprisingly clear explanation of the...",
+        createdBy: emma
+        
+      },{
+        author: "Emma Mills",
+        title: "First & Then",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1426513843l/23310751.jpg",
+        releaseYear: 2019,
+        genre: "Art",
+        pg: 272,
+        ISBN: "162779235X",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B00V37BBJI",
+      
+        description:"Devon Tennyson wouldn't change a thing. She's happy watching Friday night games from the bleachers, silently crushing on best friend Cas, and blissfully ignoring the future after high school. But the universe has other plans. It delivers Devon's cousin Foster, an unrepentant social outlier with a surprising talent for football, and the obnoxiously superior and maddeningly...",
+        createdBy: emma
+        
+      },
+      
       ])
     })
 
