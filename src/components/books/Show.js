@@ -1,11 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
-import Promise from 'bluebird'
+// import Promise from 'bluebird'
 import Card from './Card'
 import Auth from '../../lib/Auth'
 import Loading from '../common/Loading'
-
 class Show extends React.Component {
   constructor(props) {
     super(props)
@@ -15,60 +14,56 @@ class Show extends React.Component {
       errors: null,
       data: null
     }
-
     this.handleChange = this.handleChange.bind(this)
     this.handleComment = this.handleComment.bind(this)
     this.handleDelete = this.handleDelete.bind(this)
     this.handleDeleteComments = this.handleDeleteComments.bind(this)
   }
-
-  getData() {
-    Promise.props({
-      book: axios.get(`/api/books/${this.props.match.params.id}`).then(res => res.data),
-      books: axios.get('/api/books').then(res => res.data)
-    })
-      .catch(err => this.setState({ errors: err.response }))
+  componentDidMount() {
+    Promise.all([
+      fetch('/api/books'),
+      fetch('/api/books')
+    ])
+      .then(([res1, res2]) => Promise.all([res1.json(), res2.json()]))
+      .then(([data1, data2]) => this.setState({
+        book: data1,
+        books: data2
+      }))
   }
 
-  componentDidMount(){
-    this.getData()
-  }
+
+
+  // componentDidMount() {
+  //   this.getData()
+  // }
+
 
   componentDidUpdate(prevProps) {
     if (prevProps.location.pathname !== this.props.location.pathname) {
       this.getData()
     }
   }
-
   handleChange(e) {
     const data = { ...this.state.data, [e.target.name]: e.target.value }
     this.setState({ data })
   }
-
   handleComment(e) {
     e.preventDefault()
-
     const token = Auth.getToken()
-
     axios.post(`/api/books/${this.props.match.params.id}/comments`, this.state.data, {
       headers: { 'Authorization': `Bearer ${token}` }
     })
-
     window.location.reload()
   }
-
   handleDeleteComments(e) {
-
     const token = Auth.getToken()
-
     if (e.target.value === Auth.getPayload().sub) {
       axios.delete(`/api/books/${this.props.match.params.id}/comments/${e.target.id}`, {
         headers: { 'Authorization': `Bearer ${token}` }
-      } )
+      })
     }
     window.location.reload()
   }
-
   handleDelete() {
     const token = Auth.getToken()
     axios.delete(`/api/books/${this.props.match.params.id}`, {
@@ -76,19 +71,15 @@ class Show extends React.Component {
     })
       .then(() => this.props.history.push('/books'))
   }
-
-  canModify() {
-    return Auth.isAuthenticated() && Auth.getPayload().sub === this.state.book.createdBy._id
-
-  }
-
+  // canModify() {
+  //   return Auth.isAuthenticated() && Auth.getPayload().sub === this.state.book.createdBy._id
+  // }
   render() {
+    console.log(this.state.books)
     if (!this.state.book) return <Loading />
-    const { author, title, image, releaseYear, notes, genre, isbn, pages } = this.state.book
-
+    const [{ author, title, image, releaseYear, notes, genre, ISBN, pg }] = this.state.book
     let similar = this.state.books.filter(book => book.genre === this.state.book.genre && book.title !== this.state.book.title)
-    similar = similar.slice(0,5)
-
+    similar = similar.slice(0, 5)
     return (
       <section className="section" id="book-show">
         <div className="columns">
@@ -106,16 +97,14 @@ class Show extends React.Component {
                     <button className="button is-light a1">Add to Wish List</button>
                   </Link>
                 }
-                {this.canModify() &&
-                      <div className="level-right is-gapless edit2">
-                        <Link to={`/books/${this.state.book._id}/edit`} className="button is-light e1">Edit</Link>
-                        <button className="button is-light d2" onClick={this.handleDelete}>Delete</button>
-                      </div>
-                }
+                {/* {this.canModify() &&
+                  <div className="level-right is-gapless edit2">
+                    <Link to={`/books/${this.state.book._id}/edit`} className="button is-light e1">Edit</Link>
+                    <button className="button is-light d2" onClick={this.handleDelete}>Delete</button>
+                  </div>
+                } */}
               </div>
             </div>
-
-          
           </div>
           <div className="column is-two-fifths-desktop is-half-tablet is-full-mobile">
             <div className="show-content">
@@ -124,14 +113,12 @@ class Show extends React.Component {
               <hr />
               <h2 className="subtitle is-6 show"><span>Year released:</span> {releaseYear}</h2>
               <h2 className="subtitle is-6 show"><span>Genre: </span>{genre}</h2>
-              <h2 className="subtitle is-6 show"><span>Pages: </span>{pages}</h2>
-              <h2 className="subtitle is-6 show"><span>ISBN: </span> {isbn}</h2>
+              <h2 className="subtitle is-6 show"><span>Pages: </span>{pg}</h2>
+              <h2 className="subtitle is-6 show"><span>ISBN: </span> {ISBN}</h2>
               <h2 className="subtitle is-6 show"><span>Notes: </span>{notes}</h2>
               <hr />
             </div>
-
             {/* COMMENTS ===================================================*/}
-
             <div className="show-content-comments subheading-show">
               Comments
               <article className="media">
@@ -143,7 +130,7 @@ class Show extends React.Component {
                 <div className="media-content">
                   <div className="field">
                     <p className="control">
-                      <textarea className="textarea" name="content" placeholder="Add a comment..." onChange= {this.handleChange}></textarea>
+                      <textarea className="textarea" name="content" placeholder="Add a comment..." onChange={this.handleChange}></textarea>
                     </p>
                   </div>
                   <nav className="level">
@@ -152,15 +139,12 @@ class Show extends React.Component {
                         <a className="button is-info" onClick={this.handleComment}>Submit</a>
                       </div>
                     </div>
-
                   </nav>
                 </div>
               </article>
-
-              {this.state.book.comments.map(comment =>
+              {/* {this.state.book.comments.map(comment =>
                 <article key={comment._id} className="media">
                   <figure className="media-left">
-
                     <p className="image is-64x64">
                       <Link to={`/users/${comment.user.id}`}>
                         <img src={comment.user.image} />
@@ -193,14 +177,12 @@ class Show extends React.Component {
                     <button id={comment._id} value={comment.user._id} className="delete" onClick={this.handleDeleteComments}></button>
                   </div>
                 </article>
-              )}
+              )} */}
             </div>
           </div>
           <div className="column is-one-fifth-desktop is-half-tablet is-full-mobile">
             <div className="similar-show">
-
               <h2 className="subtitle is-6 subheading-show">You might also like</h2>
-
               <div>
                 {similar.map(book =>
                   <div className="similar-artist-image" key={book._id}>
@@ -210,7 +192,6 @@ class Show extends React.Component {
                   </div>
                 )}
               </div>
-
             </div>
           </div>
         </div>
