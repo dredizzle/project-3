@@ -124,7 +124,7 @@ mongoose.connect(dbURI, (err, db) => {
       },{
         author: "Martin L. Shoemaker",
         title: "The Last Dance",
-        image:"https://www.goodreads.com/book/photo/44067572-the-last-dance",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1562829205l/44067572.jpg",
         releaseYear: 2019,
         genre: "ScienceFiction",
         pg: 464,
@@ -280,6 +280,206 @@ mongoose.connect(dbURI, (err, db) => {
         createdBy: emma
         
       },
+      {
+        author: "Catherine McCormack",
+        title: "The Art of Looking Up",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1571688503l/43885165._SX318_.jpg",
+        releaseYear: 2019,
+        genre: "Art",
+        pg: 240,
+        ISBN: "0711242178 ",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B07ZWC2H86",
+      
+        description:"The Art of Looking Up surveys 40 spectacular ceilings around the globe that have been graced by the brushes of great artists including Michelangelo, Marc Chagall and Cy Twombly.From the floating women and lotus flowers of the Senso-ji Temple in Japan, to the religious iconography that adorns places of worship from Vienna to Istanbul, all the way to bold displays like the Chihuly glass flora suspended from the lobby of the Bellagio Hotel in Las Vegas: this book takes you on a tour of the extraordinary artworks that demand an alternative viewpoint.",
+        createdBy: emma
+        
+      },
+      {
+        author: "John Berger",
+        title: "Ways of Seeing",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1464018308l/2784._SY475_.jpg",
+        releaseYear: 1990,
+        genre: "Art",
+        pg: 176,
+        ISBN: "0140135154",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B002ZJSV78",
+      
+        description:"John Berger's Ways of Seeing is one of the most stimulating and the most influential books on art in any language. First published in 1972, it was based on the BBC television series about which the (London) Sunday Times critic commented: 'This is an eye-opener in more ways than one: by concentrating on how we look at paintings ",
+        createdBy: emma
+        
+      },
+      {
+        author: "Leo Tolstoy, Aylmer Maude",
+        title: "What Is Art?",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1171944592l/127963._SY475_.jpg",
+        releaseYear: 2000,
+        genre: "Art",
+        pg: 252,
+        ISBN: "0735102937",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B00FVE9WMW",
+      
+        description:"During the decades of his world fame as sage & preacher as well as author of War & Peace & Anna Karenina, Tolstoy wrote prolifically in a series of essays & polemics on issues of morality, social justice & religion. These culminated in What is Art?, published in 1898. Although Tolstoy perceived the question of art to be a religious one, he considered...",
+        createdBy: emma
+        
+      },{
+        author: "David Airey",
+        title: "Logo Design Love: A Guide to Creating Iconic Brand Identities",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1347407513l/6728983.jpg",
+        releaseYear: 2011,
+        genre: "Art",
+        pg: 216,
+        ISBN: "0321660765",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B00MTUNHDG",
+      
+        description:"There are a lot of books out there that show collections of logos. But David Airey’s “Logo Design Love” is something different: it’s a guide for designers (and clients) who want to understand what this mysterious business is all about. Written in reader-friendly, concise language, with a minimum of designer jargon, Airey gives a surprisingly clear explanation of the...",
+        createdBy: emma
+        
+      },{
+        author: "Emma Mills",
+        title: "First & Then",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1426513843l/23310751.jpg",
+        releaseYear: 2019,
+        genre: "Art",
+        pg: 272,
+        ISBN: "162779235X",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B00V37BBJI",
+      
+        description:"Devon Tennyson wouldn't change a thing. She's happy watching Friday night games from the bleachers, silently crushing on best friend Cas, and blissfully ignoring the future after high school. But the universe has other plans. It delivers Devon's cousin Foster, an unrepentant social outlier with a surprising talent for football, and the obnoxiously superior and maddeningly...",
+        createdBy: emma
+        
+      },{
+        author: "Heather Morris ",
+        title: "The Tattooist of Auschwitz",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1525962117l/38359036.jpg",
+        releaseYear: 2018,
+        genre: "History",
+        pg: 262,
+        ISBN: "006287067X",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B074CG2SGV",
+      
+        description:"In April 1942, Lale Sokolov, a Slovakian Jew, is forcibly transported to the concentration camps at Auschwitz-Birkenau. When his captors discover that he speaks several languages, he is put to work as a Tätowierer (the German word for tattooist), tasked with permanently marking his fellow prisoners.",
+        createdBy: emma
+        
+      },
+      {
+        author: "Stephen Fry",
+        title: "Mythos: The Greek Myths Retold",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1502518360l/35074096._SY475_.jpg",
+        releaseYear: 2017,
+        genre: "History",
+        pg: 416,
+        ISBN: "0718188721 ",
+        preview:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1502518360l/35074096._SY475_.jpg",
+      
+        description:"The Greek myths are the greatest stories ever told, passed down through millennia and inspiring writers and artists as varied as Shakespeare, Michelangelo, James Joyce and Walt Disney.They are embedded deeply in the traditions, tales and cultural DNA of the West. In Stephen Fry's hands the stories of the titans and gods become a brilliantly entertaining account of ribaldry",
+        createdBy: emma
+        
+      },{
+        author: "Alan Hlad",
+        title: "The Long Flight Home",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1542021872l/42422509.jpg",
+        releaseYear: 2019,
+        genre: "History",
+        pg: 304,
+        ISBN: "1496721675",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B07N6DV2V5",
+      
+        description:"Inspired by fascinating, true, yet little-known events during World War II, The Long Flight Home is a testament to the power of courage in our darkest hours—a moving, masterfully written story of love and sacrifice.It is September 1940—a year into the war—and as German bombs fall on Britain, fears grow of an impending invasion. Enemy fighter planes blacken the sky around...",
+        createdBy: emma
+        
+      },{
+        author: "Georgia Hunter",
+        title: "We Were the Lucky Ones",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1471282781l/30267929.jpg",
+        releaseYear: 2017,
+        genre: "History",
+        pg: 403,
+        ISBN: "0399563083",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B01M3TX4FQ",
+      
+        description:"It is the spring of 1939 and three generations of the Kurc family are doing their best to live normal lives, even as the shadow of war grows closer. The talk around the family Seder table is of new babies and budding romance, not of the increasing hardships threatening Jews in their hometown of Radom, Poland. But soon the horrors overtaking Europe will become inescapable ",
+        createdBy: emma
+        
+      },{
+        author: "Adam Higginbotham",
+        title: "Midnight in Chernobyl: The Untold Story of the World's Greatest Nuclear Disaster",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1545577007l/40538681.jpg",
+        releaseYear: 2019,
+        genre: "History",
+        pg: 538,
+        ISBN: "1501134612",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B0741QVVPJ",
+      
+        description:"The definitive, dramatic untold story of the Chernobyl nuclear power plant disaster, based on original reporting and new archival research.April 25, 1986, in Chernobyl, was a turning point in world history. The disaster not only changed the world’s perception of nuclear power and the science that spawned it, but also our understanding of the planet’s delicate ecology...",
+        createdBy: emma
+        
+      },{
+        author: "Levison Wood",
+        title: "Walking the Americas",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1478735694l/32934182._SY475_.jpg",
+        releaseYear: 2019,
+        genre: "Travel",
+        pg: 304,
+        ISBN: "B01KTS4XSM",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B01KTS4XSM",
+      
+        description:"'Levison Wood has breathed new life into adventure travel.' Michael Palin.Walking the Americas chronicles Levison Wood's 1,800 mile trek along the spine of the Americas, through eight countries, from Mexico to Colombia,",
+        createdBy: emma
+        
+      },{
+        author: "Levison Wood",
+        title: "Walking the Himalayas",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1448830838l/27161842.jpg",
+        releaseYear: 2015,
+        genre: "Travel",
+        pg: 293,
+        ISBN: "031635242X",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B014DUSMCA",
+      
+        description:"Following his trek along the length of the Nile River, explorer Levison Wood takes on his greatest challenge yet-navigating the treacherous foothills of the Himalayas, the world's highest mountain range.Praised by Bear Grylls, Levison Wood has been called 'the toughest man on TV' (The Times UK). Now, following in the footsteps of the great explorers, Levison recounts the...",
+        createdBy: emma
+        
+      },{
+        author: "Adam Shoalts",
+        title: "Beyond the Trees: A Journey Alone Across Canada's Arctic",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1565397926l/43671672.jpg",
+        releaseYear: 2019,
+        genre: "Travel",
+        pg: 288,
+        ISBN: "0735236836",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B07MMKL334",
+      
+        description:"In the spring of 2017, Adam Shoalts, bestselling author and adventurer, set off on an unprecedented solo journey across North America's greatest wilderness. A place where, in our increasingly interconnected, digital world, it's still possible to wander for",
+        createdBy: emma
+        
+      },{
+        author: "Jill Heinerth",
+        title: "Into the Planet: My Life as a Cave Diver",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1563335080l/43131602.jpg",
+        releaseYear: 2019,
+        genre: "Travel",
+        pg: 288,
+        ISBN: "0062691546",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B07FGX37GZ",
+      
+        description:"From one of the world’s most renowned cave divers, a firsthand account of exploring the earth’s final frontier: the hidden depths of our oceans and the sunken caves inside our planet.More people have died exploring underwater caves than climbing Mount Everest, and we know more about deep space than we do about the depths of our oceans. From one of the top cave divers",
+        createdBy: emma
+        
+      },{
+        author: "Jeff Gordinier",
+        title: "Hungry: Eating, Road-Tripping, and Risking It All with the Greatest Chef in the World",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1541419814l/42590641.jpg",
+        releaseYear: 2019,
+        genre: "Travel",
+        pg: 240,
+        ISBN: "1524759643",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B07ST2L9GS",
+      
+        description:"Hungry is a book about not only the hunger for food, but for risk, for reinvention, for creative breakthroughs, and for connection. Feeling stuck in his work and home life, writer Jeff Gordinier happened into a fateful meeting with Danish chef Ren Redzepi, whose restaurant, Noma, has been called the best in the world. A restless perfectionist, Redzepi was at the top of his",
+        createdBy: emma
+        
+      },
+      
       ])
     })
 
