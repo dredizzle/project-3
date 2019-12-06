@@ -2,8 +2,8 @@
   "name": "SEI-pj-3",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "",
-  "author": "",
+  "repository": "https://github.com/dredizzle/project-3.git",
+  "author": "Ustin Vaskin <ustin.vaskin2011@gmail.com>",
   "license": "MIT",
   "scripts": {
     "run:client": "webpack-dev-server",
