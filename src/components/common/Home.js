@@ -52,7 +52,7 @@ class Home extends React.Component {
         {/* ******************* */}
         {/* Need to create Recenmt stroies and separate API to store users stories and axios frim there to display in home and think how to show them  */}
         {/* ******************* */}
-        <div className="recently-added">
+        <div className="recent-stories">
           <div className="notification is-white">
             <h2 className="subtitle is-6 home-recent has-text-white">RECENT STORIES</h2>
             <div className="columns is-multiline">

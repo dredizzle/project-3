@@ -1,33 +1,33 @@
 {
   author: "",
-  title: "",
-  image:"",
-  releaseYear: 2019,
-  genre: "Art",
-  pg: ,
+    title: "",
+      image: "",
+        releaseYear: 2019,
+          genre: "Art",
+            pg: ,
   ISBN: "",
-  preview:"",
+    preview: "",
 
-  description:"",
-  createdBy: emma
-  
+      description: "",
+        createdBy: emma
+
 },
 
 'Fantasy',
-'Adventure',
-'Romance',
-'',
-'  ',
-'',
-'Art',
-'History',
-'Travel',
-'Motivational'
+  'Adventure',
+  'Romance',
+  '',
+  '  ',
+  '',
+  'Art',
+  'History',
+  'Travel',
+  'Motivational'
 
 
 
 Art',
-  'History',
+'History',
   'Travel',
   'Motivational'
 

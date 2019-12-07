@@ -125,7 +125,7 @@ const Form = ({ handleChange, handleSubmit, data, errors }) => {
                 </div>
               </div>
             </div>
-            <button className="button is-dark">Shubmit</button>
+            <button className="button is-dark">Submit</button>
           </form>
         </div>
       </div>
