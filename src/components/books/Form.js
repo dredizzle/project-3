@@ -10,7 +10,7 @@ const Form = ({ handleChange, handleSubmit, data, errors }) => {
 
             <div className="columns">
               <div className="column">
-
+                {/* ******************* */}
                 <div className="field">
                   <label className="label">Title</label>
                   <div className="control">
@@ -24,8 +24,7 @@ const Form = ({ handleChange, handleSubmit, data, errors }) => {
                   </div>
                   {errors.title && <div className="help is-danger">{errors.title}</div>}
                 </div>
-
-
+                {/* ******************* */}
                 <div className="field">
                   <label className="label">Image</label>
                   <div className="control">
@@ -40,6 +39,7 @@ const Form = ({ handleChange, handleSubmit, data, errors }) => {
                   </div>
                   {errors.image && <div className="help is-danger">{errors.image}</div>}
                 </div>
+                {/* ******************* */}
                 <div className="field">
                   <label className="label">Release Year</label>
                   <div className="control">
@@ -52,6 +52,7 @@ const Form = ({ handleChange, handleSubmit, data, errors }) => {
                   </div>
                   {errors.releaseYear && <div className="help is-danger">{errors.releaseYear}</div>}
                 </div>
+                {/* ******************* */}
                 <div className="field">
                   <label className="label">Genre</label>
                   <div className="control">
@@ -79,11 +80,9 @@ const Form = ({ handleChange, handleSubmit, data, errors }) => {
                     {errors.genre && <div className="help is-danger">{errors.genre}</div>}
                   </div>
                 </div>
-
-
               </div>
               <div className="column">
-
+                {/* ******************* */}
                 <div className="field">
                   <label className="label">Pages</label>
                   <div className="control">
@@ -97,7 +96,7 @@ const Form = ({ handleChange, handleSubmit, data, errors }) => {
                   </div>
                   {errors.pg && <div className="help is-danger">{errors.pg}</div>}
                 </div>
-
+                {/* ******************* */}
                 <div className="field">
                   <label className="label">Description</label>
                   <div className="control">
@@ -111,6 +110,7 @@ const Form = ({ handleChange, handleSubmit, data, errors }) => {
                   </div>
                   {errors.label && <div className="help is-danger">{errors.label}</div>}
                 </div>
+                {/* ******************* */}
                 <div className="field">
                   <label className="label">ISBN</label>
                   <div className="control">
@@ -123,8 +123,6 @@ const Form = ({ handleChange, handleSubmit, data, errors }) => {
                   </div>
                   {errors.ISBN && <div className="help is-danger">{errors.ISBN}</div>}
                 </div>
-
-
               </div>
             </div>
             <button className="button is-dark">Shubmit</button>

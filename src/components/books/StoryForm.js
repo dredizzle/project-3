@@ -7,10 +7,11 @@ const Form = ({ handleChange, handleSubmit, data, errors }) => {
       <div className="container">
         <div className="formBoxStory">
           <form onSubmit={handleSubmit}>
-
+            {/* ******************* */}
             <div className="columns">
+              {/* ******************* */}
               <div className="column">
-
+                {/* ******************* */}
                 <div className="field">
                   <label className="label">Author</label>
                   <div className="control">
@@ -24,11 +25,10 @@ const Form = ({ handleChange, handleSubmit, data, errors }) => {
                   </div>
                   {errors.author && <div className="help is-danger">{errors.author}</div>}
                 </div>
-
+                {/* ******************* */}
                 <div className="field">
                   <label className="label">Image</label>
                   <div className="control">
-
                     <input
                       className="input"
                       name="image"
@@ -39,6 +39,7 @@ const Form = ({ handleChange, handleSubmit, data, errors }) => {
                   </div>
                   {errors.image && <div className="help is-danger">{errors.image}</div>}
                 </div>
+                {/* ******************* */}
                 <div className="field">
                   <label className="label">Release Date</label>
                   <div className="control">
@@ -51,14 +52,10 @@ const Form = ({ handleChange, handleSubmit, data, errors }) => {
                   </div>
                   {errors.releasedate && <div className="help is-danger">{errors.releasedate}</div>}
                 </div>
-
-
-
+                {/* ******************* */}
               </div>
               <div className="column">
-
-
-
+                {/* ******************* */}
                 <div className="field">
                   <label className="label">Title</label>
                   <div className="control">
@@ -72,7 +69,7 @@ const Form = ({ handleChange, handleSubmit, data, errors }) => {
                   </div>
                   {errors.title && <div className="help is-danger">{errors.title}</div>}
                 </div>
-
+                {/* ******************* */}
                 <div className="field">
                   <label className="label">Short description</label>
                   <div className="control">
@@ -86,8 +83,10 @@ const Form = ({ handleChange, handleSubmit, data, errors }) => {
                   </div>
                   {errors.label && <div className="help is-danger">{errors.label}</div>}
                 </div>
+                {/* ******************* */}
               </div>
             </div>
+            {/* ******************* */}
             <div className="field">
               <label className="label has-text-centered is-h5">Story</label>
               <div className="control">
@@ -100,9 +99,7 @@ const Form = ({ handleChange, handleSubmit, data, errors }) => {
               </div>
               {errors.story && <div className="help is-danger">{errors.story}</div>}
             </div>
-
-
-
+            {/* ******************* */}
             <button className="button is-dark">Share your story</button>
           </form>
         </div>

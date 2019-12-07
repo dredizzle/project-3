@@ -38,11 +38,9 @@ class Show extends React.Component {
       .catch(err => console.error(err))
   }
 
-
   canModify() {
     return Auth.isAuthenticated() && Auth.getPayload().sub === this.state.user._id
   }
-
 
   render() {
 
@@ -51,9 +49,7 @@ class Show extends React.Component {
     return (
       <section className="section">
         <div className="container editpage">
-
           <div className="columns is-variable is-2">
-
             <div className="column is-third">
               <div className="user-info box">
                 <div className="user-image">
@@ -72,10 +68,8 @@ class Show extends React.Component {
                 <div className="level-left">
                   <Link to={`/users/${_id}/edit`} className="button is-dark">Edit</Link>
                 </div>
-
               }
             </div>
-
             <div className="column is-third">
               <div className="bookCollection box">
                 <h3 className="subtitle subheading-show">Book collection</h3>
@@ -90,7 +84,6 @@ class Show extends React.Component {
                 </div>
               </div>
             </div>
-
             <div className="column is-third">
               <div className="wishList box">
                 <div className="wishList">
@@ -106,7 +99,6 @@ class Show extends React.Component {
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
