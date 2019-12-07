@@ -37,7 +37,7 @@ class Home extends React.Component {
         </div>
         <div className="recently-added">
           <div className="notification is-white">
-            <h2 className="subtitle is-6 home-recent">RECENTLY ADDED</h2>
+            <h2 className="subtitle is-6 home-recent has-text-white">RECENTLY ADDED</h2>
             <div className="columns is-multiline">
               {recentFour.map(book =>
                 <div key={book._id} className="column is-half-tablet is-2-desktop ">
@@ -49,9 +49,11 @@ class Home extends React.Component {
             </div>
           </div>
         </div>
-        <div className="columns is-multiline is-centered genres">
+        <div id="genres" className="columns is-multiline is-centered genres">
           {genres.map(genre =>
-            <div key={genre} className="column is-one-quarter-desktop  blues is-one-third-tablet has-text-centered folder">
+
+            //Fix column responsivness 3 by 3 if tablet
+            <div key={genre} className="column is-one-quarter-desktop  is-two-thirds-tablet has-text-centered folder">
               <Link to={`/books?genre=${genre}`}>
                 <img src={`/images/${genre}.png`} alt={genre} />
                 <img src={`/images/${genre}-clr.png`} alt={genre} />

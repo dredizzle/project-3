@@ -4,7 +4,7 @@ $font-stack: Roboto, sans-serif;
 $background-color: #e3e3e3;
 $secondary-background-color: white;
 $secondary-color: #DD8964;
-$tertiary-color: #008CBA;
+$tertiary-color: #575656;
 $text-color: #575656;
 
 html, body {
@@ -16,8 +16,16 @@ html {
   background-color: $background-color;
 }
 
+#genres img {
+  width: 250px;
+}
+
+#genres img:hover {
+  transform: scale(1.1);
+}
+
 .logo {
-  max-width: 50px;
+  max-width: 200px;
   padding: 5px;
   margin-left: 25px;
 }
@@ -94,6 +102,10 @@ html {
     }
 }
 
+
+.subtitle subheading-show{
+color: #575656;
+}
 #author-show {
   text-transform: uppercase;
   letter-spacing: 6px;
@@ -140,11 +152,10 @@ nav {
 
 
 .title {
-  margin-top: 50px
+  margin-top: 10px
 }
 
 .subtitle{
-  color: white;
   font-size: 30px;
 }
 
@@ -156,6 +167,23 @@ nav {
   background-repeat:   no-repeat;
 
 }
+
+.image img:hover{
+  transform: scale(0.97);
+
+}
+
+.card{
+  border: none;
+  box-shadow: none
+}
+
+a, p {
+  text-decoration: none !important;
+
+}
+
+
 
 .card{
 padding: 0;
@@ -186,6 +214,10 @@ body{
   background-color: #719192;
 }
 
+
+.show-content{
+color: black;
+}
 .title-home{
   color: $text-color;
   font-size: 72px;
@@ -226,12 +258,12 @@ background-color: #5f6769;
 }
 
 .subtitle.is-6 {
-  color: #fff;
+  color: #5f6769;
   font-size: 25px;
 }
 
 .section{
-  background-color: #719192;
+  background-color: #5f6769;
 }
 .TopDown {
   padding-top: 50px;
@@ -248,8 +280,13 @@ background-color: #5f6769;
 }
 
 .index-control {
+  margin-top: 70px;
   margin-left: 0;
   flex-grow: 0;
+}
+
+.is-white{
+  background-color: rgba(220, 220, 220, 0.831);
 }
 
 .buttons {
@@ -258,6 +295,11 @@ background-color: #5f6769;
 
 .edit2 {
   margin-left: 10px;
+}
+
+a {
+color: #DD8964;
+font-weight: 800;
 }
 
 .editpage {
