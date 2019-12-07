@@ -10,7 +10,7 @@ class Show extends React.Component {
     this.state = {
       user: {
         books: [],
-        bookwish: []
+        bookWish: []
       }
     }
 
@@ -30,10 +30,10 @@ class Show extends React.Component {
   handleWish() {
     const token = Auth.getToken()
     const currentUser = this.state.user._id
-    const models = this.state.user.models.slice()
-    models.push(this.props.location.state.book)
-    const user = { ...this.state.user, models }
-    axios.put(`/api/users/${currentUser}`, { models: models }, { headers: { 'Authorization': `Bearer ${token}` } })
+    const bookWish = this.state.user.bookWish.slice()
+    bookWish.push(this.props.location.state.book)
+    const user = { ...this.state.user, bookWish }
+    axios.put(`/api/users/${currentUser}`, { bookWish: bookWish }, { headers: { 'Authorization': `Bearer ${token}` } })
       .then(() => this.setState({ user }))
       .catch(err => console.error(err))
   }
@@ -70,8 +70,9 @@ class Show extends React.Component {
               </div>
               {this.canModify() &&
                 <div className="level-left">
-                  <Link to={`/users/${_id}/edit`} className="button is-black">Edit</Link>
+                  <Link to={`/users/${_id}/edit`} className="button is-dark">Edit</Link>
                 </div>
+
               }
             </div>
 
