@@ -336,3 +336,50 @@ a {
 .teamContainer {
 	margin-top: 100px;
 }
+
+// Unfold animation 
+
+.text-line {
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: dash 5s linear forwards, filling 5s ease-in forwards;
+  font-size: 100px;
+
+}
+
+.text-line text {
+  font-family: Helvetica,Arial,sans-serif;
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes filling {
+  0%, 90% { fill: #fff; fill-opacity: 0; }
+  100% { fill: #fff; fill-opacity: 1; }
+}
+
+.column{
+  margin-top: 40px;
+}
+
+
+//Text home mobile: 
+
+
+
+
+  @media only screen and (max-width: 600px) {
+    .text-line text {
+      font-size: 2.5rem;
+    }
+    .column is-6-mobile {
+      width: auto; }
+    
+  }

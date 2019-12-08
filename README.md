@@ -36,8 +36,9 @@ Pj-3
 ---
 ### Overview 
 ##### For Readers Writesr BookLovers
-BamBook not only allows users to discuss books, to post their own stories, and browse those of others but also communicate with each-other. 
-
+    BamBook is a society for authors and booklovers that allows users to discuss books, post their own stories, browse
+          those of others and
+          communicate with each-other.
 ---
 ### Technologies used
 #### Front end:
@@ -48,7 +49,7 @@ Node.js, Express, MongoDB, Mongoose, Bluebird
 ---
 ### Back End
 
-Unlike our earlier projects, where we relied entirely on third-party APIs, here we were challenged to build our database. We began by planning out our book model and our user model. These set the foundation upon which we would later embed modifications such as comments and a user wishlist.
+Unlike our earlier projects, here we were challenged to build our own database. We began by planning out our book model and our user model. These set the foundation upon which we would later embed modifications such as comments and a user wishlist.
 
 After installing key dependencies (see technologies), we created an app.js page and set up a 'Hello world' message running on localhost:4000. Next we stored this port variable in an environment.js file in our config folder. Then, while half of the group worked on the user and book models, the other half started creating the user, book, and auth controllers. After this we exported routes from our controllers files into a routes file in our config folder.
 

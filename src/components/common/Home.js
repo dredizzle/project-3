@@ -31,8 +31,8 @@ class Home extends React.Component {
       <section className="hero is-medium">
         <div className="hero-body parallax">
           <div className="container">
-            <h1 className="title display title-home">UNFOLD PAGES</h1>
-            <h2 className="subtitle">BamBook</h2>
+            <svg height="200" stroke="#fff" strokeWidth="2" className="text-line" width="100%"><text x="50%" dominantBaseline="middle" textAnchor="middle" y="50%">UNFOLD PAGES</text></svg>
+
           </div>
         </div>
         <div className="recently-added">
@@ -40,7 +40,7 @@ class Home extends React.Component {
             <h2 className="subtitle is-6 home-recent has-text-white">RECENTLY ADDED</h2>
             <div className="columns is-multiline">
               {recentFour.map(book =>
-                <div key={book._id} className="column is-half-tablet is-2-desktop ">
+                <div key={book._id} className="column is-4-tablet is-2-desktop is-6-mobile ">
                   <Link to={`/books/${book._id}`}>
                     <Card {...book} />
                   </Link>
@@ -57,7 +57,7 @@ class Home extends React.Component {
             <h2 className="subtitle is-6 home-recent has-text-white">RECENT STORIES</h2>
             <div className="columns is-multiline">
               {recentFour.map(book =>
-                <div key={book._id} className="column is-half-tablet is-2-desktop ">
+                <div key={book._id} className="column is-4-tablet is-2-desktop is-6-mobile ">
                   <Link to={`/books/${book._id}`}>
                     <Card {...book} />
                   </Link>
@@ -72,7 +72,7 @@ class Home extends React.Component {
             // *******************
             //Fix column responsivness 3 by 3 if tablet
             // *******************
-            <div key={genre} className="column is-one-quarter-desktop  is-two-thirds-tablet has-text-centered folder">
+            <div key={genre} className="column is-one-quarter-desktop  is-one-third-tablet has-text-centered folder">
               <Link to={`/books?genre=${genre}`}>
                 <img src={`/images/${genre}.png`} alt={genre} />
                 <img src={`/images/${genre}-clr.png`} alt={genre} />
@@ -80,6 +80,8 @@ class Home extends React.Component {
             </div>
           )}
         </div>
+
+
         <footer className="footer">
           <div className="content has-text-centered">
             <p>
