@@ -26,7 +26,6 @@ class New extends React.Component {
 
   handleSubmit(e) {
     e.preventDefault()
-
     const token = Auth.getToken()
 
 
