@@ -9,10 +9,10 @@ class Show extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      book: null,
-      books: null,
-      errors: null,
-      data: null
+      book: '',
+      books: '',
+      errors: '',
+      data: ''
     }
     this.handleChange = this.handleChange.bind(this)
     this.handleComment = this.handleComment.bind(this)
@@ -81,7 +81,7 @@ class Show extends React.Component {
       <section className="section" id="book-show">
         <div className="columns">
           <div className="column is-two-fifths-desktop is-half-tablet is-full-mobile">
-            <figure className="image">
+            <figure className="image-show">
               <img src={this.state.book.image} alt={this.state.book.title} />
             </figure>
             <div className="container edit">
