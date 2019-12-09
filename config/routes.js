@@ -27,8 +27,6 @@ router.delete('/stories/:id', secureRoute, storiesController.delete)
 
 
 
-
-
 router.post('/books/:id/comments', secureRoute, booksController.commentCreate)
 router.delete('/books/:id/comments/:commentId', secureRoute, booksController.commentDelete)
 

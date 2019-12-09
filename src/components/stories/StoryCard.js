@@ -2,14 +2,14 @@ import React from 'react'
 
 const StoryCard = ({ title, author, description }) => {
   return (
-    <div className="card">
+    <div className="card-story">
       <div className="card-image">
 
         <div className="media-content">
-          <p className="subtitle is-6 has-text-white">{title}</p>
-          <p className="subtitle is-6 has-text-white">{description}</p>
+          <p className="subtitle is-6">{title}</p>
+          <p className="subtitle is-6 ">{description}</p>
         </div>
-        <div className="content has-text-white">
+        <div className="content ">
           <strong> by {author}</strong>
         </div>
       </div>
