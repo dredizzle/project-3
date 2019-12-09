@@ -9,26 +9,19 @@ class Show extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      book: null,
-      // books: null,
-      errors: null,
-      data: null
+      book: '',
+      books: '',
+      errors: '',
+      data: ''
     }
     this.handleChange = this.handleChange.bind(this)
     this.handleComment = this.handleComment.bind(this)
     this.handleDelete = this.handleDelete.bind(this)
     this.handleDeleteComments = this.handleDeleteComments.bind(this)
   }
-  
   componentDidMount() {
-<<<<<<< HEAD
-    axios('/api/books')
+    axios(`/api/books/${this.props.match.params.id}`)
       .then(res => this.setState({ book: res.data }))
-=======
-    fetch('/api/books')
-      .then(res => res.json())
-      .then(res => this.setState({ book: res }))
->>>>>>> development
   }
   // componentDidMount() {
   //   this.getData()
@@ -119,7 +112,7 @@ class Show extends React.Component {
               <article className="media">
                 <figure className="media-left">
                   <p className="image is-64x64">
-                    <img src="https://profile.actionsprout.com/default.jpeg" />
+                    {/* <img src="https://profile.actionsprout.com/default.jpeg" /> */}
                   </p>
                 </figure>
                 <div className="media-content">

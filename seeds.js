@@ -463,7 +463,6 @@ mongoose.connect(dbURI, (err, db) => {
 
         description: "Hungry is a book about not only the hunger for food, but for risk, for reinvention, for creative breakthroughs, and for connection. Feeling stuck in his work and home life, writer Jeff Gordinier happened into a fateful meeting with Danish chef Ren Redzepi, whose restaurant, Noma, has been called the best in the world. A restless perfectionist, Redzepi was at the top of his",
         createdBy: emma
-<<<<<<< HEAD
         
       },{
         author: "Maggie Stiefvater",
@@ -664,9 +663,7 @@ mongoose.connect(dbURI, (err, db) => {
         description:"The sun is setting on humanity. The night now belongs to voracious demons that prey upon a dwindling population forced to cower behind half-forgotten symbols of power.Legends tell of a Deliverer: a general who once bound all mankind into a single force that defeated the demons. But is the return of the Deliverer just another myth? Perhaps not.",
         createdBy: emma
         
-=======
 
->>>>>>> fae0d9df20a7fa1a0415e27ebe7033ac0b0be62d
       },
 
       ])
