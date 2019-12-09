@@ -58,7 +58,7 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     environmentPlugin,
     new CopyWebpackPlugin([
-      // { from: 'src/images', to: 'images' }
+      { from: 'src/images', to: 'images' }
     ]),
     new HtmlWebpackPlugin({
       template: 'src/index.html',
