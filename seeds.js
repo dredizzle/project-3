@@ -543,6 +543,140 @@ mongoose.connect(dbURI, (err, db) => {
         description:"Bershad stands apart from the world, the most legendary dragonslayer in history, both revered and reviled.Once, he was Lord Silas Bershad, but after a disastrous failure on the battlefield he was stripped of his titles and sentenced to one violent, perilous hunt after another. Now he lives only to stalk dragons, slaughter them, collect their precious oil, and head back",
         createdBy: emma
         
+      },{
+        author: "A.L. Jackson",
+        title: "Hold on to Hope",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1572268289l/48588509.jpg",
+        releaseYear: 2019,
+        genre: "Romance",
+        pg: 419,
+        ISBN: "B07ZMSW4G1",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B07ZMSW4G1",
+      
+        description:"A best friends-to-lovers, stand-alone romance from New York Times Bestselling Author, A.L. Jackson . . .",
+        createdBy: emma
+        
+      },{
+        author: "Kandi Steiner",
+        title: "On the Rocks",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1559569726l/45916982._SY475_.jpg",
+        releaseYear: 2019,
+        genre: "Romance",
+        pg: 340,
+        ISBN: "107217670X",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B07T255NZ4",
+      
+        description:"That's what Mama told me when I was a kid, kicking his pew in church and giggling at the games we’d play. It's what the town said when his father died and the Becker brothers went wild. And it's on repeat in my mind the day I walk into the whiskey distillery where he works to buy a wedding gift for my fiancé.",
+        createdBy: emma
+        
+      },{
+        author: "Adriana Locke",
+        title: "Tangle",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1555075597l/43237712.jpg",
+        releaseYear: 2019,
+        genre: "Romance",
+        pg: 284,
+        ISBN: "B07LB853QB",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B07LB853QB",
+      
+        description:"Sparks fly between a die-hard romantic and a sexy cynic in this fresh, funny romance from USA Today bestselling author Adriana Locke.",
+        createdBy: emma
+        
+      },{
+        author: "Lauren Landish ",
+        title: "My Big Fat Fake Wedding",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1568648488l/48189120._SY475_.jpg",
+        releaseYear: 2019,
+        genre: "Romance",
+        pg: 360,
+        ISBN: "B07XY6MRLS",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B07XY6MRLS",
+      
+        description:"He needs a wife.I need a husband.It’s just temporary… what could go wrong?",
+        createdBy: emma
+        
+      },{
+        author: "Jana Aston ",
+        title: "The One Night Stand Before Christmas",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1571343796l/48409935._SY475_.jpg",
+        releaseYear: 2019,
+        genre: "Romance",
+        pg:358 ,
+        ISBN: "B07ZV8YS68",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B07ZV8YS68",
+      
+        description:"Dear Santa,/Please stop by my house and pick up your suit. If you thought I was going to run it to the dry cleaners for you after you left it on my bedroom floor, you’ve got another think coming./Best,//Noel Winter",
+        createdBy: emma
+        
+      },
+      {
+        author: "Suzanne Collins",
+        title: "The Hunger Games",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1447303603l/2767052.jpg",
+        releaseYear: 2019,
+        genre: "Adventure",
+        pg: 374,
+        ISBN: "0439023483",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B07KGC5WL9",
+      
+        description:"Could you survive on your own, in the wild, with everyone out to make sure you don't live to see the morning?In the ruins of a place once known as North America lies the nation of Panem, a shining Capitol surrounded by twelve outlying districts. The Capitol is harsh and cruel and keeps the districts in line by forcing them all to send one boy and one girl between the ages ...",
+        createdBy: emma
+        
+      },
+      {
+        author: "Jim Butcher",
+        title: "First Lord's Fury",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327903582l/6316821.jpg",
+        releaseYear: 2019,
+        genre: "Adventure",
+        pg: 465,
+        ISBN: "044101769X",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B003HV0TVE",
+      
+        description:"For Gaius Octavian, life has been one long battle. Now, the end of all he fought for is close at hand. The brutal, dreaded Vord are on the march against Alera. And perhaps for the final time, Gaius Octavian and his legions must stand against the enemies of his people. And it will take all his intelligence, ingenuity, and furycraft to save their world from eternal darkness.",
+        createdBy: emma
+        
+      },
+      {
+        author: "Anthony Ryan ",
+        title: "Tower Lord",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1382486392l/18138189.jpg",
+        releaseYear: 2019,
+        genre: "Adventure",
+        pg: 602,
+        ISBN: "0425265625",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B00FLY3VHY",
+      
+        description:"The blood-song rose with an unexpected tune, a warm hum mingling recognition with an impression of safety. He had a sense it was welcoming him home.Vaelin Al Sorna, warrior of the Sixth Order, called Darkblade, called Hope Killer. The greatest warrior of his day, and witness to the greatest defeat of his nation: King Janus’s vision of a Greater Unified Realm drowned in ",
+        createdBy: emma
+        
+      },{
+        author: "Brent Weeks",
+        title: "The Broken Eye",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1376583941l/12652457.jpg",
+        releaseYear: 2019,
+        genre: "Adventure",
+        pg: 846,
+        ISBN: "B00H25FCNG",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B00GFHG33A",
+      
+        description:"As the old gods awaken, the Chromeria is in a race to find its lost Prism, the only man who may be able to stop catastrophe, Gavin Guile. But Gavin's enslaved on a galley, and when he finally escapes, he finds himself in less than friendly hands. Without the ability to draft which has defined him",
+        createdBy: emma
+        
+      },
+      {
+        author: "Peter V. Brett",
+        title: "The Desert Spear",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388219761l/6736971.jpg",
+        releaseYear: 2019,
+        genre: "Adventure",
+        pg: 579,
+        ISBN: "0345503813",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B003E7WJLE",
+      
+        description:"The sun is setting on humanity. The night now belongs to voracious demons that prey upon a dwindling population forced to cower behind half-forgotten symbols of power.Legends tell of a Deliverer: a general who once bound all mankind into a single force that defeated the demons. But is the return of the Deliverer just another myth? Perhaps not.",
+        createdBy: emma
+        
       },
       
       ])
