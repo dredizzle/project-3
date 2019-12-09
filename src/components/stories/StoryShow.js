@@ -1,16 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
-// import Promise from 'bluebird'
-import Card from './Card'
+
 import Auth from '../../lib/Auth'
 import Loading from '../common/Loading'
 class Show extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      book: '',
-      books: '',
+      story: '',
+      stories: '',
       errors: '',
       data: ''
     }
@@ -19,105 +18,92 @@ class Show extends React.Component {
     this.handleDelete = this.handleDelete.bind(this)
     this.handleDeleteComments = this.handleDeleteComments.bind(this)
   }
-
-
   componentDidMount() {
-    Promise.all([
-      fetch(`/api/books/${this.props.match.params.id}`),
-      fetch('/api/books/')
-    ])
-      .then(([res1, res2]) => Promise.all([res1.json(), res2.json()]))
-      .then(([data1, data2]) => this.setState({
-        book: data1,
-        books: data2
-      }))
+    axios.get(`/api/stories/${this.props.match.params.id}`)
+      .then(res => this.setState({ story: res.data }))
   }
-
-
+  // componentDidMount() {
+  //   this.getData()
+  // }
   componentDidUpdate(prevProps) {
     if (prevProps.location.pathname !== this.props.location.pathname) {
-      this.componentDidMount()
+      this.getData()
     }
   }
   handleChange(e) {
     const data = { ...this.state.data, [e.target.name]: e.target.value }
     this.setState({ data })
-    console.log(data)
   }
   handleComment(e) {
     e.preventDefault()
     const token = Auth.getToken()
-    axios.post(`/api/books/${this.props.match.params.id}/comments`, this.state.data, {
+    axios.post(`/api/stories/${this.props.match.params.id}/comments`, this.state.data, {
       headers: { 'Authorization': `Bearer ${token}` }
     })
-    // window.location.reload()
+    window.location.reload()
   }
   handleDeleteComments(e) {
     const token = Auth.getToken()
     if (e.target.value === Auth.getPayload().sub) {
-      axios.delete(`/api/books/${this.props.match.params.id}/comments/${e.target.id}`, {
+      axios.delete(`/api/stories/${this.props.match.params.id}/comments/${e.target.id}`, {
         headers: { 'Authorization': `Bearer ${token}` }
       })
     }
-    // window.location.reload()
+    window.location.reload()
   }
   handleDelete() {
     const token = Auth.getToken()
-    axios.delete(`/api/books/${this.props.match.params.id}`, {
+    axios.delete(`/api/stories/${this.props.match.params.id}`, {
       headers: { 'Authorization': `Bearer ${token}` }
     })
-      .then(() => this.props.history.push('/books'))
+      .then(() => this.props.history.push('/stories'))
   }
-
-  canModify() {
-    return Auth.isAuthenticated() && Auth.getPayload().sub === this.state.book.createdBy._id
-  }
-
+  // canModify() {
+  //   return Auth.isAuthenticated() && Auth.getPayload().sub === this.state.book.createdBy._id
+  // }
   render() {
-    if (!this.state.book) return <Loading />
-    let similar = this.state.books.filter(book => book.genre === this.state.book.genre && book.title !== this.state.book.title)
-    similar = similar.slice(0, 5)
+    console.log(this.state.story)
+    if (!this.state.story) return <Loading />
+    // const [{ author, title, image, releaseYear, description, genre, ISBN, pg }] = this.state.book
+    // let similar = this.state.books.filter(book => book.genre === this.state.book.genre && book.title !== this.state.book.title)
+    // similar = similar.slice(0, 5)
     return (
       <section className="section" id="book-show">
         <div className="columns">
           <div className="column is-two-fifths-desktop is-half-tablet is-full-mobile">
             <figure className="image-show">
-              <img src={this.state.book.image} alt={this.state.book.title} />
+              <img src={this.state.story.image} alt={this.state.story.title} />
             </figure>
             <div className="container edit">
               <div className="buttons is-gapless">
                 {Auth.isAuthenticated() &&
                   <Link to={{
                     pathname: `/users/${Auth.getPayload().sub}`,
-                    state: { book: this.state.book }
+                    state: { story: this.state.story }
                   }}>
                     <button className="button is-light a1">Add to Wish List</button>
                   </Link>
                 }
-                {this.canModify() &&
+                {/* {this.canModify() &&
                   <div className="level-right is-gapless edit2">
                     <Link to={`/books/${this.state.book._id}/edit`} className="button is-light e1">Edit</Link>
                     <button className="button is-light d2" onClick={this.handleDelete}>Delete</button>
                   </div>
-                }
+                } */}
               </div>
             </div>
           </div>
-          <div id="goodreads-widget" className="row is-two-fifths-desktop is-half-tablet is-full-mobile">
-            <div id="gr_header"><h1>Goodreads reviews for {this.state.book.title}</h1></div>
-            <iframe id="the_iframe" src={`https://www.goodreads.com/api/reviews_widget_iframe?did=DEVELOPER_ID&format=html&header_text=Goodreads+reviews+for+${this.state.book.title}&isbn=${this.state.book.ISBN}&links=660&review_back=fff&stars=000&text=000`} width="565" height="400" frameBorder="0"></iframe>
-          </div>
-
           <div className="column is-two-fifths-desktop is-half-tablet is-full-mobile">
             <div className="show-content">
-              <h2 className="subtitle is-4 show" id="author-show">{this.state.book.author}</h2>
-              <h2 className="subtitle is-5 show" id="title-show">{this.state.book.title}</h2>
+              <h2 className="subtitle is-4 show" id="author-show">{this.state.story.title}</h2>
+              <h2 className="subtitle is-5 show" id="title-show">{this.state.story.author}</h2>
               <hr />
-              <h2 className="subtitle is-6 show"><span>Year released:</span> {this.state.book.releaseYear}</h2>
-              <h2 className="subtitle is-6 show"><span>Genre: </span>{this.state.book.genre}</h2>
-              <h2 className="subtitle is-6 show"><span>Pages: </span>{this.state.book.pg}</h2>
-              <h2 className="subtitle is-6 show"><span>ISBN: </span> {this.state.book.ISBN}</h2>
-              <h2 className="subtitle is-6 show"><span>Notes: </span>{this.state.book.description}</h2>
+              <h2 className="subtitle is-6 show"><span>Year released:</span> {this.state.story.releaseYear}</h2>
+
+
+              <h2 className="subtitle is-6 show"><span>Notes: </span>{this.state.story.description}</h2>
+              <h2 className="subtitle is-6 show"><span>Notes: </span>{this.state.story.story}</h2>
+
               <hr />
             </div>
             {/* COMMENTS ===================================================*/}
@@ -144,14 +130,14 @@ class Show extends React.Component {
                   </nav>
                 </div>
               </article>
-              {this.state.book.comments.map(comment =>
+              {/* {this.state.book.comments.map(comment =>
                 <article key={comment._id} className="media">
                   <figure className="media-left">
-                    {/* <p className="image is-64x64">
+                    <p className="image is-64x64">
                       <Link to={`/users/${comment.user.id}`}>
                         <img src={comment.user.image} />
                       </Link>
-                    </p> */}
+                    </p>
                   </figure>
                   <div className="media-content">
                     <div className="content">
@@ -179,10 +165,10 @@ class Show extends React.Component {
                     <button id={comment._id} value={comment.user._id} className="delete" onClick={this.handleDeleteComments}></button>
                   </div>
                 </article>
-              )}
+              )} */}
             </div>
           </div>
-          <div className="column is-one-fifth-desktop is-half-tablet is-full-mobile">
+          {/* <div className="column is-one-fifth-desktop is-half-tablet is-full-mobile">
             <div className="similar-show">
               <h2 className="subtitle is-6 subheading-show">You might also like</h2>
               <div>
@@ -195,7 +181,7 @@ class Show extends React.Component {
                 )}
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     )
