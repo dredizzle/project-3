@@ -36,7 +36,7 @@ class Show extends React.Component {
 
   componentDidUpdate(prevProps) {
     if (prevProps.location.pathname !== this.props.location.pathname) {
-      this.getData()
+      this.componentDidMount()
     }
   }
   handleChange(e) {
@@ -50,7 +50,7 @@ class Show extends React.Component {
     axios.post(`/api/books/${this.props.match.params.id}/comments`, this.state.data, {
       headers: { 'Authorization': `Bearer ${token}` }
     })
-    this.forceUpdate()
+    // window.location.reload()
   }
   handleDeleteComments(e) {
     const token = Auth.getToken()
