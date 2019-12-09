@@ -17,7 +17,7 @@ const Form = ({ handleChange, handleSubmit, data, errors }) => {
                     <input
                       className="input"
                       name="title"
-                      placeholder="eg: The Kinks"
+                      placeholder="eg: J.K Rowling"
                       onChange={handleChange}
                       value={data.title || ''}
                     />
@@ -89,7 +89,7 @@ const Form = ({ handleChange, handleSubmit, data, errors }) => {
                     <input
                       className="input"
                       name="pg"
-                      placeholder="eg: The Kinks are the Village Green Preservation Society"
+                      placeholder="eg: 432"
                       onChange={handleChange}
                       value={data.pg || ''}
                     />
@@ -98,27 +98,27 @@ const Form = ({ handleChange, handleSubmit, data, errors }) => {
                 </div>
                 {/* ******************* */}
                 <div className="field">
-                  <label className="label">Description</label>
+                  <label className="label">ISBN No.</label>
                   <div className="control">
                     <input
                       className="input"
-                      name="description"
-                      placeholder="eg: description"
+                      name="ISBN"
+                      placeholder="ISBN"
                       onChange={handleChange}
-                      value={data.description || ''}
+                      value={data.ISBN || ''}
                     />
                   </div>
                   {errors.label && <div className="help is-danger">{errors.label}</div>}
                 </div>
                 {/* ******************* */}
                 <div className="field">
-                  <label className="label">ISBN</label>
+                  <label className="label">Description</label>
                   <div className="control">
                     <textarea
                       className="textarea"
-                      name="ISBN"
+                      name="description"
                       onChange={handleChange}
-                      value={data.ISBN || ''}
+                      value={data.description || ''}
                     />
                   </div>
                   {errors.ISBN && <div className="help is-danger">{errors.ISBN}</div>}

@@ -35,6 +35,7 @@
     "mongoose": "^5.7.13",
     "mongoose-unique-validator": "^2.0.3",
     "node-sass": "^4.13.0",
+    "punycode": "^2.1.1",
     "query-string": "^6.5.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
