@@ -50,7 +50,7 @@ class Show extends React.Component {
     axios.post(`/api/books/${this.props.match.params.id}/comments`, this.state.data, {
       headers: { 'Authorization': `Bearer ${token}` }
     })
-    window.location.reload()
+    this.forceUpdate()
   }
   handleDeleteComments(e) {
     const token = Auth.getToken()
@@ -59,7 +59,7 @@ class Show extends React.Component {
         headers: { 'Authorization': `Bearer ${token}` }
       })
     }
-    window.location.reload()
+    // window.location.reload()
   }
   handleDelete() {
     const token = Auth.getToken()
@@ -142,11 +142,11 @@ class Show extends React.Component {
               {this.state.book.comments.map(comment =>
                 <article key={comment._id} className="media">
                   <figure className="media-left">
-                    <p className="image is-64x64">
+                    {/* <p className="image is-64x64">
                       <Link to={`/users/${comment.user.id}`}>
                         <img src={comment.user.image} />
                       </Link>
-                    </p>
+                    </p> */}
                   </figure>
                   <div className="media-content">
                     <div className="content">
