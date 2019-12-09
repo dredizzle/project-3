@@ -498,7 +498,7 @@ mongoose.connect(dbURI, (err, db) => {
         genre: 'Fantasy',
         pg: 448,
         ISBN: '1524738174',
-        preview:'https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B07THR7F9R',
+        preview: 'https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B07THR7F9R',
       
         description:"n 1872, New Orleans is a city ruled by the dead. But to seventeen-year-old Celine Rousseau, New Orleans provides her a refuge after she's forced to flee her life as a dressmaker in Paris. Taken in by the sisters of the Ursuline convent along with six other girls, Celine quickly becomes enamored with the vibrant city from the music to the food to the soirées and—especially...",
         createdBy: emma
@@ -639,26 +639,25 @@ mongoose.connect(dbURI, (err, db) => {
       },{
         author: 'Brent Weeks',
         title: 'The Broken Eye',
-        image:'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1376583941l/12652457.jpg',
+        image: 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1376583941l/12652457.jpg',
         releaseYear: 2019,
         genre: 'Adventure',
         pg: 846,
         ISBN: 'B00H25FCNG',
-        preview:'https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B00GFHG33A',
-      
-        description:"s the old gods awaken, the Chromeria is in a race to find its lost Prism, the only man who may be able to stop catastrophe, Gavin Guile. But Gavin's enslaved on a galley, and when he finally escapes, he finds himself in less than friendly hands. Without the ability to draft which has defined him",
+        preview: 'https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B00GFHG33A',
+        description: "Is the old gods awaken, the Chromeria is in a race to find its lost Prism, the only man who may be able to stop catastrophe, Gavin Guile. But Gavin's enslaved on a galley, and when he finally escapes, he finds himself in less than friendly hands. Without the ability to draft which has defined him",
         createdBy: emma
         
       },
       {
         author: 'Peter V. Brett',
         title: 'The Desert Spear',
-        image:'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388219761l/6736971.jpg',
+        image: 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388219761l/6736971.jpg',
         releaseYear: 2019,
         genre: 'Adventure',
         pg: 579,
         ISBN: '0345503813',
-        preview:'https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B003E7WJLE',
+        preview: 'https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B003E7WJLE',
       
         description:"he sun is setting on humanity. The night now belongs to voracious demons that prey upon a dwindling population forced to cower behind half-forgotten symbols of power.Legends tell of a Deliverer: a general who once bound all mankind into a single force that defeated the demons. But is the return of the Deliverer just another myth? Perhaps not.",
         createdBy: emma
@@ -919,7 +918,7 @@ mongoose.connect(dbURI, (err, db) => {
         author: 'David Bayles, Ted Orland',
         title: 'Art and Fear: Observations on the Perils (and Rewards) of Artmaking',
         image: 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1442712080l/187633._SY475_.jpg',
-        releaseYear: 2001,
+        releaseYear: 2001,                                                                                                
         genre: 'Art',
         pg: '122',
         ISBN: '0961454733',
