@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Card from '../books/Card'
+import StoryCard from '../stories/StoryCard'
 import axios from 'axios'
 import genres from '../../lib/genres'
 function orderByDate(arr) {
@@ -15,7 +16,8 @@ class Home extends React.Component {
     super()
     this.state = {
       books: [],
-      genre: {}
+      genre: {},
+      stories: []
     }
   }
   componentDidMount() {
@@ -56,10 +58,10 @@ class Home extends React.Component {
           <div className="notification is-white">
             <h2 className="subtitle is-6 home-recent has-text-white">RECENT STORIES</h2>
             <div className="columns is-multiline">
-              {recentFour.map(book =>
-                <div key={book._id} className="column is-4-tablet is-2-desktop is-6-mobile ">
-                  <Link to={`/books/${book._id}`}>
-                    <Card {...book} />
+              {recentFour.map(story =>
+                <div key={story._id} className="column is-4-tablet is-2-desktop is-6-mobile ">
+                  <Link to={`/stories/${story._id}`}>
+                    <StoryCard {...story} />
                   </Link>
                 </div>
               )}
