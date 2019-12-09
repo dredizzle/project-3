@@ -72,7 +72,7 @@ class Show extends React.Component {
       <section className="section" id="book-show">
         <div className="columns">
           <div className="column is-two-fifths-desktop is-half-tablet is-full-mobile">
-            <figure className="image">
+            <figure className="image-show">
               <img src={this.state.book.image} alt={this.state.book.title} />
             </figure>
             <div className="container edit">
@@ -98,12 +98,13 @@ class Show extends React.Component {
             <div className="show-content">
               <h2 className="subtitle is-4 show" id="author-show">{this.state.book.author}</h2>
               <h2 className="subtitle is-5 show" id="title-show">{this.state.book.title}</h2>
-              {/* <hr />
-              <h2 className="subtitle is-6 show"><span>Year released:</span> {releaseYear}</h2>
-              <h2 className="subtitle is-6 show"><span>Genre: </span>{genre}</h2>
-              <h2 className="subtitle is-6 show"><span>Pages: </span>{pg}</h2>
-              <h2 className="subtitle is-6 show"><span>ISBN: </span> {ISBN}</h2>
-              <h2 className="subtitle is-6 show"><span>Notes: </span>{description}</h2> */}
+              <hr />
+              <h2 className="subtitle is-6 show"><span>Year released:</span> {this.state.book.releaseYear}</h2>
+              <h2 className="subtitle is-6 show"><span>Genre: </span>{this.state.book.genre}</h2>
+              <h2 className="subtitle is-6 show"><span>Pages: </span>{this.state.book.pg}</h2>
+              <h2 className="subtitle is-6 show"><span>ISBN: </span> {this.state.book.ISBN}</h2>
+              <h2 className="subtitle is-6 show"><span>Notes: </span>{this.state.book.description}</h2>
+
               <hr />
             </div>
             {/* COMMENTS ===================================================*/}
