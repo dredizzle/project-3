@@ -19,9 +19,21 @@ class Show extends React.Component {
     this.handleDelete = this.handleDelete.bind(this)
     this.handleDeleteComments = this.handleDeleteComments.bind(this)
   }
+  
   componentDidMount() {
+<<<<<<< HEAD
     axios('/api/books')
       .then(res => this.setState({ book: res.data }))
+=======
+<<<<<<< HEAD
+    axios('/api/books')
+      .then(res => this.setState({ book: res.data }))
+=======
+    fetch('/api/books')
+      .then(res => res.json())
+      .then(res => this.setState({ book: res }))
+>>>>>>> development
+>>>>>>> 9e3a4360ac0fc4ae94e2301b872ee3d1920a733c
   }
   // componentDidMount() {
   //   this.getData()
