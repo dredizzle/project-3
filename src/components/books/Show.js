@@ -33,7 +33,7 @@ class Show extends React.Component {
       }))
   }
 
-  
+
   componentDidUpdate(prevProps) {
     if (prevProps.location.pathname !== this.props.location.pathname) {
       this.componentDidMount()
@@ -103,6 +103,11 @@ class Show extends React.Component {
               </div>
             </div>
           </div>
+          <div id="goodreads-widget" className="row is-two-fifths-desktop is-half-tablet is-full-mobile">
+            <div id="gr_header"><h1>Goodreads reviews for {this.state.book.title}</h1></div>
+            <iframe id="the_iframe" src={`https://www.goodreads.com/api/reviews_widget_iframe?did=DEVELOPER_ID&format=html&header_text=Goodreads+reviews+for+${this.state.book.title}&isbn=${this.state.book.ISBN}&links=660&review_back=fff&stars=000&text=000`} width="565" height="400" frameBorder="0"></iframe>
+          </div>
+
           <div className="column is-two-fifths-desktop is-half-tablet is-full-mobile">
             <div className="show-content">
               <h2 className="subtitle is-4 show" id="author-show">{this.state.book.author}</h2>
