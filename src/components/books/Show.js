@@ -50,7 +50,7 @@ class Show extends React.Component {
     axios.post(`/api/books/${this.props.match.params.id}/comments`, this.state.data, {
       headers: { 'Authorization': `Bearer ${token}` }
     })
-    // window.location.reload()
+    window.location.reload()
   }
   handleDeleteComments(e) {
     const token = Auth.getToken()
@@ -59,7 +59,7 @@ class Show extends React.Component {
         headers: { 'Authorization': `Bearer ${token}` }
       })
     }
-    // window.location.reload()
+    window.location.reload()
   }
   handleDelete() {
     const token = Auth.getToken()
