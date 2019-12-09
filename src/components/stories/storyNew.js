@@ -4,7 +4,7 @@ import axios from 'axios'
 import Form from './StoryForm'
 import Auth from '../../lib/Auth'
 
-class New extends React.Component {
+class StoryNew extends React.Component {
 
   constructor() {
     super()
@@ -62,4 +62,4 @@ class New extends React.Component {
   }
 }
 
-export default New
+export default StoryNew

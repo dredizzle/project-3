@@ -2,6 +2,7 @@ const mongoose = require('mongoose')
 const { dbURI } = require('./config/environment')
 const User = require('./models/User')
 const Book = require('./models/Book')
+const Story = require('./models/Story')
 
 mongoose.connect(dbURI, (err, db) => {
   db.dropDatabase()
@@ -467,7 +468,19 @@ mongoose.connect(dbURI, (err, db) => {
 
       ])
 
-
+      // CREATE STORY API SEEDS MODELS/ STORY 
+    })
+    .then(users => {
+      const [sean, gabe, emma] = users
+      return Story.create([{
+        author: "Oyinkan Braithwaite",
+        title: "My Sister, the Serial Killer",
+        releaseDate: 10 / 11 / 2018,
+        description: "Mistery",
+        story: "This is my story",
+        createdBy: emma
+      }
+      ])
     })
 
     .then(() => mongoose.connection.close()) // disconnect from the database
@@ -477,3 +490,6 @@ mongoose.connect(dbURI, (err, db) => {
     })
 
 })
+
+
+

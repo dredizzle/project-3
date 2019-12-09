@@ -33,7 +33,7 @@ class Show extends React.Component {
       }))
   }
 
-  
+
   componentDidUpdate(prevProps) {
     if (prevProps.location.pathname !== this.props.location.pathname) {
       this.getData()
