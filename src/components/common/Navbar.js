@@ -13,7 +13,6 @@ class Navbar extends React.Component {
     this.toggleActive = this.toggleActive.bind(this)
   }
 
-
   logout() {
     Auth.removeToken()
     this.props.history.push('/')
@@ -31,28 +30,23 @@ class Navbar extends React.Component {
       <nav className="navbar is-fixed-top">
         <div className="navbar-brand">
           <Link to="/" >
-            <img className="logo" src="https://i.imgur.com/2MdZJ7h.png" />
+            <img className="logo" src="https://i.imgur.com/cCvPghk.png" />
           </Link>
-
           <a role="button" className={`navbar-burger${this.state.active ? ' is-active' : ''}`}
             onClick={this.toggleActive}>
-
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
           </a>
         </div>
         <div>
-
         </div>
-
         <div className={`navbar-menu${this.state.active ? ' is-active' : ''}`}>
-
           <div className="navbar-start">
-            <Link to="/books" className="navbar-item">Vinyl collection</Link>
-            {Auth.isAuthenticated() && <Link to="/books/new" className="navbar-item">Add new vinyl</Link>}
+            <Link to="/books" className="navbar-item">Book collection</Link>
+            {Auth.isAuthenticated() && <Link to="/books/new" className="navbar-item">Add a new book</Link>}
+            {Auth.isAuthenticated() && <Link to="/books/story" className="navbar-item">Add a new story</Link>}
           </div>
-
           <div className="navbar-end">
             {Auth.isAuthenticated() && <Link to={`/users/${Auth.getPayload().sub}`} className="navbar-item">Profile</Link>}
             {!Auth.isAuthenticated() && <Link to="/register" className="navbar-item">Register</Link>}
@@ -60,7 +54,7 @@ class Navbar extends React.Component {
             {Auth.isAuthenticated() && <a className="navbar-item" onClick={this.logout}>Logout</a>}
           </div>
         </div>
-      </nav>
+      </nav >
     )
   }
 }
