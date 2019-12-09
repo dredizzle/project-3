@@ -20,9 +20,8 @@ class Show extends React.Component {
     this.handleDeleteComments = this.handleDeleteComments.bind(this)
   }
   componentDidMount() {
-    fetch('/api/books')
-      .then(res => res.json())
-      .then(res => this.setState({ book: res }))
+    axios('/api/books')
+      .then(res => this.setState({ book: res.data }))
   }
   // componentDidMount() {
   //   this.getData()
@@ -64,7 +63,7 @@ class Show extends React.Component {
   //   return Auth.isAuthenticated() && Auth.getPayload().sub === this.state.book.createdBy._id
   // }
   render() {
-    console.log(this.state.books)
+    console.log(this.state.book)
     if (!this.state.book) return <Loading />
     const [{ author, title, image, releaseYear, description, genre, ISBN, pg }] = this.state.book
     // let similar = this.state.books.filter(book => book.genre === this.state.book.genre && book.title !== this.state.book.title)
