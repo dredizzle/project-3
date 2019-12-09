@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
-import Promise from 'bluebird'
+// import Promise from 'bluebird'
 // import Card from './Card'
 import Auth from '../../lib/Auth'
 import Loading from '../common/Loading'
@@ -19,16 +19,10 @@ class Show extends React.Component {
     this.handleDelete = this.handleDelete.bind(this)
     this.handleDeleteComments = this.handleDeleteComments.bind(this)
   }
+  
   componentDidMount() {
-    Promise.all([
-      fetch('/api/books'),
-      fetch('/api/books')
-    ])
-      .then(([res1, res2]) => Promise.all([res1.json(), res2.json()]))
-      .then(([data1, data2]) => this.setState({
-        book: data1,
-        books: data2
-      }))
+    axios('/api/books')
+      .then(res => this.setState({ book: res.data }))
   }
 
 
@@ -75,9 +69,9 @@ class Show extends React.Component {
   //   return Auth.isAuthenticated() && Auth.getPayload().sub === this.state.book.createdBy._id
   // }
   render() {
-    console.log(this.state.books)
+    console.log(this.state.book)
     if (!this.state.book) return <Loading />
-    const [{ author, title, image, releaseYear, notes, genre, ISBN, pg }] = this.state.book
+    const [{ author, title, image, releaseYear, description, genre, ISBN, pg }] = this.state.book
     // let similar = this.state.books.filter(book => book.genre === this.state.book.genre && book.title !== this.state.book.title)
     // similar = similar.slice(0, 5)
     return (
@@ -115,7 +109,7 @@ class Show extends React.Component {
               <h2 className="subtitle is-6 show"><span>Genre: </span>{genre}</h2>
               <h2 className="subtitle is-6 show"><span>Pages: </span>{pg}</h2>
               <h2 className="subtitle is-6 show"><span>ISBN: </span> {ISBN}</h2>
-              <h2 className="subtitle is-6 show"><span>Notes: </span>{notes}</h2>
+              <h2 className="subtitle is-6 show"><span>Notes: </span>{description}</h2>
               <hr />
             </div>
             {/* COMMENTS ===================================================*/}
