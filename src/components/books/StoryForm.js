@@ -3,32 +3,32 @@ import { withRouter } from 'react-router-dom'
 
 const Form = ({ handleChange, handleSubmit, data, errors }) => {
   return (
-    <section className="section">
+    <section className="section is-white">
       <div className="container">
         <div className="formBoxStory">
           <form onSubmit={handleSubmit}>
-
+            {/* ******************* */}
             <div className="columns">
+              {/* ******************* */}
               <div className="column">
                 {/* ******************* */}
                 <div className="field">
-                  <label className="label">Title</label>
+                  <label className="label">Author</label>
                   <div className="control">
                     <input
                       className="input"
-                      name="title"
+                      name="author"
                       placeholder="eg: The Kinks"
                       onChange={handleChange}
-                      value={data.title || ''}
+                      value={data.author || ''}
                     />
                   </div>
-                  {errors.title && <div className="help is-danger">{errors.title}</div>}
+                  {errors.author && <div className="help is-danger">{errors.author}</div>}
                 </div>
                 {/* ******************* */}
                 <div className="field">
                   <label className="label">Image</label>
                   <div className="control">
-
                     <input
                       className="input"
                       name="image"
@@ -41,64 +41,37 @@ const Form = ({ handleChange, handleSubmit, data, errors }) => {
                 </div>
                 {/* ******************* */}
                 <div className="field">
-                  <label className="label">Release Year</label>
+                  <label className="label">Release Date</label>
                   <div className="control">
                     <input
                       className="input"
-                      name="releaseYear"
+                      name="releasedate"
                       onChange={handleChange}
-                      value={data.releaseYear || ''}
+                      value={data.releasedate || ''}
                     />
                   </div>
-                  {errors.releaseYear && <div className="help is-danger">{errors.releaseYear}</div>}
+                  {errors.releasedate && <div className="help is-danger">{errors.releasedate}</div>}
                 </div>
                 {/* ******************* */}
-                <div className="field">
-                  <label className="label">Genre</label>
-                  <div className="control">
-                    <div className="select is-fullwidth">
-                      <select
-                        name="genre"
-                        onChange={handleChange}
-                        value={data.genre || ''}
-                      >
-                        <option value="" disabled>Please choose...</option>
-                        <option value="Fantasy">Fantasy</option>
-                        <option value="Adventure">Adventure</option>
-                        <option value="Romance">Romance</option>
-                        <option value="Mystery">Mystery</option>
-                        <option value="Horror">Horror</option>
-                        <option value="ScienceFiction">ScienceFiction</option>
-                        <option value="Cookings">Cooking</option>
-                        <option value="Art">Art</option>
-                        <option value="History">History</option>
-                        <option value="Travel">Travel</option>
-                        <option value="Biography">Biography</option>
-                        <option value="Nonfiction">Nonfiction</option>
-                      </select>
-                    </div>
-                    {errors.genre && <div className="help is-danger">{errors.genre}</div>}
-                  </div>
-                </div>
               </div>
               <div className="column">
                 {/* ******************* */}
                 <div className="field">
-                  <label className="label">Pages</label>
+                  <label className="label">Title</label>
                   <div className="control">
                     <input
                       className="input"
-                      name="pg"
+                      name="title"
                       placeholder="eg: The Kinks are the Village Green Preservation Society"
                       onChange={handleChange}
-                      value={data.pg || ''}
+                      value={data.title || ''}
                     />
                   </div>
-                  {errors.pg && <div className="help is-danger">{errors.pg}</div>}
+                  {errors.title && <div className="help is-danger">{errors.title}</div>}
                 </div>
                 {/* ******************* */}
                 <div className="field">
-                  <label className="label">Description</label>
+                  <label className="label">Short description</label>
                   <div className="control">
                     <input
                       className="input"
@@ -111,25 +84,27 @@ const Form = ({ handleChange, handleSubmit, data, errors }) => {
                   {errors.label && <div className="help is-danger">{errors.label}</div>}
                 </div>
                 {/* ******************* */}
-                <div className="field">
-                  <label className="label">ISBN</label>
-                  <div className="control">
-                    <textarea
-                      className="textarea"
-                      name="ISBN"
-                      onChange={handleChange}
-                      value={data.ISBN || ''}
-                    />
-                  </div>
-                  {errors.ISBN && <div className="help is-danger">{errors.ISBN}</div>}
-                </div>
               </div>
             </div>
-            <button className="button is-dark">Submit</button>
+            {/* ******************* */}
+            <div className="field">
+              <label className="label has-text-centered is-h5">Story</label>
+              <div className="control">
+                <textarea rows="10"
+                  className="textarea"
+                  name="story"
+                  onChange={handleChange}
+                  value={data.story || ''}
+                />
+              </div>
+              {errors.story && <div className="help is-danger">{errors.story}</div>}
+            </div>
+            {/* ******************* */}
+            <button className="button is-dark">Share your story</button>
           </form>
         </div>
       </div>
-    </section>
+    </section >
   )
 }
 

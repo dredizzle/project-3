@@ -21,17 +21,18 @@ class Show extends React.Component {
   }
   
   componentDidMount() {
+<<<<<<< HEAD
     axios('/api/books')
       .then(res => this.setState({ book: res.data }))
+=======
+    fetch('/api/books')
+      .then(res => res.json())
+      .then(res => this.setState({ book: res }))
+>>>>>>> development
   }
-
-
-
   // componentDidMount() {
   //   this.getData()
   // }
-
-
   componentDidUpdate(prevProps) {
     if (prevProps.location.pathname !== this.props.location.pathname) {
       this.getData()
