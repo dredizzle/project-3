@@ -71,7 +71,6 @@ class Index extends React.Component {
                   {genres.map(genre =>
                     <option key={genre} value={genre}>{genre.charAt(0).toUpperCase() + genre.substr(1)}</option>
                   )}
-
                 </select>
               </div>
             </div>

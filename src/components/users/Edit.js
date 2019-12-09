@@ -45,7 +45,7 @@ class Edit extends React.Component {
       <section className="section">
         <div className="container ">
           <div className="columns is-centered">
-            <div className="column is-half-desktop is-two-thirds-tablet">
+            <div className="column moved-down is-half-desktop is-two-thirds-tablet">
               <div className="formBox">
                 <form onSubmit={this.handleSubmit}>
                   <div className="field">

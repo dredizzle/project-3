@@ -31,67 +31,69 @@ class Register extends React.Component {
   render() {
     console.log(this.state)
     return (
-      <section className="section">
-        <div className="container box is-fluid">
-          <div className="columns is-centered">
-            <div className="column is-half-desktop is-two-thirds-tablet">
-              <form onSubmit={this.handleSubmit}>
-                <div className="field">
-                  <label className="label">Username</label>
-                  <div className="control">
-                    <input
-                      className="input"
-                      name="username"
-                      placeholder="eg: BamBookHead38"
-                      onChange={this.handleChange}
-                    />
-                  </div>
+      <div className="TopDown">
+        <section className="section">
+          <div className="container box is-fluid">
+            <div className="columns is-centered">
+              <div className="column is-half-desktop is-two-thirds-tablet">
+                <form onSubmit={this.handleSubmit}>
                   <div className="field">
-                    <label className="label">Email</label>
+                    <label className="label">Username</label>
                     <div className="control">
                       <input
                         className="input"
-                        name="email"
-                        placeholder="eg: BamBookHead38@book.com"
+                        name="username"
+                        placeholder="eg: BamBookHead38"
                         onChange={this.handleChange}
                       />
                     </div>
-                    {this.state.errors.email && <div className="help is-danger">{this.state.errors.email}</div>}
-                  </div>
-                  <div className="field">
-                    <label className="label">Password</label>
-                    <div className="control">
-                      <input
-                        className="input"
-                        name="password"
-                        type="password"
-                        placeholder="eg: ••••••••"
-                        onChange={this.handleChange}
-                      />
+                    <div className="field">
+                      <label className="label">Email</label>
+                      <div className="control">
+                        <input
+                          className="input"
+                          name="email"
+                          placeholder="eg: BamBookHead38@book.com"
+                          onChange={this.handleChange}
+                        />
+                      </div>
+                      {this.state.errors.email && <div className="help is-danger">{this.state.errors.email}</div>}
                     </div>
-                    {this.state.errors.password && <div className="help is-danger">{this.state.errors.password}</div>}
-                  </div>
-                  <div className="field">
-                    <label className="label">Password Confirmation</label>
-                    <div className="control">
-                      <input
-                        className="input"
-                        name="passwordConfirmation"
-                        type="password"
-                        placeholder="eg: ••••••••"
-                        onChange={this.handleChange}
-                      />
+                    <div className="field">
+                      <label className="label">Password</label>
+                      <div className="control">
+                        <input
+                          className="input"
+                          name="password"
+                          type="password"
+                          placeholder="eg: ••••••••"
+                          onChange={this.handleChange}
+                        />
+                      </div>
+                      {this.state.errors.password && <div className="help is-danger">{this.state.errors.password}</div>}
+                    </div>
+                    <div className="field">
+                      <label className="label">Password Confirmation</label>
+                      <div className="control">
+                        <input
+                          className="input"
+                          name="passwordConfirmation"
+                          type="password"
+                          placeholder="eg: ••••••••"
+                          onChange={this.handleChange}
+                        />
+                      </div>
+                      {this.state.errors.passwordConfirmation && <div className="help is-danger">{this.state.errors.passwordConfirmation}</div>}
                     </div>
                     {this.state.errors.passwordConfirmation && <div className="help is-danger">{this.state.errors.passwordConfirmation}</div>}
                   </div>
-                  {this.state.errors.passwordConfirmation && <div className="help is-danger">{this.state.errors.passwordConfirmation}</div>}
-                </div>
-                <button className="button is-dark">Submit</button>
-              </form>
+                  <button className="button is-dark">Submit</button>
+                </form>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     )
   }
 }

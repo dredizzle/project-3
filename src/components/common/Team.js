@@ -9,7 +9,7 @@ const Team = () => {
             <article className="media">
               <div className="media-left">
                 <figure className="image is-128x128">
-                  <img className="is-rounded" src="https://i.imgur.com/OgeplkZ.jpg" alt="Image" />
+                  <img id="face" className="is-rounded" src="https://i.imgur.com/OgeplkZ.jpg" alt="Image" />
                 </figure>
               </div>
               <div className="media-content">
@@ -29,7 +29,7 @@ const Team = () => {
             <article className="media">
               <div className="media-left">
                 <figure className="image is-128x128">
-                  <img className="is-rounded" src="https://i.imgur.com/OgeplkZ.jpg" alt="Image" />
+                  <img id="face" className="is-rounded" src="https://i.imgur.com/OgeplkZ.jpg" alt="Image" />
                 </figure>
               </div>
               <div className="media-content">
@@ -51,7 +51,7 @@ const Team = () => {
             <article className="media">
               <div className="media-left">
                 <figure className="image is-128x128">
-                  <img className="is-rounded" src="https://i.imgur.com/OgeplkZ.jpg" alt="Image" />
+                  <img id="face" className="is-rounded" src="https://i.imgur.com/OgeplkZ.jpg" alt="Image" />
                 </figure>
               </div>
               <div className="media-content">
@@ -71,7 +71,7 @@ const Team = () => {
             <article className="media">
               <div className="media-left">
                 <figure className="image is-128x128">
-                  <img className="is-rounded" src="https://i.imgur.com/OgeplkZ.jpg" alt="Image" />
+                  <img id="face" className="is-rounded" src="https://i.imgur.com/OgeplkZ.jpg" alt="Image" />
                 </figure>
               </div>
               <div className="media-content">
