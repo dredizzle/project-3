@@ -37,7 +37,7 @@ class Edit extends React.Component {
     axios.put(`/api/stories/${this.state.data._id}`, this.state.data, {
       headers: { 'Authorization': `Bearer ${token}` }
     })
-      .then(() => this.props.history.push('/houses'))
+      .then(() => this.props.history.push('/stories'))
       .catch(err => this.setState({ errors: err.response.data.errors }))
   }
 
