@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Card from '../books/Card'
+import StoryCard from '../stories/StoryCard'
 import axios from 'axios'
 import genres from '../../lib/genres'
 function orderByDate(arr) {
@@ -15,17 +16,22 @@ class Home extends React.Component {
     super()
     this.state = {
       books: [],
-      genre: {}
+      genre: {},
+      stories: []
     }
   }
   componentDidMount() {
-    axios('/api/books')
+    axios.get('/api/books')
       .then(res => this.setState({ books: res.data }))
+    axios.get('/api/stories')
+      .then(res => this.setState({ stories: res.data }))
   }
   render() {
     if (!this.state.books.length === 0) return null
     let recentFour = orderByDate(this.state.books, this.state.books.createdAt)
+    let recentFourStories = orderByDate(this.state.stories, this.state.stories.createdAt)
     console.log(this.state.books, 'BOOK HOME')
+    console.log(this.state.stories, 'STORIES HOME')
     recentFour = recentFour.slice(0, 6)
     return (
       <section className="hero is-medium">
@@ -52,20 +58,27 @@ class Home extends React.Component {
         {/* ******************* */}
         {/* Need to create Recenmt stroies and separate API to store users stories and axios frim there to display in home and think how to show them  */}
         {/* ******************* */}
+
+
+
+        {/* ******************* */}   {/* ******************* */}   {/* ******************* */}
+
         <div className="recent-stories">
           <div className="notification is-white">
             <h2 className="subtitle is-6 home-recent has-text-white">RECENT STORIES</h2>
             <div className="columns is-multiline">
-              {recentFour.map(book =>
-                <div key={book._id} className="column is-4-tablet is-2-desktop is-6-mobile ">
-                  <Link to={`/books/${book._id}`}>
-                    <Card {...book} />
+              {recentFourStories.map(story =>
+                <div key={story._id} className="column is-4-tablet is-2-desktop is-6-mobile ">
+                  <Link to={`/stories/${story._id}`}>
+                    <StoryCard {...story} />
                   </Link>
                 </div>
               )}
             </div>
           </div>
         </div>
+
+        {/* ******************* */}   {/* ******************* */}   {/* ******************* */}
 
         <div id="genres" className="columns is-multiline is-centered genres">
           {genres.map(genre =>
