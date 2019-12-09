@@ -24,6 +24,9 @@ const Form = ({ handleChange, handleSubmit, data, errors }) => {
                   </div>
                   {errors.title && <div className="help is-danger">{errors.title}</div>}
                 </div>
+
+
+
                 {/* ******************* */}
                 <div className="field">
                   <label className="label">Image</label>
@@ -83,6 +86,20 @@ const Form = ({ handleChange, handleSubmit, data, errors }) => {
               </div>
               <div className="column">
                 {/* ******************* */}
+                <div className="field">
+                  <label className="label">Author</label>
+                  <div className="control">
+                    <input
+                      className="input"
+                      name="author"
+                      placeholder="eg: Steven King"
+                      onChange={handleChange}
+                      value={data.author || ''}
+                    />
+                  </div>
+                  {errors.pg && <div className="help is-danger">{errors.pg}</div>}
+                </div>
+
                 <div className="field">
                   <label className="label">Pages</label>
                   <div className="control">

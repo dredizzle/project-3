@@ -22,7 +22,7 @@ const commentSchema = new mongoose.Schema({
   }
 })
 
-const bookSchema = new mongoose.Schema({
+const storySchema = new mongoose.Schema({
   author: {
     type: String,
     required: 'Please enter an author name'
@@ -32,28 +32,15 @@ const bookSchema = new mongoose.Schema({
     required: 'Please enter a title',
     unique: 'That title has already been used'
   },
-  image: {
-    type: String,
-    required: 'Please add an image'
-  },
-  releaseYear: {
+  releaseDate: {
     type: Number,
     required: 'Year'
   },
-  genre: {
-    type: String,
-    required: true,
-    enum: ['Fantasy', 'Adventure', 'Romance', 'Mystery', 'Horror', 'ScienceFiction', 'Cooking', 'Art', 'History', 'Travel', 'Biography', 'Nonfiction']
-  },
-
-  pg: {
-    type: String
-  },
-  ISBN: {
-    type: String,
-    required: 'Add ISBN'
-  },
   description: {
+    type: String,
+    required: false
+  },
+  story: {
     type: String,
     required: false
   },
@@ -72,6 +59,6 @@ const bookSchema = new mongoose.Schema({
   }
 })
 
-bookSchema.plugin(uniqueValidator)
+storySchema.plugin(uniqueValidator)
 
-module.exports = mongoose.model('Book', bookSchema)
+module.exports = mongoose.model('story', storySchema)
