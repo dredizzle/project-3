@@ -1,40 +1,40 @@
-{
-  author: "",
-  title: "",
-  image:"",
-  releaseYear: 2019,
-  genre: "Adventure",
-  pg: ,
-  ISBN: "",
-  preview:"",
+// {
+//   author: "",
+//   title: "",
+//   image:"",
+//   releaseYear: 2019,
+//   genre: "Adventure",
+//   pg: ,
+//   ISBN: "",
+//   preview:"",
 
-  description:"",
-  createdBy: emma
+//   description:"",
+//   createdBy: emma
   
-},
+// },
 
-'Adventure',
-'',
-'  ',
-'',
+// 'Adventure',
+// '',
+// '  ',
+// '',
 
-'Motivational'
-
-
-
-  'Motivational'
+// 'Motivational'
 
 
-  The Side Dish Bible: 1001 Perfect Recipes for Every Vegetable, Rice, Grain, and Bean Dish You Will Ever Need
+
+//   'Motivational'
 
 
-  '',
-  'Adventure',
-  'Romance',
-  '',
-  '  ',
-  '',
-  '',
-  '',
-  '',
-  ''
+//   The Side Dish Bible: 1001 Perfect Recipes for Every Vegetable, Rice, Grain, and Bean Dish You Will Ever Need
+
+
+//   '',
+//   'Adventure',
+//   'Romance',
+//   '',
+//   '  ',
+//   '',
+//   '',
+//   '',
+//   '',
+//   ''
