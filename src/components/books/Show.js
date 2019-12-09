@@ -9,31 +9,19 @@ class Show extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      book: null,
-      // books: null,
-      errors: null,
-      data: null
+      book: '',
+      books: '',
+      errors: '',
+      data: ''
     }
     this.handleChange = this.handleChange.bind(this)
     this.handleComment = this.handleComment.bind(this)
     this.handleDelete = this.handleDelete.bind(this)
     this.handleDeleteComments = this.handleDeleteComments.bind(this)
   }
-  
   componentDidMount() {
-<<<<<<< HEAD
-    axios('/api/books')
+    axios.get(`/api/books/${this.props.match.params.id}`)
       .then(res => this.setState({ book: res.data }))
-=======
-<<<<<<< HEAD
-    axios('/api/books')
-      .then(res => this.setState({ book: res.data }))
-=======
-    fetch('/api/books')
-      .then(res => res.json())
-      .then(res => this.setState({ book: res }))
->>>>>>> development
->>>>>>> 9e3a4360ac0fc4ae94e2301b872ee3d1920a733c
   }
   // componentDidMount() {
   //   this.getData()
@@ -77,7 +65,7 @@ class Show extends React.Component {
   render() {
     console.log(this.state.book)
     if (!this.state.book) return <Loading />
-    const [{ author, title, image, releaseYear, description, genre, ISBN, pg }] = this.state.book
+    // const [{ author, title, image, releaseYear, description, genre, ISBN, pg }] = this.state.book
     // let similar = this.state.books.filter(book => book.genre === this.state.book.genre && book.title !== this.state.book.title)
     // similar = similar.slice(0, 5)
     return (
@@ -85,7 +73,7 @@ class Show extends React.Component {
         <div className="columns">
           <div className="column is-two-fifths-desktop is-half-tablet is-full-mobile">
             <figure className="image">
-              <img src={image} alt={title} />
+              <img src={this.state.book.image} alt={this.state.book.title} />
             </figure>
             <div className="container edit">
               <div className="buttons is-gapless">
@@ -108,14 +96,14 @@ class Show extends React.Component {
           </div>
           <div className="column is-two-fifths-desktop is-half-tablet is-full-mobile">
             <div className="show-content">
-              <h2 className="subtitle is-4 show" id="author-show">{author}</h2>
-              <h2 className="subtitle is-5 show" id="title-show">{title}</h2>
-              <hr />
+              <h2 className="subtitle is-4 show" id="author-show">{this.state.book.author}</h2>
+              <h2 className="subtitle is-5 show" id="title-show">{this.state.book.title}</h2>
+              {/* <hr />
               <h2 className="subtitle is-6 show"><span>Year released:</span> {releaseYear}</h2>
               <h2 className="subtitle is-6 show"><span>Genre: </span>{genre}</h2>
               <h2 className="subtitle is-6 show"><span>Pages: </span>{pg}</h2>
               <h2 className="subtitle is-6 show"><span>ISBN: </span> {ISBN}</h2>
-              <h2 className="subtitle is-6 show"><span>Notes: </span>{description}</h2>
+              <h2 className="subtitle is-6 show"><span>Notes: </span>{description}</h2> */}
               <hr />
             </div>
             {/* COMMENTS ===================================================*/}
@@ -124,7 +112,7 @@ class Show extends React.Component {
               <article className="media">
                 <figure className="media-left">
                   <p className="image is-64x64">
-                    <img src="https://profile.actionsprout.com/default.jpeg" />
+                    {/* <img src="https://profile.actionsprout.com/default.jpeg" /> */}
                   </p>
                 </figure>
                 <div className="media-content">
