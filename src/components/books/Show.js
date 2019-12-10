@@ -88,6 +88,8 @@ class Show extends React.Component {
                   <p className="subtitle is-5">Genre: {this.state.book.genre}</p>
                   <p className="subtitle is-5">Pages: {this.state.book.pg}</p>
                   <p className="subtitle is-5">ISBN: {this.state.book.ISBN}</p>
+                  <p className="subtitle is-5">buy: {this.state.book.amazon}</p>
+
 
                   <div id="goodreads-widget" className="row is-two-fifths-desktop is-half-tablet is-full-mobile">
                     <div className="title is-4">Goodreads reviews for {this.state.book.title}</div>
@@ -122,7 +124,10 @@ class Show extends React.Component {
                       </div>
                     }
                   </div>
+                  <button className="button is-dark">Preview</button>
+
                   <button className="button is-dark">Buy on Amazon</button>
+
                 </article>
               </div>
             </div>
