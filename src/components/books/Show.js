@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 // import Promise from 'bluebird'
-import Card from './Card'
+import Card from './CardSimular'
 import Auth from '../../lib/Auth'
 import Loading from '../common/Loading'
 class Show extends React.Component {
@@ -76,116 +76,131 @@ class Show extends React.Component {
   render() {
     if (!this.state.book) return <Loading />
     let similar = this.state.books.filter(book => book.genre === this.state.book.genre && book.title !== this.state.book.title)
-    similar = similar.slice(0, 5)
+    similar = similar.slice(0, 3)
     return (
-      <section className="section" id="book-show">
-        <div className="columns">
-          <div className="column is-two-fifths-desktop is-half-tablet is-full-mobile">
-            <figure className="image-show">
-              <img src={this.state.book.image} alt={this.state.book.title} />
-            </figure>
-            <div className="container edit">
-              <div className="buttons is-gapless">
-                {Auth.isAuthenticated() &&
-                  <Link to={{
-                    pathname: `/users/${Auth.getPayload().sub}`,
-                    state: { book: this.state.book }
-                  }}>
-                    <button className="button is-light a1">Add to Wish List</button>
-                  </Link>
-                }
-                {this.canModify() &&
-                  <div className="level-right is-gapless edit2">
-                    <Link to={`/books/${this.state.book._id}/edit`} className="button is-light e1">Edit</Link>
-                    <button className="button is-light d2" onClick={this.handleDelete}>Delete</button>
-                  </div>
-                }
-              </div>
-            </div>
-          </div>
-          <div id="goodreads-widget" className="row is-two-fifths-desktop is-half-tablet is-full-mobile">
-            <div id="gr_header"><h1>Goodreads reviews for {this.state.book.title}</h1></div>
-            <iframe id="the_iframe" src={`https://www.goodreads.com/api/reviews_widget_iframe?did=DEVELOPER_ID&format=html&header_text=Goodreads+reviews+for+${this.state.book.title}&isbn=${this.state.book.ISBN}&links=660&review_back=fff&stars=000&text=000`} width="565" height="400" frameBorder="0"></iframe>
-          </div>
+      <section className="ShowOneBook">
+        <div className="tile is-ancestor">
+          <div className="tile is-vertical is-8">
+            <div className="tile">
+              <div className="tile is-parent is-vertical">
+                <article id="titelShowBook" className="tile is-child box">
+                  <p className="subtitle is-5">Release Year: {this.state.book.releaseYear}</p>
+                  <p className="subtitle is-5">Genre: {this.state.book.genre}</p>
+                  <p className="subtitle is-5">Pages: {this.state.book.pg}</p>
+                  <p className="subtitle is-5">ISBN: {this.state.book.ISBN}</p>
 
-          <div className="column is-two-fifths-desktop is-half-tablet is-full-mobile">
-            <div className="show-content">
-              <h2 className="subtitle is-4 show" id="author-show">{this.state.book.author}</h2>
-              <h2 className="subtitle is-5 show" id="title-show">{this.state.book.title}</h2>
-              <hr />
-              <h2 className="subtitle is-6 show"><span>Year released:</span> {this.state.book.releaseYear}</h2>
-              <h2 className="subtitle is-6 show"><span>Genre: </span>{this.state.book.genre}</h2>
-              <h2 className="subtitle is-6 show"><span>Pages: </span>{this.state.book.pg}</h2>
-              <h2 className="subtitle is-6 show"><span>ISBN: </span> {this.state.book.ISBN}</h2>
-              <h2 className="subtitle is-6 show"><span>Notes: </span>{this.state.book.description}</h2>
-              <hr />
-            </div>
-            {/* COMMENTS ===================================================*/}
-            <div className="show-content-comments subheading-show">
-              Comments
-              <article className="media">
-                <figure className="media-left">
-                  <p className="image is-64x64">
-                    {/* <img src="https://profile.actionsprout.com/default.jpeg" /> */}
-                  </p>
-                </figure>
-                <div className="media-content">
-                  <div className="field">
-                    <p className="control">
-                      <textarea className="textarea" name="content" placeholder="Add a comment..." onChange={this.handleChange}></textarea>
-                    </p>
-                  </div>
-                  <nav className="level">
-                    <div className="level-left">
-                      <div className="level-item">
-                        <a className="button is-info" onClick={this.handleComment}>Submit</a>
-                      </div>
-                    </div>
-                  </nav>
-                </div>
-              </article>
-              {this.state.book.comments.map(comment =>
-                <article key={comment._id} className="media">
-                  <figure className="media-left">
-                    {/* <p className="image is-64x64">
-                      <Link to={`/users/${comment.user.id}`}>
-                        <img src={comment.user.image} />
-                      </Link>
-                    </p> */}
-                  </figure>
-                  <div className="media-content">
-                    <div className="content">
-                      <p className="commentText">
-                        <strong>{comment.user.username}</strong>  <small>{comment.createdAt.substring(0, comment.createdAt.length - 5).replace(/T/g, ' ')}</small>
-                        <br />
-                        {comment.content}
-                      </p>
-                    </div>
-                    <nav className="level is-mobile">
-                      <div className="level-left">
-                        <a className="level-item">
-                          <span className="icon is-small"><i className="fas fa-reply"></i></span>
-                        </a>
-                        <a className="level-item">
-                          <span className="icon is-small"><i className="fas fa-retweet"></i></span>
-                        </a>
-                        <a className="level-item">
-                          <span className="icon is-small"><i className="fas fa-heart"></i></span>
-                        </a>
-                      </div>
-                    </nav>
-                  </div>
-                  <div className="media-right">
-                    <button id={comment._id} value={comment.user._id} className="delete" onClick={this.handleDeleteComments}></button>
+                  <div id="goodreads-widget" className="row is-two-fifths-desktop is-half-tablet is-full-mobile">
+                    <div className="title is-4">Goodreads reviews for {this.state.book.title}</div>
+                    <iframe id="the_iframe" src={`https://www.goodreads.com/api/reviews_widget_iframe?did=DEVELOPER_ID&format=html&header_text=Goodreads+reviews+for+${this.state.book.title}&isbn=${this.state.book.ISBN}&links=660&review_back=fff&stars=000&text=000`} width="565" height="400" frameBorder="0"></iframe>
                   </div>
                 </article>
-              )}
+
+              </div>
+              <div className="tile is-parent">
+                <article id="ImgShowBook" className="tile is-child box">
+                  <p className="title">{this.state.book.title}</p>
+                  <p className="subtitle">{this.state.book.author}</p>
+                  <figure className="image is-4by2">
+                    <img src={this.state.book.image} alt={this.state.book.title} />
+                  </figure>
+                  <div className="buttons is-gapless">
+                    {Auth.isAuthenticated() &&
+                      <Link to={{
+                        pathname: `/users/${Auth.getPayload().sub}`,
+                        state: { book: this.state.book }
+                      }}>
+
+                        <button className="button is-dark">Add to Wish List</button>
+
+                      </Link>
+
+                    }
+                    {this.canModify() &&
+                      <div className="level-right is-gapless edit2">
+                        <Link to={`/books/${this.state.book._id}/edit`} className="button is-light e1">Edit</Link>
+                        <button className="button is-light d2" onClick={this.handleDelete}>Delete</button>
+                      </div>
+                    }
+                  </div>
+                  <button className="button is-dark">Buy on Amazon</button>
+                </article>
+              </div>
+            </div>
+
+            <div className="tile is-parent">
+              <article className="tile is-child box">
+                <div className="show-content-comments subheading-show">
+                  Comments
+                  <article className="media">
+                    <figure className="media-left">
+                      <p className="image is-64x64">
+                        {/* <img src="https://profile.actionsprout.com/default.jpeg" /> */}
+                      </p>
+                    </figure>
+                    <div className="media-content">
+                      <div className="field">
+                        <p className="control">
+                          <textarea className="textarea" name="content" placeholder="Add a comment..." onChange={this.handleChange}></textarea>
+                        </p>
+                      </div>
+                      <nav className="level">
+                        <div className="level-left">
+                          <div className="level-item">
+                            <a className="button is-info" onClick={this.handleComment}>Post Comment</a>
+                          </div>
+                        </div>
+                      </nav>
+                    </div>
+                  </article>
+                  {this.state.book.comments.map(comment =>
+                    <article key={comment._id} className="media">
+                      <figure className="media-left">
+                        <p className="image is-64x64">
+                          <Link to={`/users/${comment.user.id}`}>
+                            {comment.user.username}
+                          </Link>
+                        </p>
+                      </figure>
+                      <div className="media-content">
+                        <div className="content">
+                          <p className="commentText">
+                            <strong>{comment.user.username}</strong> <small>{comment.createdAt.substring(0, comment.createdAt.length - 5).replace(/T/g, ' ')}</small>
+                            <br />
+                            {comment.content}
+                          </p>
+                        </div>
+                        <nav className="level is-mobile">
+                          <div className="level-left">
+                            <a className="level-item">
+                              <span className="icon is-small"><i className="fas fa-reply"></i></span>
+                            </a>
+                            <a className="level-item">
+                              <span className="icon is-small"><i className="fas fa-retweet"></i></span>
+                            </a>
+                            <a className="level-item">
+                              <span className="icon is-small"><i className="fas fa-heart"></i></span>
+                            </a>
+                          </div>
+                        </nav>
+                      </div>
+                      <div className="media-right">
+                        <button id={comment._id} value={comment.user._id} className="delete" onClick={this.handleDeleteComments}></button>
+                      </div>
+                    </article>
+                  )}
+                </div>
+              </article>
             </div>
           </div>
-          <div className="column is-one-fifth-desktop is-half-tablet is-full-mobile">
-            <div className="similar-show">
-              <h2 className="subtitle is-6 subheading-show">You might also like</h2>
-              <div>
+          <div className="tile is-parent">
+            <article id="DescriptionShowBook" className="tile is-child box">
+
+              <p className="title">Description</p><br />
+              <p className="subtitle is-5">{this.state.book.description}</p>
+
+
+              <h2 className="title is-4 ">You might also like</h2>
+              <div className="simularbooksall">
                 {similar.map(book =>
                   <div className="similar-artist-image" key={book._id}>
                     <Link to={`/books/${book._id}`}>
@@ -194,10 +209,13 @@ class Show extends React.Component {
                   </div>
                 )}
               </div>
-            </div>
+
+            </article>
           </div>
+
         </div>
-      </section>
+
+      </section >
     )
   }
 }

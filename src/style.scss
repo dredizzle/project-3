@@ -72,9 +72,10 @@ html {
 	background-color: $secondary-background-color;
 	padding: 5px;
 	border-radius: 4px;
-	border-top: 1px solid $secondary-color;
+	border-top: 2px solid #719192;
 	margin-top: 10px;
 }
+
 
 #book-show {
 	margin-top: 20px;
@@ -93,14 +94,16 @@ html {
 }
 
 .similar-show {
-	background-color: $secondary-background-color;
 	padding: 5px;
 	border-radius: 4px;
-	border-top: 1px solid $secondary-color;
+
+}
+#imgSimular img{
+  width: 8rem;
 }
 
-.similar-artist-image {
-	padding: 4px;
+.cardSimular{
+  background-color: none;
 }
 
 .formBox {
@@ -384,14 +387,20 @@ a {
     
   }
 
+
+  .ShowOneBook{
+    margin-top: 90px;
+    background-color:#fff;
+  }
   .image-show img {
     width: 20rem;
   }
 
   #goodreads-widget {
-    font-family: georgia, serif;
+
     padding: 18px 0;
-    width:565px;
+ 
+  
   }
   #goodreads-widget h1 {
     font-weight:normal;
@@ -419,5 +428,74 @@ a {
     color: #382110;
     font-size: 11px;
     text-decoration: none;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+   
   }
+
+  #individualBook{
+    width: 200px;
+  }
+
+//   #titelShowBook {
+// background-color: #719192;
+//   }
+
+//   #DescriptionShowBook{
+//     background-color: #dfcdc3;
+//   }
+
+
+
+.similar-artist-image{
+display: flex;
+flex-direction: row;
+align-content: space-between;
+
+}
+
+.simularbooksall{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.simularbooksall img {
+	size: 100%;
+	width: 290px;
+	height: 200px;
+	background-repeat: no-repeat;
+}
+
+.is-recent-stories{
+  background-color: #dfcdc3;
+}
+.card-story{
+  background-color: #fff;
+ 
+}
+
+.card-story{
+  border-radius: 5px;
+}
+
+#titelShowBook{
+  border:none !important;
+  box-shadow: none;
+}
+
+#DescriptionShowBook{
+
+  box-shadow: none;
+  border-left: 2px solid #719192;  
+  border-top-left-radius: none;;
+}
+
+
+.box{
+  background-color: white;
+  border-radius: none;
+  box-shadow:none;
+  display: block;
+  padding: 1.25rem; 
+}
+
+ 
