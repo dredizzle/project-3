@@ -131,9 +131,6 @@ class Show extends React.Component {
                       )}
                     </div>
                   </div>
-
-
-
                 </div>
               </article>
             </div>

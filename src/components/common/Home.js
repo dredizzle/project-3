@@ -56,7 +56,7 @@ class Home extends React.Component {
           </div>
         </div>
         {/* ******************* */}
-        {/* Need to create Recenmt stroies and separate API to store users stories and axios frim there to display in home and think how to show them  */}
+        {/* Need to create Recenmt stroies in a new API create stories in SEEDS to store users stories and axios frim there to display in home and think how to show them  */}
         {/* ******************* */}
 
 
