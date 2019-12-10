@@ -1,5 +1,9 @@
-# # project-3
+!['Sign-Up-Flow'](https://i.imgur.com/cCvPghk.png )
+!['Sign-Up-Flow'](https://i.imgur.com/JKZJWdY.gif )
+!!! ADD info about HASH ROUTER ANDRE 
+INFO ABOut seeds
 
+Info about design 
 
 ```
 Pj-3
@@ -7,6 +11,7 @@ Pj-3
 // NEED to do folder structure 
 ```
 ---
+
 # Start: 
 # Installation
     Clone or download the repo
@@ -54,6 +59,43 @@ Unlike our earlier projects, here we were challenged to build our own database. 
 After installing key dependencies (see technologies), we created an app.js page and set up a 'Hello world' message running on localhost:4000. Next we stored this port variable in an environment.js file in our config folder. Then, while half of the group worked on the user and book models, the other half started creating the user, book, and auth controllers. After this we exported routes from our controllers files into a routes file in our config folder.
 
 Once we had completed the models we created a seeds file, to make it easier to update the database. We then looked at authorisation, creating a SecureRoute file, to make sure that only logged in users would be able to add books and stories to the site and then delete or update only their own collections.
+
+
+
+## ERD
+#### Sign-Up-Flow: 
+!['Sign-Up-Flow'](https://i.imgur.com/NcSmXEF.png)
+
+## API Endpoint Documentation
+
+| **GET** |  |
+| --- | --- |
+| _/users/verify_ | Primarily used to check if a user is already logged in when the page loads. Takes user’s token from local storage (if there is one) and uses it to verify who they are. Returns user’s data (name, email, id). |
+| _/questions/topic/:topic_ | For fetching all questions pertaining to a specific topic. ‘Topic’ is the only parameter in the request. Returns an array of questions, each with: id, topic, title, question, user id. |
+| _/questions/id/:id_ | For fetching one question and all of its associated answers. The request will include the question id. Returns a single question (id, topic, title, question, user id) with an array of answers (id, answer, question id, user id). |
+
+| **POST** |  |
+| --- | --- |
+| _/users_ | For adding a new user. Takes users name, email and password, encrypts the password and stores the info in the database. Returns user’s data (name, email, id) minus password, and an auth token. |
+| _/users/login_ | For logging in users. Will take their name and password, verify them and create a token to be stored in local storage. Returns user’s data (name, email, id) minus password, and an auth token. |
+| _/questions_ | For posting a new question to the database. Requests will include the user’s token, topic, title, question and user id. Returns question data (id, topic, title, question and user id). |
+| _/question/id/:id/answers_ | For posting a new answer to a specific question in the database. Takes the user’s token, question id, user id, and answer. Returns answer data (id, answer, question id, user id). |
+
+| **PUT** |  |
+| --- | --- |
+| _/questions/:id_ | For updating a question. The request will include the user’s token, question id, topic, title, and question. Returns question data (question id, topic, title, question). |
+| _/answers/:id_ | For updating a question. The request will include the user’s token, answer id, and answer. Returns answer data (answer id, answer, user id, question id). |
+
+| **DELETE** |  |
+| --- | --- |
+| _/questions/:id_ | For deleting a question. The request will include the user’s token and question id. Returns message “Question deleted.” |
+| _/answers/:id_ | For deleting an answer. The request will include the user’s token and answer id. Returns message “Answer deleted.” |
+
+## Wireframes
+!['Sign-Up-Flow'](https://i.imgur.com/5h2AVK5.png)
+!['Sign-Up-Flow'](https://i.imgur.com/nz5oWYx.png)
+!['Sign-Up-Flow'](https://i.imgur.com/g7BjIRD.png)
+!['Sign-Up-Flow'](https://i.imgur.com/C4JavIf.png)
 
 ---
 ### Home Page
@@ -135,8 +177,7 @@ For instance, the code would be more readable and modular, if we were to make a 
 
 There are still a few corners of the site where we could add more error messages and redirect the user to the login page. For example, when a user is not logged in they cannot add comments, though no message informs them of this.
 
-
-
+!['Sign-Up-Flow'](https://i.imgur.com/JKZJWdY.gif)
 
 
 

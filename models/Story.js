@@ -42,7 +42,7 @@ const storySchema = new mongoose.Schema({
   },
   story: {
     type: String,
-    required: false
+    required: true
   },
   createdBy: {
     type: mongoose.Schema.ObjectId,

@@ -64,8 +64,8 @@ class Home extends React.Component {
         {/* ******************* */}   {/* ******************* */}   {/* ******************* */}
 
         <div className="recent-stories">
-          <div className="notification is-white">
-            <h2 className="subtitle is-6 home-recent has-text-white">RECENT STORIES</h2>
+          <div className="notification is-recent-stories">
+            <h2 className="subtitle is-6 home-recent">RECENT STORIES</h2>
             <div className="columns is-multiline">
               {recentFourStories.map(story =>
                 <div key={story._id} className="column is-4-tablet is-2-desktop is-6-mobile ">

@@ -10,7 +10,8 @@ class Show extends React.Component {
     this.state = {
       user: {
         books: [],
-        bookWish: []
+        bookWish: [],
+        stories: []
       }
     }
 
@@ -50,7 +51,7 @@ class Show extends React.Component {
       <section className="section">
         <div className="container editpage">
           <div className="columns is-variable is-2">
-            <div className="column is-third">
+            <div className="column is-forth">
               <div className="user-info box">
                 <div className="user-image">
                   <figure className="image">
@@ -70,12 +71,12 @@ class Show extends React.Component {
                 </div>
               }
             </div>
-            <div className="column is-third">
+            <div className="column is-forth">
               <div className="bookCollection box">
                 <h3 className="subtitle subheading-show">Book collection</h3>
                 <div className="columns is-multiline">
                   {this.state.user.books.map(book =>
-                    <div key={book._id} className="column is-one-third">
+                    <div key={book._id} className="column is-one-forth">
                       <Link to={`/books/${book._id}`}>
                         <img src={book.image} alt={book.title} />
                       </Link>
@@ -84,7 +85,26 @@ class Show extends React.Component {
                 </div>
               </div>
             </div>
-            <div className="column is-third">
+            {/* STORY COLLECTION EDIT  */}
+            <div className="column is-forth">
+              <div className="bookCollection box">
+                <h3 className="subtitle subheading-show">Story collection</h3>
+                <div className="columns is-multiline">
+                  {this.state.user.books.map(book =>
+                    <div key={book._id} className="column is-one-forth">
+                      <Link to={`/books/${book._id}`}>
+                        <img src={book.image} alt={book.title} />
+                      </Link>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+
+
+
+
+            <div className="column is-forth">
               <div className="wishList box">
                 <div className="wishList">
                   <h3 className="subtitle subheading-show">Wish List</h3>
