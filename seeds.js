@@ -225,7 +225,7 @@ mongoose.connect(dbURI, (err, db) => {
       },
       {
         author: "America's Test Kitchen",
-        title: "The Side Dish Bible: 1001 Perfect Recipes for Every Vegetable, Rice, Grain, and Bean Dish You Will Ever Need",
+        title: "The Side Dish Bible",
         image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1573121632l/44291121._SX318_.jpg",
         releaseYear: 2019,
         genre: "Cooking",
@@ -251,7 +251,7 @@ mongoose.connect(dbURI, (err, db) => {
 
       }, {
         author: "Samin Nosrat",
-        title: "Salt, Fat, Acid, Heat: Mastering the Elements of Good Cooking",
+        title: "Salt, Fat, Acid, Heat",
         image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1475460859l/30753841._SX318_.jpg",
         releaseYear: 2019,
         genre: "Cooking",
@@ -264,7 +264,7 @@ mongoose.connect(dbURI, (err, db) => {
 
       }, {
         author: "Suzanne Lenzer",
-        title: "Graze: Inspiration for Small Plates and Meandering Meals",
+        title: "Graze",
         image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1492920730l/31450748._SX318_.jpg",
         releaseYear: 2017,
         genre: "Cooking",
@@ -314,7 +314,7 @@ mongoose.connect(dbURI, (err, db) => {
         createdBy: emma
       }, {
         author: "Austin Kleon",
-        title: "Steal Like an Artist: 10 Things Nobody Told You About Being Creative",
+        title: "Steal Like an Artist",
         image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1404576602l/13099738.jpg",
         releaseYear: 2012,
         genre: "Art",
@@ -326,7 +326,7 @@ mongoose.connect(dbURI, (err, db) => {
         createdBy: emma
       }, {
         author: "David Bayles, Ted Orland",
-        title: "Art and Fear: Observations on the Perils (and Rewards) of Artmaking",
+        title: "Art and Fear",
         image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1442712080l/187633._SY475_.jpg",
         releaseYear: 2001,
         genre: "Art",
@@ -362,7 +362,7 @@ mongoose.connect(dbURI, (err, db) => {
         createdBy: emma
       }, {
         author: "Mark Manson",
-        title: "The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life",
+        title: "The Subtle Art of Not Giving a F*ck",
         image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1480903131l/29965800.jpg",
         releaseYear: 2016,
         genre: "Art",
@@ -440,7 +440,7 @@ mongoose.connect(dbURI, (err, db) => {
 
       }, {
         author: "David Airey",
-        title: "Logo Design Love: A Guide to Creating Iconic Brand Identities",
+        title: "Logo Design Love",
         image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1347407513l/6728983.jpg",
         releaseYear: 2011,
         genre: "Art",
@@ -502,7 +502,7 @@ mongoose.connect(dbURI, (err, db) => {
         createdBy: emma
       }, {
         author: " Max Brooks",
-        title: "World War Z: An Oral History of the Zombie War",
+        title: "World War Z",
         image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1528312647l/8908._SX318_.jpg",
         releaseYear: 2006,
         genre: "History",
@@ -562,7 +562,7 @@ mongoose.connect(dbURI, (err, db) => {
         createdBy: emma
       }, {
         author: "William L. Shirer",
-        title: "The Rise and Fall of the Third Reich: A History of Nazi Germany",
+        title: "The Rise and Fall of the Third Reich",
         image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1331223772l/767171.jpg",
         releaseYear: 1990,
         genre: "History",
@@ -629,7 +629,7 @@ mongoose.connect(dbURI, (err, db) => {
 
       }, {
         author: "Adam Higginbotham",
-        title: "Midnight in Chernobyl: The Untold Story of the World's Greatest Nuclear Disaster",
+        title: "Midnight in Chernobyl",
         image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1545577007l/40538681.jpg",
         releaseYear: 2019,
         genre: "History",
@@ -668,7 +668,7 @@ mongoose.connect(dbURI, (err, db) => {
 
       }, {
         author: "Adam Shoalts",
-        title: "Beyond the Trees: A Journey Alone Across Canada's Arctic",
+        title: "Beyond the Trees",
         image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1565397926l/43671672.jpg",
         releaseYear: 2019,
         genre: "Travel",
@@ -681,7 +681,7 @@ mongoose.connect(dbURI, (err, db) => {
 
       }, {
         author: "Jill Heinerth",
-        title: "Into the Planet: My Life as a Cave Diver",
+        title: "Into the Planet",
         image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1563335080l/43131602.jpg",
         releaseYear: 2019,
         genre: "Travel",
@@ -694,7 +694,7 @@ mongoose.connect(dbURI, (err, db) => {
 
       }, {
         author: "Jeff Gordinier",
-        title: "Hungry: Eating, Road-Tripping, and Risking It All with the Greatest Chef in the World",
+        title: "Hungry",
         image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1541419814l/42590641.jpg",
         releaseYear: 2019,
         genre: "Travel",
@@ -1147,7 +1147,7 @@ mongoose.connect(dbURI, (err, db) => {
         createdBy: emma
       },{
         author: " Julie Andrews Edwards, Emma Walton Hamilton ",
-        title: "Home Work: A Memoir of My Hollywood Years",
+        title: "Home Work",
         image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1556723540l/44286431.jpg",
         releaseYear: 2019,
         genre: "Biography",
@@ -1199,7 +1199,7 @@ mongoose.connect(dbURI, (err, db) => {
         
       },{
         author: "Ashlee Vance",
-        title: "Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future",
+        title: "Elon Musk",
         image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1518291452l/25541028.jpg",
         releaseYear: 2019,
         genre: "Biography",
@@ -1212,7 +1212,7 @@ mongoose.connect(dbURI, (err, db) => {
         
       },{
         author: "Jim Afremow",
-        title: "The Champion's Mind: How Great Athletes Think, Train, and Thrive",
+        title: "The Champion's Mind",
         image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1375932339l/18050010.jpg",
         releaseYear: 2019,
         genre: "Nonfiction",
@@ -1225,7 +1225,7 @@ mongoose.connect(dbURI, (err, db) => {
         
       },{
         author: "Lawrence Levy ",
-        title: "To Pixar and Beyond: My Unlikely Journey with Steve Jobs to Make Entertainment History",
+        title: "To Pixar and Beyond",
         image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1455172199l/28114529.jpg",
         releaseYear: 2019,
         genre: "Nonfiction",
@@ -1238,7 +1238,7 @@ mongoose.connect(dbURI, (err, db) => {
         
       },{
         author: "Emmanuel Saez, Gabriel Zucman",
-        title: "The Triumph of Injustice: How the Rich Dodge Taxes and How to Make Them Pay",
+        title: "The Triumph of Injustice",
         image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1569897778l/45894166.jpg",
         releaseYear: 2019,
         genre: "Nonfiction",
@@ -1251,7 +1251,7 @@ mongoose.connect(dbURI, (err, db) => {
         
       },{
         author: "Emily Guendelsberger ",
-        title: "On the Clock: What Low-Wage Work Did to Me and How It Drives America Insane",
+        title: "On the Clock",
         image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1563869517l/42779084._SY475_.jpg",
         releaseYear: 2019,
         genre: "Nonfiction",
@@ -1264,7 +1264,7 @@ mongoose.connect(dbURI, (err, db) => {
         
       },{
         author: "Benjamin Sells",
-        title: "The Tunnel under the Lake: The Engineering Marvel That Saved Chicago",
+        title: "The Tunnel under the Lake",
         image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1494054283l/32072714.jpg",
         releaseYear: 2019,
         genre: "Nonfiction",

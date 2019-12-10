@@ -11,8 +11,8 @@ const Card = ({ image, title, author }) => {
       <div className="card-content">
         <div className="media">
           <div className="media-content">
-            <p className="title is-4 has-text-white">{title}</p>
-            <p className="subtitle is-6 has-text-light">{author}</p>
+            <p className="subtitle is-4 is-size-5 has-text-white">{title}</p>
+            <p className="title is-italic is-6 is-size-7 has-text-light">{author}</p>
           </div>
         </div>
       </div >
