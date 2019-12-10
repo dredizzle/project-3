@@ -18,6 +18,8 @@ router.get('/books/:id', booksController.show)
 router.get('/stories', storiesController.index)
 router.post('/stories', secureRoute, storiesController.create)
 
+router.get('/stories/:id', storiesController.show)
+
 router.put('/books/:id', secureRoute, booksController.update)
 router.delete('/books/:id', secureRoute, booksController.delete)
 

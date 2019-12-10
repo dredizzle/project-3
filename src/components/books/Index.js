@@ -40,7 +40,7 @@ class Index extends React.Component {
     const search = new RegExp(this.state.searchText, 'i')
     const genre = new RegExp(this.state.genre, 'i')
     return this.state.books.filter(book => {
-      return (search.test(book.artist) || search.test(book.title)) && genre.test(book.genre)
+      return (search.test(book.author) || search.test(book.title)) && genre.test(book.genre)
     })
   }
 
