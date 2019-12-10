@@ -88,16 +88,16 @@ class Show extends React.Component {
                   <p className="subtitle is-5">Genre: {this.state.book.genre}</p>
                   <p className="subtitle is-5">Pages: {this.state.book.pg}</p>
                   <p className="subtitle is-5">ISBN: {this.state.book.ISBN}</p>
-                </article>
-                <article className="tile is-child box">
+
                   <div id="goodreads-widget" className="row is-two-fifths-desktop is-half-tablet is-full-mobile">
-                    <div id="gr_header"><h1>Goodreads reviews for {this.state.book.title}</h1></div>
+                    <div className="title is-4">Goodreads reviews for {this.state.book.title}</div>
                     <iframe id="the_iframe" src={`https://www.goodreads.com/api/reviews_widget_iframe?did=DEVELOPER_ID&format=html&header_text=Goodreads+reviews+for+${this.state.book.title}&isbn=${this.state.book.ISBN}&links=660&review_back=fff&stars=000&text=000`} width="565" height="400" frameBorder="0"></iframe>
                   </div>
                 </article>
+
               </div>
               <div className="tile is-parent">
-                <article className="tile is-child box">
+                <article id="ImgShowBook" className="tile is-child box">
                   <p className="title">{this.state.book.title}</p>
                   <p className="subtitle">{this.state.book.author}</p>
                   <figure className="image is-4by2">
