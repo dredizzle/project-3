@@ -2,7 +2,7 @@ import React from 'react'
 
 const CardSimular = ({ image, title, author }) => {
   return (
-    < div className="cardSimular" >
+    <div className="cardSimular" >
       <div className="cardSimular">
         <figure id="imgSimular">
           <img src={image} alt={title} />
