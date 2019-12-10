@@ -1087,7 +1087,142 @@ mongoose.connect(dbURI, (err, db) => {
 
         description: "The sun is setting on humanity. The night now belongs to voracious demons that prey upon a dwindling population forced to cower behind half-forgotten symbols of power.Legends tell of a Deliverer: a general who once bound all mankind into a single force that defeated the demons. But is the return of the Deliverer just another myth? Perhaps not.",
         createdBy: emma
+      },{
+        author: " Julie Andrews Edwards, Emma Walton Hamilton ",
+        title: "Home Work: A Memoir of My Hollywood Years",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1556723540l/44286431.jpg",
+        releaseYear: 2019,
+        genre: "Biography",
+        pg: 560,
+        ISBN: "0306845989",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B07PG9J34H",
+      
+        description:"In this follow-up to her critically acclaimed memoir, Home, Julie Andrews shares reflections on her astonishing career, including such classics as Mary Poppins, The Sound of Music, and Victor/Victoria.",
+        createdBy: emma
+        
+      },{
+        author: "Elton John",
+        title: "Me",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1553526563l/44303730.jpg",
+        releaseYear: 2019,
+        genre: "Biography",
+        pg: 352,
+        ISBN: "1250147603",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B07PFPPYD4",
+      
+        description:"In his only official autobiography, music icon Elton John writes about his extraordinary life, which is also the subject of the film Rocketman.",
+        createdBy: emma
+        
+      },{
+        author: "Michelle Obama ",
+        title: "Becoming",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1528206996l/38746485.jpg",
+        releaseYear: 2019,
+        genre: "Biography",
+        pg: 426,
+        ISBN: "1524763136",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B079Z661B7",
+      
+        description:"In a life filled with meaning and accomplishment, Michelle Obama has emerged as one of the most iconic and compelling women of our era. As First Lady of the United States of America—the first African American to serve in that role—she helped create the most welcoming and inclusive White House in history, while also establishing herself as a powerful advocate for women and",
+        createdBy: emma
+        
+      },{
+        author: "Walter Isaacson",
+        title: "Steve Jobs",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1511288482l/11084145._SY475_.jpg",
+        releaseYear: 2019,
+        genre: "Biography",
+        pg: 627,
+        ISBN: "1451648537 ",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B005J3IEZQ",
+      
+        description:"From the author of the bestselling biographies of Benjamin Franklin and Albert Einstein, this is the exclusive, New York Times bestselling biography of Apple co-founder Steve Jobs.",
+        createdBy: emma
+        
+      },{
+        author: "Ashlee Vance",
+        title: "Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1518291452l/25541028.jpg",
+        releaseYear: 2019,
+        genre: "Biography",
+        pg: 400,
+        ISBN: "0062301233 ",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B00SIDCSWY",
+      
+        description:"Elon Musk, the entrepreneur and innovator behind SpaceX, Tesla, and SolarCity, sold one of his internet companies, PayPal, for $1.5 billion. Ashlee Vance captures the full spectacle and arc of the genius's life and work, from his tumultuous upbringing in South Africa and flight to the United States to his dramatic technical innovations and entrepreneurial pursuits.",
+        createdBy: emma
+        
+      },{
+        author: "Jim Afremow",
+        title: "The Champion's Mind: How Great Athletes Think, Train, and Thrive",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1375932339l/18050010.jpg",
+        releaseYear: 2019,
+        genre: "Nonfiction",
+        pg:288 ,
+        ISBN: "1623361486 ",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B00DVF12IU",
+      
+        description:"Even amongst the most elite performers, certain athletes stand out as a cut above the rest, able to outperform in clutch, game-deciding moments. These athletes prove that raw athletic ability doesn’t necessarily translate to a superior on-field experience—it’s the mental game that matters most.Sports participation—from the recreational to the collegiate Division I level",
+        createdBy: emma
+        
+      },{
+        author: "Lawrence Levy ",
+        title: "To Pixar and Beyond: My Unlikely Journey with Steve Jobs to Make Entertainment History",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1455172199l/28114529.jpg",
+        releaseYear: 2019,
+        genre: "Nonfiction",
+        pg: 272,
+        ISBN: "0544734149",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B07ZWPH654",
+      
+        description:"After Steve Jobs was unceremoniously dismissed from Apple, he bought a little-known graphics company called Pixar. One day, out of the blue, Jobs called Lawrence Levy,",
+        createdBy: emma
+        
+      },{
+        author: "Emmanuel Saez, Gabriel Zucman",
+        title: "The Triumph of Injustice: How the Rich Dodge Taxes and How to Make Them Pay",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1569897778l/45894166.jpg",
+        releaseYear: 2019,
+        genre: "Nonfiction",
+        pg: 232,
+        ISBN: "1324002727",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B07TK3NSW5",
+      
+        description:"Even as they became fabulously wealthy, the ultra-rich have seen their taxes collapse to levels last seen in the 1920s. Meanwhile, working-class Americans have been asked to pay more. The Triumph of Injustice presents a forensic investigation into this dramatic transformation, written by two economists",
+        createdBy: emma
+        
+      },{
+        author: "Emily Guendelsberger ",
+        title: "On the Clock: What Low-Wage Work Did to Me and How It Drives America Insane",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1563869517l/42779084._SY475_.jpg",
+        releaseYear: 2019,
+        genre: "Nonfiction",
+        pg: 352,
+        ISBN: "0316509000",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B07K7LPDR3",
+      
+        description:"After the local newspaper where she worked as a reporter closed, Emily Guendelsberger took a pre-Christmas job at an Amazon fulfillment center outside Louisville, Kentucky. There, the vending machines were stocked with painkillers, and the staff turnover was dizzying. In the new year, she traveled to North Carolina to work at a call center, a place where even bathroom...",
+        createdBy: emma
+        
+      },{
+        author: "Benjamin Sells",
+        title: "The Tunnel under the Lake: The Engineering Marvel That Saved Chicago",
+        image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1494054283l/32072714.jpg",
+        releaseYear: 2019,
+        genre: "Nonfiction",
+        pg: 200,
+        ISBN: "0810134748 ",
+        preview:"https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B071F2QBQ7",
+      
+        description:"The Tunnel under the Lake recounts the gripping story of how the young city of Chicago, under the leadership of an audacious engineer named Ellis Chesbrough, constructed a two-mile tunnel below Lake Michigan in search of clean water.",
+        createdBy: emma
+        
       },
+      
+      
+      
+      
+      
 
 
       ])
@@ -1097,11 +1232,39 @@ mongoose.connect(dbURI, (err, db) => {
     .then(users => {
       const [sean, gabe, emma] = users
       return Story.create([{
-        author: "Oyinkan Braithwaite",
-        title: "My Sister, the Serial Killer",
-        releaseDate: 10 / 11 / 2018,
-        description: "Mistery",
-        story: "This is my story",
+        author: "Lydia Davis",
+        title: "Lost Things",
+        releaseDate:  2019,
+        description:" The Collected Short Stores of Lydia Davis",
+        story: "They are lost, but also not lost but somewhere in the world. Most of them are small, though two are larger, one a coat and one a dog. Of the small things, one is a certain ring, one a certain button. They are lost from me and where I am, but they are also not gone. They are somewhere else, and they are there to someone else, it may be. But if not there to someone else, the ring is, still, not lost to itself, but there, only not where I am, and the button, too, there, still, only not where I am.",
+        createdBy: emma
+      },{
+        author: "Lydia Davis",
+        title: "Fear",
+        releaseDate:  2019,
+        description:"The Collected Short Stores of Lydia Davis",
+        story: "Nearly every morning, a certain woman in our community comes running out of her house with her face white and her overcoat flapping wildly. She cries out, “Emergency, emergency,” and one of us runs to her and holds her until her fears are calmed. We know she is making it up; nothing has really happened to her. But we understand, because there is hardly one of us who has not been moved at some time to do just what she has done, and every time, it has taken all our strength, and even the strength of our friends and families too, to quiet us.",
+        createdBy: emma
+      },{
+        author: "Lydia Davis",
+        title: "The Outing",
+        releaseDate:  2019,
+        description:"The Collected Short Stores of Lydia Davis",
+        story: "An outburst of anger near the road, a refusal to speak on the path, a silence in the pine woods, a silence across the old railroad bridge, an attempt to be friendly in the water, a refusal to end the argument on the flat stones, a cry of anger on the steep bank of dirt, a weeping among the bushes.",
+        createdBy: emma
+      },{
+        author: "Lydia Davis",
+        title: "Odd Behavior",
+        releaseDate:  2019,
+        description:"The Collected Short Stores of Lydia Davis",
+        story: "You see how circumstances are to blame. I am not really an odd person if I put more and more small pieces of shredded kleenex in my ears and tie a scarf around my head: when I lived alone I had all the silence I needed.",
+        createdBy: emma
+      },{
+        author: "Aurelie Sheehan",
+        title: "A Case of Motherhood",
+        releaseDate:  2019,
+        description:"Aurelie Sheehan is the author of three short story collections: Demigods on Speedway (University of Arizona),",
+        story:"I had a child, and then more children. A child, head turned and chin lifted, eyes shut in concentration, finding in sleep bounties of peaches and pork chops and Raisinets. A child, baby hawk tucked close to my body, flawless rider. A child, amid dinosaurs and their social graces, murmuring instructions, eyes on her creation. A child, decked out in all manner of scarf. A child, smartly outfitted for Washington, DC, with a stuffed dog in her purse. A child, walking to school, balancing guitar, lunch box, backpack, running clothes, art project. A child, adjusting the mirror in the car. A child, a child—and so many children. She is in her room creating. She is in her room dreaming. She is in her room suffering. The walls of her room have dissolved to nothing.",
         createdBy: emma
       }
       ])
