@@ -345,7 +345,7 @@ a {
 .text-line {
   stroke-dasharray: 500;
   stroke-dashoffset: 500;
-  animation: dash 5s linear forwards, filling 5s ease-in forwards;
+  animation: dash 5s linear forwards, filling 3s ease-in forwards;
   font-size: 100px;
 
 }
@@ -497,5 +497,37 @@ align-content: space-between;
   display: block;
   padding: 1.25rem; 
 }
+// User Show
+//  .is-your-books{
+//    background-color: #719192;
+//  }
 
- 
+//  .is-your-edit{
+//    background-color: #dfcdc3;
+//  }
+
+//  .is-your-user{
+//    background-color: #5f6769;
+//  }
+
+ .is-your-stories{
+   background-color: #dfcdc3;
+ }
+//  .is-your-bookWish{
+// background-color: #719192;
+//  }
+
+//  .is-your-favStories{
+//    background-color: #575656;
+//  }
+
+ #user-img{
+   border-radius: 50%;
+   width: 300px;
+   height: 300px;
+ }
+
+ .UserShow{
+   background-color: #719192;
+   margin-top: 90px;
+ }
