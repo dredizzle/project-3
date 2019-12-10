@@ -51,7 +51,7 @@ class Show extends React.Component {
       <section className="section">
         <div className="container editpage">
           <div className="columns is-variable is-2">
-            <div className="column is-forth">
+            <div className="column is-fifth">
               <div className="user-info box">
                 <div className="user-image">
                   <figure className="image">
@@ -59,7 +59,7 @@ class Show extends React.Component {
                   </figure>
                 </div>
                 <div className="username">
-                  <h3 className="subheading-show">{this.state.user.username}</h3>
+                  <h3 className="">{this.state.user.username}</h3>
                 </div>
                 <div className="user-bio">
                   <p className="profile">{this.state.user.bio}</p>
@@ -71,12 +71,12 @@ class Show extends React.Component {
                 </div>
               }
             </div>
-            <div className="column is-forth">
+            <div className="column is-fifth">
               <div className="bookCollection box">
-                <h3 className="subtitle subheading-show">Book collection</h3>
+                <h3 className="subtitle ">Your Books</h3>
                 <div className="columns is-multiline">
                   {this.state.user.books.map(book =>
-                    <div key={book._id} className="column is-one-forth">
+                    <div key={book._id} className="column is-one-fifth">
                       <Link to={`/books/${book._id}`}>
                         <img src={book.image} alt={book.title} />
                       </Link>
@@ -86,12 +86,12 @@ class Show extends React.Component {
               </div>
             </div>
             {/* STORY COLLECTION EDIT  */}
-            <div className="column is-forth">
+            <div className="column is-fifth">
               <div className="bookCollection box">
-                <h3 className="subtitle subheading-show">Story collection</h3>
+                <h3 className="subtitle ">Your Stories</h3>
                 <div className="columns is-multiline">
                   {this.state.user.books.map(book =>
-                    <div key={book._id} className="column is-one-forth">
+                    <div key={book._id} className="column is-one-fifth">
                       <Link to={`/books/${book._id}`}>
                         <img src={book.image} alt={book.title} />
                       </Link>
@@ -102,12 +102,12 @@ class Show extends React.Component {
             </div>
 
 
+            {/* Wish List */}
 
-
-            <div className="column is-forth">
+            <div className="column is-fifth">
               <div className="wishList box">
                 <div className="wishList">
-                  <h3 className="subtitle subheading-show">Wish List</h3>
+                  <h3 className="subtitle ">Book Wish List</h3>
                   <div className="columns is-multiline">
                     {this.state.user.bookWish.map(book =>
                       <div key={book._id} className="column is-one-fifth">
@@ -120,6 +120,28 @@ class Show extends React.Component {
                 </div>
               </div>
             </div>
+
+            {/* //Favourite Stories (Amend like in Wish list to save and add fav stories ) */}
+
+            <div className="column is-fifth">
+              <div className="wishList box">
+                <div className="wishList">
+                  <h3 className="subtitle">Favourite Stories</h3>
+                  <div className="columns is-multiline">
+                    {this.state.user.bookWish.map(book =>
+                      <div key={book._id} className="column is-one-fifth">
+                        <Link to={`/books/${book._id}`}>
+                          <img src={book.image} alt={book.title} />
+                        </Link>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
           </div>
         </div>
       </section>
