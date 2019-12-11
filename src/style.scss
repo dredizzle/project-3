@@ -478,17 +478,17 @@ flex-direction: row;
 }
 
 #ImgShowBook figure{
-transform: scale(0.7) ;
-
+transform: scale(0.7);
+margin-top: -20%;
 }
 
-#ImgShowBook img{
-margin-top: -90px;
+.SomeBookInfo{
+  margin-top: -20%;
 }
 
-.BookMainInfo{
-  margin-top: -35%;
-  }
-  
 
+.section-story{
+  background-color: whitesmoke;
+  margin-top: 80px;
+}
 // subtitle

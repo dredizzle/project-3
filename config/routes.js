@@ -60,6 +60,3 @@ router.get('/me', secureRoute, authController.profile)
 
 
 module.exports = router
-
-
-

@@ -9,6 +9,7 @@ import FlashMessages from './components/common/FlashMessages'
 import Home from './components/common/Home'
 import Navbar from './components/common/Navbar'
 import Team from './components/common/Team'
+import Feed from './components/common/Feed'
 
 
 
@@ -26,8 +27,8 @@ import storiesNew from './components/stories/storyNew'
 
 
 
-
 import booksIndex from './components/books/Index'
+import storyIndex from './components/stories/StoryIndex'
 
 
 
@@ -54,7 +55,7 @@ class App extends React.Component {
         <Switch>
           <SecureRoute path="/users/:id/edit" component={UsersEdit} />
           <SecureRoute path="/users/:id" component={UsersShow} />
-
+          <SecureRoute path="/feed" component={Feed} />
 
 
           <SecureRoute path="/books/:id/edit" component={booksEdit} />
@@ -72,10 +73,12 @@ class App extends React.Component {
 
           <Route path="/books/genre" component={booksIndex} />
           <Route path="/books" component={booksIndex} />
+          <Route path="/stories" component={storyIndex} />
 
           <Route path="/register" component={Register} />
           <Route path="/login" component={Login} />
           <Route path="/team" component={Team} />
+
           <Route path="/" component={Home} />
         </Switch>
       </HashRouter>
