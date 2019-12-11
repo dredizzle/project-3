@@ -75,43 +75,44 @@ class Show extends React.Component {
     if (!this.state.story) return <Loading />
 
     return (
-      <section className="section" id="book-show">
+      <section className="section" id="story-show">
 
 
-        <div className="column ">
 
-          <div className="container edit">
-            <div className="buttons is-gapless">
-              {Auth.isAuthenticated() &&
-                <Link to={{
-                  pathname: `/users/${Auth.getPayload().sub}`,
-                  state: { story: this.state.story }
-                }}>
-                  <button className="button is-light a1">Add to Favourites</button>
-                </Link>
-              }
 
-              <div className="level-right is-gapless edit2">
-                {this.canModify() && <Link to={`/stories/${this.state.story._id}/edit`} className="button is-light e1">Edit</Link>}
-                {this.canModify() && <button className="button is-light d2" onClick={this.handleDelete}>Delete</button>}
+        <div className="colum" id="StoryArticle">
+
+
+          <div className="AtricleCentered">
+            <p className="title is-italic is-6 is-size-5 " id="title-show">{this.state.story.author}</p>
+            <p className="subtitle is-4 is-size-6" id="author-show">{this.state.story.title}</p>
+
+            <h2 className="text is-4 is-italic show"><span>Description: </span>{this.state.story.description}</h2>
+            <h2 className="text is-5 show"><span><br></br> </span>{this.state.story.story}</h2>
+            <br></br>
+            <h2 className="text is-4 is-italic show"><span>Date released:</span> {this.state.story.releaseDate}</h2>
+            <div className="container edit">
+
+              <div className="buttons is-gapless">
+                {Auth.isAuthenticated() &&
+                  <Link to={{
+                    pathname: `/users/${Auth.getPayload().sub}`,
+                    state: { story: this.state.story }
+                  }}>
+                    <button className="button is-dark">Add to Favourites</button>
+                  </Link>
+                }
+
+                <div className="level-right is-gapless edit2">
+                  {this.canModify() && <Link to={`/stories/${this.state.story._id}/edit`} className="button is-dark ">Edit</Link>}
+                  {this.canModify() && <button className="button is-dark" onClick={this.handleDelete}>Delete</button>}
+
+                </div>
 
               </div>
 
+
             </div>
-          </div>
-        </div>
-        <div className="column ">
-          <div className="show-content">
-            <h2 className="subtitle is-4 show" id="author-show">{this.state.story.title}</h2>
-            <h2 className="subtitle is-5 show" id="title-show">{this.state.story.author}</h2>
-            <hr />
-            <h2 className="subtitle is-6 show"><span>Year released:</span> {this.state.story.releaseYear}</h2>
-
-
-            <h2 className="subtitle is-6 show"><span>Notes: </span>{this.state.story.description}</h2>
-            <h2 className="subtitle is-6 show"><span>Notes: </span>{this.state.story.story}</h2>
-
-            <hr />
           </div>
           {/* COMMENTS ===================================================*/}
           <div className="show-content-comments subheading-show">
@@ -127,7 +128,7 @@ class Show extends React.Component {
                 <nav className="level">
                   <div className="level-left">
                     <div className="level-item">
-                      <a className="button is-info" onClick={this.handleComment}>Submit</a>
+                      <a className="button is-dark" onClick={this.handleComment}>Post a comment</a>
                     </div>
                   </div>
                 </nav>
@@ -172,7 +173,7 @@ class Show extends React.Component {
           </div>
         </div>
 
-      </section>
+      </section >
 
     )
   }

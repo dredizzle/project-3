@@ -76,27 +76,34 @@ class Show extends React.Component {
   render() {
     if (!this.state.book) return <Loading />
     let similar = this.state.books.filter(book => book.genre === this.state.book.genre && book.title !== this.state.book.title)
-    similar = similar.slice(0, 6)
+    similar = similar.slice(0, 3)
     return (
       <section className="ShowOneBook">
         <div className="tile is-ancestor">
           <div className="tile is-vertical is-8">
             <div className="tile">
               <div className="tile is-parent is-vertical">
-
                 <article id="ImgShowBook" className="tile is-child box">
                   <figure className="image is-2by3">
                     <img src={this.state.book.image} alt={this.state.book.title} />
                   </figure>
                   <p className="subtitle">{this.state.book.title}</p>
                   <p className="title is-italic is-6 is-size-6">{this.state.book.author}</p>
-                  <article id="titelShowBook" className="tile is-child box">
-                    <p className="subtitle is-7">Release Year: {this.state.book.releaseYear}/ Genre: {this.state.book.genre}/ Pages: {this.state.book.pg}</p>
+                  <p className="text is-6">Release Year: {this.state.book.releaseYear}/ Genre: {this.state.book.genre}/ Pages: {this.state.book.pg}</p>
 
-                  </article>
+
+
+
+
+
                   <div className="show-content-comments subheading-show">
                     Comments
                   <article className="media">
+                      <figure className="media-left">
+                        <p className="image is-64x64">
+                          {/* <img src="https://profile.actionsprout.com/default.jpeg" /> */}
+                        </p>
+                      </figure>
                       <div className="media-content">
                         <div className="field">
                           <p className="control">
@@ -193,25 +200,22 @@ class Show extends React.Component {
               </div>
             </div>
 
-            <div className="tile is-parent">
-              <article className="tile is-child box">
 
-              </article>
-            </div>
           </div>
           <div className="tile is-parent">
-            <article id="DescriptionShowBook" className="tile is-child box">
-
+            <article id="" className="tile is-child box">
               <h2 className="title is-4 ">You might also like</h2>
+              <div className="columns3">
 
-              <div className="simularbooksall">
-                {similar.map(book =>
-                  <div className="similar-artist-image" key={book._id}>
-                    <Link to={`/books/${book._id}`}>
-                      <Card {...book} />
-                    </Link>
-                  </div>
-                )}
+                <div className=" simularbooksall">
+                  {similar.map(book =>
+                    <div className="similar-artist-image" key={book._id}>
+                      <Link to={`/books/${book._id}`}>
+                        <Card {...book} />
+                      </Link>
+                    </div>
+                  )}
+                </div>
               </div>
             </article>
           </div>

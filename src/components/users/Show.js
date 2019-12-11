@@ -11,6 +11,7 @@ class Show extends React.Component {
         bookWish: [],
         stories: [],
         storyWish: []
+
       }
     }
   }
@@ -97,8 +98,8 @@ class Show extends React.Component {
                 <article className="tile is-child notification is-your-user">
                   <div className="user-info box">
                     <div className="user-image">
-                      <figure className="image">
-                        <img id="user-img" src={this.state.user.image} alt={this.state.user.username} />
+                      <figure>
+                        <img className="UserImg" src={this.state.user.image} alt={this.state.user.username} />
                       </figure>
                     </div>
                     <div className="username">
