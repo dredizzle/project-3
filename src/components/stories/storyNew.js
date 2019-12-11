@@ -6,8 +6,8 @@ import Auth from '../../lib/Auth'
 
 class StoryNew extends React.Component {
 
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
 
     this.state = {
       data: {},

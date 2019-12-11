@@ -19,14 +19,14 @@ router.get('/stories', storiesController.index)
 router.get('/stories/:id', storiesController.show)
 router.post('/stories', secureRoute, storiesController.create)
 
+router.get('/stories/:id', storiesController.show)
+
 router.put('/books/:id', secureRoute, booksController.update)
 router.delete('/books/:id', secureRoute, booksController.delete)
 
 
 router.put('/stories/:id', secureRoute, storiesController.update)
 router.delete('/stories/:id', secureRoute, storiesController.delete)
-
-
 
 
 

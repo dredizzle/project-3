@@ -18,9 +18,11 @@ class Show extends React.Component {
     this.handleDelete = this.handleDelete.bind(this)
     this.handleDeleteComments = this.handleDeleteComments.bind(this)
   }
+
   componentDidMount() {
-    axios.get(`/api/stories/${this.props.match.params.id}`)
-      .then(res => this.setState({ story: res.data }))
+    fetch(`/api/stories/${this.props.match.params.id}`)
+      .then(res => res.json())
+      .then(res => this.setState({ story: res }))
   }
   // componentDidMount() {
   //   this.getData()
@@ -61,6 +63,9 @@ class Show extends React.Component {
   canModify() {
     return Auth.isAuthenticated() && Auth.getPayload().sub === this.state.story.createdBy._id
   }
+  // canModify() {
+  //   return Auth.isAuthenticated() && Auth.getPayload().sub === this.state.story.createdBy._id
+  // }
   render() {
     console.log(this.state.story)
     if (!this.state.story) return <Loading />
@@ -81,7 +86,7 @@ class Show extends React.Component {
                     pathname: `/users/${Auth.getPayload().sub}`,
                     state: { story: this.state.story }
                   }}>
-                    <button className="button is-light a1">Add to Wish List</button>
+                    <button className="button is-light a1">Add to Favourites</button>
                   </Link>
                 }
                 {this.canModify() &&
