@@ -41,19 +41,7 @@ const Form = ({ handleChange, handleSubmit, data, errors }) => {
                   {errors.title && <div className="help is-danger">{errors.title}</div>}
                 </div>
                 {/* ******************* */}
-                <div className="field">
-                  <label className="label">Release Date</label>
-                  <div className="control">
-                    <input
-                      className="input"
-                      name="releaseDate"
-                      onChange={handleChange}
-                      value={data.releaseDate || ''}
-                    />
-                  </div>
-                  {errors.releaseDate && <div className="help is-danger">{errors.releaseDate}</div>}
-                </div>
-                {/* ******************* */}
+
               </div>
               <div className="column">
                 {/* ******************* */}
