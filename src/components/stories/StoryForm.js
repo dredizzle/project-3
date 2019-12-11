@@ -18,7 +18,7 @@ const Form = ({ handleChange, handleSubmit, data, errors }) => {
                     <input
                       className="input"
                       name="author"
-                      placeholder="eg: The Kinks"
+                      placeholder="eg: Your name"
                       onChange={handleChange}
                       value={data.author || ''}
                     />
@@ -62,7 +62,7 @@ const Form = ({ handleChange, handleSubmit, data, errors }) => {
                     <input
                       className="input"
                       name="releaseDate"
-                      placeholder="eg: The Kinks are the Village Green Preservation Society"
+                      placeholder="eg: 2019"
                       onChange={handleChange}
                       value={data.releaseDate || ''}
                     />
