@@ -224,6 +224,7 @@ mongoose.connect(
           amazon: "https://www.goodreads.com/buy_buttons/13/follow?book_id=43260175&ref=x_gr_w_bb_sin&tag=x_gr_w_bb_sin_uk-21",
           createdBy: user[0]
 
+
         },
         {
           author: "America's Test Kitchen",
@@ -238,6 +239,7 @@ mongoose.connect(
           amazon: "https://www.goodreads.com/buy_buttons/13/follow?book_id=44291121&ref=x_gr_w_bb_sin&tag=x_gr_w_bb_sin_uk-21",
           createdBy: user[0]
 
+
         }, {
           author: "The Good Place",
           title: "Forking Good: A Cookbook Inspired",
@@ -250,6 +252,7 @@ mongoose.connect(
           description: "A fun, lively, and fully illustrated cookbook of 30 original and practical recipes inspired by NBC's hit sitcom The Good Place, filled with the absurd, pun-driven food humor and accessible philosophy that makes the show so popular with fans.With its high concept, exceptional writing, eye-popping set design, stellar cast, meaningful explorations of what it means to be a..",
           amazon: "https://www.goodreads.com/buy_buttons/13/follow?book_id=46131607&ref=x_gr_w_bb_sin&tag=x_gr_w_bb_sin_uk-21",
           createdBy: user[0]
+
 
         }, {
           author: "Samin Nosrat",
@@ -277,6 +280,7 @@ mongoose.connect(
           amazon: "https://www.goodreads.com/buy_buttons/13/follow?book_id=31450748&ref=x_gr_w_bb_sin&tag=x_gr_w_bb_sin_uk-21",
           createdBy: user[0]
 
+
         }, {
           author: " Yotam Ottolenghi, Helen Goh",
           title: "Sweet",
@@ -289,6 +293,7 @@ mongoose.connect(
           description: "In his stunning new baking and desserts cookbook Yotam Ottolenghi and his long-time collaborator Helen Goh bring the Ottolenghi hallmarks of fresh, evocative ingredients, exotic spices and complex flavourings - including fig, rose petal, saffron, aniseed, orange blossom, pistachio and cardamom - to indulgent cakes, biscuits, tarts, puddings, cheesecakes and ice cream.",
           amazon: "https://www.goodreads.com/buy_buttons/13/follow?book_id=34063669&ref=x_gr_w_bb_sin&tag=x_gr_w_bb_sin_uk-21",
           createdBy: user[0]
+
 
         }, {
           author: "Sun Tzu, Thomas Cleary",
@@ -373,6 +378,7 @@ mongoose.connect(
           preview: "https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B019MMUA8S",
           description: "In this generation-defining self-help guide, a superstar blogger cuts through the crap to show us how to stop trying to be positive all the time so that we can truly become better, happier people.",
 
+
           createdBy: user[0]
         }, {
           author: "B.A. Shapiro",
@@ -426,6 +432,7 @@ mongoose.connect(
           amazon: "https://www.goodreads.com/buy_buttons/13/follow?book_id=2784&ref=x_gr_w_bb_sin&tag=x_gr_w_bb_sin_uk-21",
           createdBy: user[0]
 
+
         },
         {
           author: "Leo Tolstoy, Aylmer Maude",
@@ -440,6 +447,7 @@ mongoose.connect(
           amazon: "https://www.goodreads.com/buy_buttons/13/follow?book_id=127963&ref=x_gr_w_bb_sin&tag=x_gr_w_bb_sin_uk-21",
           createdBy: user[0]
 
+
         }, {
           author: "David Airey",
           title: "Logo Design Love: A Guide to Creating Iconic Brand Identities",
@@ -453,6 +461,7 @@ mongoose.connect(
           amazon: "https://www.goodreads.com/buy_buttons/13/follow?book_id=6728983&ref=x_gr_w_bb_sin&tag=x_gr_w_bb_sin_uk-21",
           createdBy: user[0]
 
+
         }, {
           author: "user[0] Mills",
           title: "First & Then",
@@ -465,6 +474,7 @@ mongoose.connect(
           description: "Devon Tennyson wouldn't change a thing. She's happy watching Friday night games from the bleachers, silently crushing on best friend Cas, and blissfully ignoring the future after high school. But the universe has other plans. It delivers Devon's cousin Foster, an unrepentant social outlier with a surprising talent for football, and the obnoxiously superior and maddeningly...",
           amazon: "https://www.goodreads.com/buy_buttons/13/follow?book_id=23310751&ref=x_gr_w_bb_sin&tag=x_gr_w_bb_sin_uk-21",
           createdBy: user[0]
+
 
         }, {
           author: "Yuval Noah Harari",
@@ -629,6 +639,7 @@ mongoose.connect(
           amazon: "https://www.goodreads.com/buy_buttons/13/follow?book_id=30267929&ref=x_gr_w_bb_sin&tag=x_gr_w_bb_sin_uk-21",
           createdBy: user[0]
 
+
         }, {
           author: "Adam Higginbotham",
           title: "Midnight in Chernobyl: The Untold Story of the World's Greatest Nuclear Disaster",
@@ -654,6 +665,7 @@ mongoose.connect(
           description: "'Levison Wood has breathed new life into adventure travel.' Michael Palin.Walking the Americas chronicles Levison Wood's 1,800 mile trek along the spine of the Americas, through eight countries, from Mexico to Colombia,",
           amazon: "https://www.goodreads.com/buy_buttons/13/follow?book_id=32934182&ref=x_gr_w_bb_sin&tag=x_gr_w_bb_sin_uk-21",
           createdBy: user[0]
+
 
         }, {
           author: "Levison Wood",
@@ -693,6 +705,7 @@ mongoose.connect(
           description: "From one of the world's most renowned cave divers, a firsthand account of exploring the earth's final frontier: the hidden depths of our oceans and the sunken caves inside our planet.More people have died exploring underwater caves than climbing Mount Everest, and we know more about deep space than we do about the depths of our oceans. From one of the top cave divers",
           amazon: "https://www.goodreads.com/buy_buttons/13/follow?book_id=43131602&ref=x_gr_w_bb_sin&tag=x_gr_w_bb_sin_uk-21",
           createdBy: user[0]
+
 
         }, {
           author: "Jeff Gordinier",
@@ -831,6 +844,7 @@ mongoose.connect(
           preview: "https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B07NLDZ5GS",
           description: "Bershad stands apart from the world, the most legendary dragonslayer in history, both revered and reviled.Once, he was Lord Silas Bershad, but after a disastrous failure on the battlefield he was stripped of his titles and sentenced to one violent, perilous hunt after another. Now he lives only to stalk dragons, slaughter them, collect their precious oil, and head back",
           createdBy: user[0]
+
 
         }, {
           author: "L.J. Shen",
@@ -1134,6 +1148,7 @@ mongoose.connect(
           amazon: "https://www.goodreads.com/buy_buttons/13/follow?book_id=12652457&ref=x_gr_w_bb_sin&tag=x_gr_w_bb_sin_uk-21",
           createdBy: user[0]
 
+
         },
         {
           author: "Peter V. Brett",
@@ -1159,6 +1174,7 @@ mongoose.connect(
           description: "In this follow-up to her critically acclaimed memoir, Home, Julie Andrews shares reflections on her astonishing career, including such classics as Mary Poppins, The Sound of Music, and Victor/Victoria.",
           amazon: "https://www.goodreads.com/buy_buttons/13/follow?book_id=44286431&ref=x_gr_w_bb_sin&tag=x_gr_w_bb_sin_uk-21",
           createdBy: user[0]
+
 
         }, {
           author: "Elton John",

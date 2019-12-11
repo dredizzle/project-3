@@ -65,15 +65,18 @@ class Show extends React.Component {
       .then(() => this.props.history.push('/stories'))
   }
 
+
   canModify() {
     return Auth.isAuthenticated() && Auth.getPayload().sub === this.state.story.createdBy._id
   }
+
   render() {
     console.log(this.state.story)
     if (!this.state.story) return <Loading />
 
     return (
       <section className="section" id="book-show">
+
 
         <div className="column ">
 
@@ -91,6 +94,7 @@ class Show extends React.Component {
               <div className="level-right is-gapless edit2">
                 {this.canModify() && <Link to={`/stories/${this.state.story._id}/edit`} className="button is-light e1">Edit</Link>}
                 {this.canModify() && <button className="button is-light d2" onClick={this.handleDelete}>Delete</button>}
+
               </div>
 
             </div>

@@ -83,6 +83,7 @@ class Show extends React.Component {
           <div className="tile is-vertical is-8">
             <div className="tile">
               <div className="tile is-parent is-vertical">
+
                 <article id="ImgShowBook" className="tile is-child box">
                   <figure className="image is-2by3">
                     <img src={this.state.book.image} alt={this.state.book.title} />
@@ -93,9 +94,6 @@ class Show extends React.Component {
                     <p className="subtitle is-7">Release Year: {this.state.book.releaseYear}/ Genre: {this.state.book.genre}/ Pages: {this.state.book.pg}</p>
 
                   </article>
-
-
-
                   <div className="show-content-comments subheading-show">
                     Comments
                   <article className="media">
@@ -203,7 +201,9 @@ class Show extends React.Component {
           </div>
           <div className="tile is-parent">
             <article id="DescriptionShowBook" className="tile is-child box">
+
               <h2 className="title is-4 ">You might also like</h2>
+
               <div className="simularbooksall">
                 {similar.map(book =>
                   <div className="similar-artist-image" key={book._id}>

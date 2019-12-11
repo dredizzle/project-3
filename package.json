@@ -1,5 +1,4 @@
 {
-  
   "name": "SEIpj3",
   "version": "1.0.0",
   "main": "index.js",
@@ -34,7 +33,7 @@
     "hashrouter": "^1.1.1",
     "html-webpack-plugin": "^3.2.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.7.13",
+    "mongoose": "^5.8.0",
     "mongoose-unique-validator": "^2.0.3",
     "node-sass": "^4.13.0",
     "query-string": "^6.5.0",
@@ -50,3 +49,4 @@
     "webpack-dev-server": "^3.9.0"
   }
 }
+
