@@ -19,8 +19,6 @@ class Show extends React.Component {
     this.handleDelete = this.handleDelete.bind(this)
     this.handleDeleteComments = this.handleDeleteComments.bind(this)
   }
-
-
   componentDidMount() {
     Promise.all([
       fetch(`/api/books/${this.props.match.params.id}`),
@@ -32,8 +30,6 @@ class Show extends React.Component {
         books: data2
       }))
   }
-
-
   componentDidUpdate(prevProps) {
     if (prevProps.location.pathname !== this.props.location.pathname) {
       this.componentDidMount()
@@ -68,11 +64,9 @@ class Show extends React.Component {
     })
       .then(() => this.props.history.push('/books'))
   }
-
   canModify() {
     return Auth.isAuthenticated() && Auth.getPayload().sub === this.state.book.createdBy._id
   }
-
   render() {
     if (!this.state.book) return <Loading />
     let similar = this.state.books.filter(book => book.genre === this.state.book.genre && book.title !== this.state.book.title)
@@ -84,39 +78,31 @@ class Show extends React.Component {
             <div className="tile">
               <div className="tile is-parent is-vertical">
                 <article id="titelShowBook" className="tile is-child box">
-                  <p className="subtitle is-7">Release Year: {this.state.book.releaseYear}</p>
-                  <p className="subtitle is-7">Genre: {this.state.book.genre}</p>
-                  <p className="subtitle is-7">Pages: {this.state.book.pg}</p>
-                  <p className="subtitle is-7">ISBN: {this.state.book.ISBN}</p>
-                  <p className="subtitle is-7">buy: {this.state.book.amazon}</p>
-
-
+                  <p className="subtitle is-5">Release Year: {this.state.book.releaseYear}</p>
+                  <p className="subtitle is-5">Genre: {this.state.book.genre}</p>
+                  <p className="subtitle is-5">Pages: {this.state.book.pg}</p>
+                  <p className="subtitle is-5">ISBN: {this.state.book.ISBN}</p>
                   <div id="goodreads-widget" className="row is-two-fifths-desktop is-half-tablet is-full-mobile">
-                    <div className="title is-5">Goodreads reviews for {this.state.book.title}</div>
-                    <iframe id="the_iframe" src={`https://www.goodreads.com/api/reviews_widget_iframe?did=DEVELOPER_ID&format=html&header_text=Goodreads+reviews+for+${this.state.book.title}&isbn=${this.state.book.ISBN}&links=660&review_back=fff&stars=000&text=000`} width="90%" height="50%" frameBorder="0"></iframe>
+                    <div className="title is-4">Goodreads reviews for {this.state.book.title}</div>
+                    <iframe id="the_iframe" src={`https://www.goodreads.com/api/reviews_widget_iframe?did=DEVELOPER_ID&format=html&header_text=Goodreads+reviews+for+${this.state.book.title}&isbn=${this.state.book.ISBN}&links=660&review_back=fff&stars=000&text=000`} width="565" height="400" frameBorder="0"></iframe>
                   </div>
                 </article>
-
               </div>
               <div className="tile is-parent">
                 <article id="ImgShowBook" className="tile is-child box">
-                <figure className="image is-4by2">
-                    <img src={this.state.book.image} alt={this.state.book.title} />
-                  </figure>
                   <p className="title">{this.state.book.title}</p>
                   <p className="subtitle">{this.state.book.author}</p>
-                  
+                  <figure className="image is-4by2">
+                    <img src={this.state.book.image} alt={this.state.book.title} />
+                  </figure>
                   <div className="buttons is-gapless">
                     {Auth.isAuthenticated() &&
                       <Link to={{
                         pathname: `/users/${Auth.getPayload().sub}`,
                         state: { book: this.state.book }
                       }}>
-
                         <button className="button is-dark">Add to Wish List</button>
-
                       </Link>
-
                     }
                     {this.canModify() &&
                       <div className="level-right is-gapless edit2">
@@ -125,14 +111,10 @@ class Show extends React.Component {
                       </div>
                     }
                   </div>
-                  <button className="button is-dark">Preview</button>
-
                   <button className="button is-dark">Buy on Amazon</button>
-
                 </article>
               </div>
             </div>
-
             <div className="tile is-parent">
               <article className="tile is-child box">
                 <div className="show-content-comments subheading-show">
@@ -196,7 +178,7 @@ class Show extends React.Component {
                   )}
                 </div>
               </article>
-            </div>ZZ
+            </div>
           </div>
           <div className="tile is-parent">
             <article id="DescriptionShowBook" className="tile is-child box">
@@ -218,9 +200,7 @@ class Show extends React.Component {
 
             </article>
           </div>
-
         </div>
-
       </section >
     )
   }
