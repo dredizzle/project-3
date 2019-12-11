@@ -115,6 +115,7 @@ class Show extends React.Component {
                     }
                   </div>
                 </article>
+                {/* Fixed */}
               </div>
             </div>
             <div className="tile is-parent">
