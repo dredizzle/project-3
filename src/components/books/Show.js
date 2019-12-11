@@ -87,10 +87,11 @@ class Show extends React.Component {
                   <figure className="image is-2by3">
                     <img src={this.state.book.image} alt={this.state.book.title} />
                   </figure>
-                  <p className="subtitle">{this.state.book.title}</p>
-                  <p className="title is-italic is-6 is-size-6">{this.state.book.author}</p>
-                  <p className="text is-6">Release Year: {this.state.book.releaseYear}/ Genre: {this.state.book.genre}/ Pages: {this.state.book.pg}</p>
-
+                  <div className="BookMainInfo">
+                    <p className="subtitle">{this.state.book.title}</p>
+                    <p className="title is-italic is-6 is-size-6">{this.state.book.author}</p>
+                    <p className="text is-6">Release Year: {this.state.book.releaseYear}/ Genre: {this.state.book.genre}/ Pages: {this.state.book.pg}</p>
+                  </div>
 
                 </article>
 
@@ -102,7 +103,7 @@ class Show extends React.Component {
                 <article id="DescriptionShowBook" className="tile is-child box">
 
                   <p className="title">Description</p><br />
-                  <p className="subtitle is-5">{this.state.book.description}</p>
+                  <p className="text is-5">{this.state.book.description}</p>
 
 
                   <div>
