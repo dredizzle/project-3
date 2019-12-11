@@ -20,13 +20,17 @@ class Show extends React.Component {
   }
 
   componentDidMount() {
-    fetch(`/api/stories/${this.props.match.params.id}`)
-      .then(res => res.json())
-      .then(res => this.setState({ story: res }))
+    Promise.all([
+      fetch(`/api/stories/${this.props.match.params.id}`),
+      fetch('/api/stories/')
+    ])
+      .then(([res1, res2]) => Promise.all([res1.json(), res2.json()]))
+      .then(([data1, data2]) => this.setState({
+        story: data1,
+        stories: data2
+      }))
   }
-  // componentDidMount() {
-  //   this.getData()
-  // }
+
   componentDidUpdate(prevProps) {
     if (prevProps.location.pathname !== this.props.location.pathname) {
       this.getData()
@@ -60,135 +64,117 @@ class Show extends React.Component {
     })
       .then(() => this.props.history.push('/stories'))
   }
+
+
   canModify() {
     return Auth.isAuthenticated() && Auth.getPayload().sub === this.state.story.createdBy._id
   }
-  // canModify() {
-  //   return Auth.isAuthenticated() && Auth.getPayload().sub === this.state.story.createdBy._id
-  // }
+
   render() {
     console.log(this.state.story)
     if (!this.state.story) return <Loading />
-    // const [{ author, title, image, releaseYear, description, genre, ISBN, pg }] = this.state.book
-    // let similar = this.state.books.filter(book => book.genre === this.state.book.genre && book.title !== this.state.book.title)
-    // similar = similar.slice(0, 5)
+
     return (
-      <section className="section" id="book-show">
-        <div className="columns">
-          <div className="column is-two-fifths-desktop is-half-tablet is-full-mobile">
-            <figure className="image-show">
-              <img src={this.state.story.image} alt={this.state.story.title} />
-            </figure>
+      <section className="section" id="story-show">
+
+
+
+
+        <div className="colum" id="StoryArticle">
+
+
+          <div className="AtricleCentered">
+            <p className="title is-italic is-6 is-size-5 " id="title-show">{this.state.story.author}</p>
+            <p className="subtitle is-4 is-size-6" id="author-show">{this.state.story.title}</p>
+
+            <h2 className="text is-4 is-italic show"><span>Description: </span>{this.state.story.description}</h2>
+            <h2 className="text is-5 show"><span><br></br> </span>{this.state.story.story}</h2>
+            <br></br>
+            <h2 className="text is-4 is-italic show"><span>Date released:</span> {this.state.story.releaseDate}</h2>
             <div className="container edit">
+
               <div className="buttons is-gapless">
                 {Auth.isAuthenticated() &&
                   <Link to={{
                     pathname: `/users/${Auth.getPayload().sub}`,
                     state: { story: this.state.story }
                   }}>
-                    <button className="button is-light a1">Add to Favourites</button>
+                    <button className="button is-dark">Add to Favourites</button>
                   </Link>
                 }
-                {this.canModify() &&
-                  <div className="level-right is-gapless edit2">
-                    <Link to={`/stories/${this.state.story._id}/edit`} className="button is-light e1">Edit</Link>
-                    <button className="button is-light d2" onClick={this.handleDelete}>Delete</button>
-                  </div>
-                }
+
+                <div className="level-right is-gapless edit2">
+                  {this.canModify() && <Link to={`/stories/${this.state.story._id}/edit`} className="button is-dark ">Edit</Link>}
+                  {this.canModify() && <button className="button is-dark" onClick={this.handleDelete}>Delete</button>}
+
+                </div>
+
               </div>
+
+
             </div>
           </div>
-          <div className="column is-two-fifths-desktop is-half-tablet is-full-mobile">
-            <div className="show-content">
-              <h2 className="subtitle is-4 show" id="author-show">{this.state.story.title}</h2>
-              <h2 className="subtitle is-5 show" id="title-show">{this.state.story.author}</h2>
-              <hr />
-              <h2 className="subtitle is-6 show"><span>Year released:</span> {this.state.story.releaseYear}</h2>
+          {/* COMMENTS ===================================================*/}
+          <div className="show-content-comments subheading-show">
+            Comments
+            <article className="media">
 
-
-              <h2 className="subtitle is-6 show"><span>Notes: </span>{this.state.story.description}</h2>
-              <h2 className="subtitle is-6 show"><span>Notes: </span>{this.state.story.story}</h2>
-
-              <hr />
-            </div>
-            {/* COMMENTS ===================================================*/}
-            <div className="show-content-comments subheading-show">
-              Comments
-              <article className="media">
+              <div className="media-content">
+                <div className="field">
+                  <p className="control">
+                    <textarea className="textarea" name="content" placeholder="Add a comment..." onChange={this.handleChange}></textarea>
+                  </p>
+                </div>
+                <nav className="level">
+                  <div className="level-left">
+                    <div className="level-item">
+                      <a className="button is-dark" onClick={this.handleComment}>Post a comment</a>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            </article>
+            {this.state.story.comments.map(comment =>
+              <article key={comment._id} className="media">
                 <figure className="media-left">
                   <p className="image is-64x64">
-                    {/* <img src="https://profile.actionsprout.com/default.jpeg" /> */}
+                    <Link to={`/users/${comment.user.id}`}>
+                      {comment.user.username}
+                    </Link>
                   </p>
                 </figure>
                 <div className="media-content">
-                  <div className="field">
-                    <p className="control">
-                      <textarea className="textarea" name="content" placeholder="Add a comment..." onChange={this.handleChange}></textarea>
+                  <div className="content">
+                    <p className="commentText">
+                      <strong>{comment.user.username}</strong>  <small>{comment.createdAt.substring(0, comment.createdAt.length - 5).replace(/T/g, ' ')}</small>
+                      <br />
+                      {comment.content}
                     </p>
                   </div>
-                  <nav className="level">
+                  <nav className="level is-mobile">
                     <div className="level-left">
-                      <div className="level-item">
-                        <a className="button is-info" onClick={this.handleComment}>Submit</a>
-                      </div>
+                      <a className="level-item">
+                        <span className="icon is-small"><i className="fas fa-reply"></i></span>
+                      </a>
+                      <a className="level-item">
+                        <span className="icon is-small"><i className="fas fa-retweet"></i></span>
+                      </a>
+                      <a className="level-item">
+                        <span className="icon is-small"><i className="fas fa-heart"></i></span>
+                      </a>
                     </div>
                   </nav>
                 </div>
+                <div className="media-right">
+                  <button id={comment._id} value={comment.user._id} className="delete" onClick={this.handleDeleteComments}></button>
+                </div>
               </article>
-              {this.state.story.comments.map(comment =>
-                <article key={comment._id} className="media">
-                  <figure className="media-left">
-                    <p className="image is-64x64">
-                      <Link to={`/users/${comment.user.id}`}>
-                        <img src={comment.user.image} />
-                      </Link>
-                    </p>
-                  </figure>
-                  <div className="media-content">
-                    <div className="content">
-                      <p className="commentText">
-                        <strong>{comment.user.username}</strong>  <small>{comment.createdAt.substring(0, comment.createdAt.length - 5).replace(/T/g, ' ')}</small>
-                        <br />
-                        {comment.content}
-                      </p>
-                    </div>
-                    <nav className="level is-mobile">
-                      <div className="level-left">
-                        <a className="level-item">
-                          <span className="icon is-small"><i className="fas fa-reply"></i></span>
-                        </a>
-                        <a className="level-item">
-                          <span className="icon is-small"><i className="fas fa-retweet"></i></span>
-                        </a>
-                        <a className="level-item">
-                          <span className="icon is-small"><i className="fas fa-heart"></i></span>
-                        </a>
-                      </div>
-                    </nav>
-                  </div>
-                  <div className="media-right">
-                    <button id={comment._id} value={comment.user._id} className="delete" onClick={this.handleDeleteComments}></button>
-                  </div>
-                </article>
-              )}
-            </div>
+            )}
           </div>
-          {/* <div className="column is-one-fifth-desktop is-half-tablet is-full-mobile">
-            <div className="similar-show">
-              <h2 className="subtitle is-6 subheading-show">You might also like</h2>
-              <div>
-                {similar.map(book =>
-                  <div className="similar-artist-image" key={book._id}>
-                    <Link to={`/books/${book._id}`}>
-                      <Card {...book} />
-                    </Link>
-                  </div>
-                )}
-              </div>
-            </div>
-          </div> */}
         </div>
-      </section>
+
+      </section >
+
     )
   }
 }

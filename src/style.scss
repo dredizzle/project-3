@@ -381,7 +381,13 @@ a {
     }
 }
 
-.image-show img {
+
+  .ShowOneBook{
+    margin-top: 90px;
+    background-color:#fff;
+  }
+  .image-show img {
+
     width: 20rem;
 }
 
@@ -426,4 +432,47 @@ iframe {
     font-size: 11px;
     text-decoration: none;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.UserShow {
+  margin-top: 90px;
+}
+
+// STORY
+
+#story-show{
+background-color: #FFFFFF;
+
+}
+
+.show-content-story {
+margin: 0px 80px 0px 80px;
+}
+#StoryArticle{
+  margin-top: 50px;
+}
+
+.AtricleCentered{
+  margin: 0% 15%;
+}
+
+
+.simularbooksall {
+
+display: flex;
+flex-direction: row;
+
+}
+
+.columns3{
+  display: flex;
+
+
+}
+
+.UserImg{
+ 
+  border-radius: 50%;
+  width:200px;
+  height:200px;
 }

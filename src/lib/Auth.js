@@ -18,7 +18,7 @@ class Auth {
   }
 
   static isAuthenticated() {
-    return !!this.getToken()
+    return this.getToken()
   }
 }
 

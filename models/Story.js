@@ -44,6 +44,10 @@ const storySchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  amazon: {
+    type: String,
+    required: false
+  },
   createdBy: {
     type: mongoose.Schema.ObjectId,
     ref: 'User'
@@ -61,4 +65,4 @@ const storySchema = new mongoose.Schema({
 
 storySchema.plugin(uniqueValidator)
 
-module.exports = mongoose.model('story', storySchema)
+module.exports = mongoose.model('Story', storySchema)
