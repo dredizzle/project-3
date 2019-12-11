@@ -70,12 +70,12 @@ class Show extends React.Component {
                     <br></br>
                     <div className="level-left">
                       <Link to={`/users/${_id}/edit`}
-                        className="button  is-light is-fullwidth">All Users</Link>
+                        className="button  is-light is-fullwidth">All Users (coming soon)</Link>
                     </div>
                     <br></br>
                     <div className="level-left">
                       <Link to={`/users/${_id}/edit`}
-                        className="button  is-light is-fullwidth">Messages</Link>
+                        className="button  is-light is-fullwidth">Messages (coming soon)</Link>
                     </div>
                   </div>
                 </article>
@@ -124,15 +124,15 @@ class Show extends React.Component {
                 <div className="column is-fifth">
                   <div className="bookCollection box">
                     <h3 className="subtitle ">Your Stories</h3>
-                    <div className="columns is-multiline">
-                      {this.state.user.books.map(book =>
-                        <div key={book._id} className="column is-one-fifth">
-                          <Link to={`/books/${book._id}`}>
-                            <img src={book.image} alt={book.title} />
+                    {/* <div className="columns is-multiline">
+                      {this.state.user.stories.map(story =>
+                        <div key={story._id} className="column is-one-fifth">
+                          <Link to={`/stories/${story._id}`}>
+                            <p>{story.title}</p>
                           </Link>
                         </div>
                       )}
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </article>

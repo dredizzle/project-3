@@ -100,12 +100,12 @@ class Show extends React.Component {
               </div>
               <div className="tile is-parent">
                 <article id="ImgShowBook" className="tile is-child box">
-                <figure className="image is-4by2">
+                  <figure className="image is-4by2">
                     <img src={this.state.book.image} alt={this.state.book.title} />
                   </figure>
                   <p className="title">{this.state.book.title}</p>
                   <p className="subtitle">{this.state.book.author}</p>
-                  
+
                   <div className="buttons is-gapless">
                     {Auth.isAuthenticated() &&
                       <Link to={{
