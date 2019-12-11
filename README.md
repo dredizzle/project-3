@@ -136,11 +136,13 @@ Once we'd decided on the theme for our project, we created a group Trello board 
 ---
 
 ### Final Product: 
-
-# `ADD IMAGES` 
-
-
+!['Prewiew'](https://media.giphy.com/media/gHytuehR0mfRkMUVkE/giphy.gif)
+!['Prewiew'](https://media.giphy.com/media/PnsEqZJXkzal2MYU6y/giphy.gif)
 ---
+!['Prewiew'](https://i.imgur.com/G9aFD4u.png)
+!['Prewiew'](https://i.imgur.com/r5SKle8.png)
+---
+
 ---
 ---
 
