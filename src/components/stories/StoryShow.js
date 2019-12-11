@@ -83,7 +83,7 @@ class Show extends React.Component {
                     pathname: `/users/${Auth.getPayload().sub}`,
                     state: { story: this.state.story }
                   }}>
-                    <button className="button is-light a1">Add to Wish List</button>
+                    <button className="button is-light a1">Add to Favourites</button>
                   </Link>
                 }
                 {/* {this.canModify() &&

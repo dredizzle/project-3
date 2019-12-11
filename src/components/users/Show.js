@@ -50,31 +50,31 @@ class Show extends React.Component {
     return (
 
 
-      <section className="ShowOneBook">
+      <section className="UserShow">
         <div className="tile is-ancestor">
           <div className="tile is-vertical is-8">
             <div className="tile">
               <div className="tile is-parent is-vertical">
-                <article className="tile is-child notification is-primary">
+                <article className="tile is-child notification is-your-edit">
                   <div className="user-menue box">
                     {this.canModify() &&
                       <div className="level-left">
-                        <Link to={`/users/${_id}/edit`} className="button is-dark">Edit your Profile</Link>
+                        <Link to={`/users/${_id}/edit`} className="button  is-light is-fullwidth">Edit your Profile</Link>
                       </div>
                     }
                     <br></br>
                     <div className="level-left">
                       <Link to={`/users/${_id}/edit`}
-                        className="button is-dark">All Users</Link>
+                        className="button  is-light is-fullwidth">All Users</Link>
                     </div>
                     <br></br>
                     <div className="level-left">
                       <Link to={`/users/${_id}/edit`}
-                        className="button is-dark">Messages</Link>
+                        className="button  is-light is-fullwidth">Messages</Link>
                     </div>
                   </div>
                 </article>
-                <article className="tile is-child notification is-warning">
+                <article className="tile is-child notification is-your-books">
 
                   <div className="bookCollection box">
                     <h3 className="subtitle ">Your Books</h3>
@@ -91,11 +91,11 @@ class Show extends React.Component {
                 </article>
               </div>
               <div className="tile is-parent">
-                <article className="tile is-child notification is-info">
+                <article className="tile is-child notification is-your-user">
                   <div className="user-info box">
                     <div className="user-image">
                       <figure className="image">
-                        <img src={this.state.user.image} alt={this.state.user.username} />
+                        <img id="user-img" src={this.state.user.image} alt={this.state.user.username} />
                       </figure>
                     </div>
                     <div className="username">
@@ -106,7 +106,7 @@ class Show extends React.Component {
                     </div>
                     {this.canModify() &&
                       <div className="level-left">
-                        <Link to={`/users/${_id}/edit`} className="button is-dark">Edit</Link>
+                        <Link to={`/users/${_id}/edit`} className="button  is-light">Edit</Link>
                       </div>
                     }
                   </div>
@@ -116,7 +116,7 @@ class Show extends React.Component {
               </div>
             </div>
             <div className="tile is-parent">
-              <article className="tile is-child notification is-danger">
+              <article className="tile is-child notification is-your-stories">
                 {/* STORY COLLECTION EDIT  */}
                 <div className="column is-fifth">
                   <div className="bookCollection box">
@@ -131,15 +131,12 @@ class Show extends React.Component {
                       )}
                     </div>
                   </div>
-
-
-
                 </div>
               </article>
             </div>
           </div>
           <div className="tile is-parent">
-            <article className="tile is-child notification is-success">
+            <article id="DescriptionShowBook" className="tile is-child notification">
               <div className="content">
                 {/* Wish List */}
 
@@ -160,7 +157,7 @@ class Show extends React.Component {
             </article>
           </div>
           <div className="tile is-parent">
-            <article className="tile is-child notification is-success">
+            <article id="DescriptionShowBook" className="tile is-child notification">
               <div className="content">
                 {/* //Favourite Stories (Amend like in Wish list to save and add fav stories ) */}
                 <h3 className="subtitle">Favourite Stories</h3>
