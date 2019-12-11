@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 // import Promise from 'bluebird'
-import Card from './CardSimular'
+import Card from '../books/CardSimular'
 import Auth from '../../lib/Auth'
 import Loading from '../common/Loading'
 class Show extends React.Component {
