@@ -1,16 +1,7 @@
 !['Sign-Up-Flow'](https://i.imgur.com/cCvPghk.png )
 !['Sign-Up-Flow'](https://i.imgur.com/JKZJWdY.gif )
-!!! ADD info about HASH ROUTER ANDRE 
-INFO ABOut seeds
 
-Info about design 
 
-```
-Pj-3
-└──index.html
-// NEED to do folder structure 
-```
----
 
 # Start: 
 # Installation
@@ -66,28 +57,10 @@ Once we had completed the models we created a seeds file, to make it easier to u
 
 ## API Endpoint Documentation
 
-| **GET** |  |
-| --- | --- |
-| _/users/verify_ | Primarily used to check if a user is already logged in when the page loads. Takes user’s token from local storage (if there is one) and uses it to verify who they are. Returns user’s data (name, email, id). |
-| _/questions/topic/:topic_ | For fetching all questions pertaining to a specific topic. ‘Topic’ is the only parameter in the request. Returns an array of questions, each with: id, topic, title, question, user id. |
-| _/questions/id/:id_ | For fetching one question and all of its associated answers. The request will include the question id. Returns a single question (id, topic, title, question, user id) with an array of answers (id, answer, question id, user id). |
+| **GET**                                                                                                                                              | **Post**                                                                                                                                                                                                                             | **PUT**                                                                   | **DELETE**                                                                                                                                                                         |
+|------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| router.get `/books` router.get `/books/:id` router.get `/stories` router.get `/stories/:id` router.get `/users` router.get `/users` router.get `/me` | router.post `/books` router.post `/stories` router.post `/books/:id/comments` router.post `/stories/:id/comments` router.post `/stories/:id/comments` router.post `/register` router.post `/login` router.post `/users/:id/bookWish` | router.put `/books/:id` router.put `/stories/:id` router.put `/users/:id` | router.delete `/books/:id` router.delete `/stories/:id` router.delete `/books/:id/comments/:commentId` router.delete `/stories/:id/comments/:commentId` router.delete `/users/:id` |
 
-| **POST** |  |
-| --- | --- |
-| _/users_ | For adding a new user. Takes users name, email and password, encrypts the password and stores the info in the database. Returns user’s data (name, email, id) minus password, and an auth token. |
-| _/users/login_ | For logging in users. Will take their name and password, verify them and create a token to be stored in local storage. Returns user’s data (name, email, id) minus password, and an auth token. |
-| _/questions_ | For posting a new question to the database. Requests will include the user’s token, topic, title, question and user id. Returns question data (id, topic, title, question and user id). |
-| _/question/id/:id/answers_ | For posting a new answer to a specific question in the database. Takes the user’s token, question id, user id, and answer. Returns answer data (id, answer, question id, user id). |
-
-| **PUT** |  |
-| --- | --- |
-| _/questions/:id_ | For updating a question. The request will include the user’s token, question id, topic, title, and question. Returns question data (question id, topic, title, question). |
-| _/answers/:id_ | For updating a question. The request will include the user’s token, answer id, and answer. Returns answer data (answer id, answer, user id, question id). |
-
-| **DELETE** |  |
-| --- | --- |
-| _/questions/:id_ | For deleting a question. The request will include the user’s token and question id. Returns message “Question deleted.” |
-| _/answers/:id_ | For deleting an answer. The request will include the user’s token and answer id. Returns message “Answer deleted.” |
 
 ---
 ### Wireframes:
@@ -156,17 +129,7 @@ Within the user profile page, is the users Wishlist of books they are on the hun
 ---
 
 
-### Messaging:
-
-In a future version of the site we would like to implement a more secure messaging system, as to allow the user more comfortability in sharing their personal information over the web.
-# `ADD MORE INFO`
-
----
-
-
 ### Process:
-
-# `ADD A TRELLO BOARD` Create a good one and add it 
 
 Once we'd decided on the theme for our project, we created a group Trello board to breakdown and manage our workload and created wireframes for the website.
 
@@ -174,12 +137,27 @@ Once we'd decided on the theme for our project, we created a group Trello board 
 
 ### Final Product: 
 
-# `ADD IMAGES` 
-
-
+!['Prewiew'](https://i.imgur.com/zrP6wPJ.gif)
+---
+!['Prewiew'](https://i.imgur.com/G9aFD4u.png)
+!['Prewiew'](https://i.imgur.com/r5SKle8.png)
 ---
 
-### Modifiations:
+---
+---
+
+# Modifiations:
+
+### Messaging:
+
+In a future version of the site we would like to implement a more secure messaging system, as to allow the user more comfortability in sharing their personal information over the web.
+
+We were planning on implementing a new model, `Conversations`. 
+* A page for all of a users conversations `/users/<userId>/conversation`.  From this page, they can search for a user to start a conversation with, and see all existing conversations.
+* A conversation page for each conversation `/users/<userId>/conversation/<conversationId>`
+* Each conversation will have messages, which will work essentially the same as comments.
+* To lock it down so only a user and the person they are talking to can access the page: so you'll need to store both users on your model. Adding a conversation to your own convo page will also add one to your conversation partners page.
+
 
 ### PayPal
 

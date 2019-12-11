@@ -14,7 +14,7 @@ class Feed extends React.Component {
       books: '',
       errors: '',
       data: '',
-      comments: ''
+      comments: []
     }
 
     this.handleComment = this.handleComment.bind(this)
@@ -63,6 +63,7 @@ class Feed extends React.Component {
     }
     window.location.reload()
   }
+
 
   render() {
     return (
