@@ -180,7 +180,6 @@ mongoose.connect(dbURI, (err, db) => {
         pg: 272,
         ISBN: "0062679104",
         preview: "https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B07F1X87BB",
-
         description: "The Bram Stoker Award-winning author of A Head Full of Ghosts adds an inventive twist to the home invasion horror story in a heart-palpitating novel of psychological suspense that recalls Stephen King's Misery, Ruth Ware's In a Dark, Dark Wood, and Jack Ketchum's cult hit The Girl Next Door.Seven-year-old Wen and her parents, Eric and Andrew, are vacationing at a remote cabin on a quiet New Hampshire lake. Their closest neighbors are more than two miles in either direction along a rutted dirt road...",
         createdBy: emma
 
@@ -288,7 +287,7 @@ mongoose.connect(dbURI, (err, db) => {
         releaseYear: 1999,
         genre: "Art",
         pg: 104,
-        ISBN: '8433908936',
+        ISBN: "8433908936",
         preview: "https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B01N5O532I",
         description: "Sergio has bought a modern painting for a large sum of money. Marcos hates him and cannot believe that a friend of his likes a similar work. Ivan tries unsuccessfully to appease the two sides. If your friendship is based on a tacit mutual agreement, what happens when a person does something completely different and unexpected? The question is: are you who you think you are or are who your friends think you are. This dazzling comedy by Yasmina Reza premiered in Paris at the Comédie des Champs-Elysées in October 1994 where he remained 18 months; in Berlin at the Theater of the Schaubühne in October 1995; in London at the Wyndham's Theater in October 1996; in New York at the Royal Theater in March 1998 and lately in Madrid at the Marquina Theater, with an address of José María Flotats, in September 1998, winner of the Max awards and the most prestigious Spanish awards.",
         createdBy: emma
@@ -299,7 +298,7 @@ mongoose.connect(dbURI, (err, db) => {
         releaseYear: 2012,
         genre: "Art",
         pg: 160,
-        ISBN: '0761169253',
+        ISBN: "0761169253",
         preview: "https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B0074QGGK6",
         description: "You don't need to be a genius, you just need to be yourself. That's the message from Austin Kleon, a young writer and artist who knows that creativity is everywhere, creativity is for everyone. A manifesto for the digital age, Steal Like an Artist is a guide whose positive message, graphic look and illustrations, exercises, and examples will put readers directly in touch with their artistic side.",
         createdBy: emma
@@ -343,7 +342,7 @@ mongoose.connect(dbURI, (err, db) => {
         releaseYear: 2016,
         genre: "Art",
         pg: 229,
-        ISBN: '0062641549',
+        ISBN: "0062641549",
         preview: "https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B019MMUA8S",
         description: "In this generation-defining self-help guide, a superstar blogger cuts through the crap to show us how to stop trying to be positive all the time so that we can truly become better, happier people.",
         createdBy: emma
@@ -354,7 +353,7 @@ mongoose.connect(dbURI, (err, db) => {
         releaseYear: 2012,
         genre: "Art",
         pg: 360,
-        ISBN: '1616201320',
+        ISBN: "1616201320",
         preview: "https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B00AFKISKO",
         description: "On March 18, 1990, thirteen works of art worth today over $500 million were stolen from the Isabella Stewart Gardner Museum in Boston. It remains the largest unsolved art heist in history, and Claire Roth, a struggling young artist, is about to discover that there's more to this crime than meets the eye.",
         createdBy: emma
@@ -441,7 +440,7 @@ mongoose.connect(dbURI, (err, db) => {
         releaseYear: 2014,
         genre: "History",
         pg: 466,
-        ISBN: '0062316095',
+        ISBN: "0062316095",
         preview: "https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B00K7ED54M",
         description: "How did our species succeed in the battle for dominance? Why did our foraging ancestors come together to create cities and kingdoms? How did we come to believe in gods, nations and human rights; to trust money, books and laws; and to be enslaved by bureaucracy",
         createdBy: emma
@@ -452,7 +451,7 @@ mongoose.connect(dbURI, (err, db) => {
         releaseYear: 2004,
         genre: "History",
         pg: 559,
-        ISBN: '1400031702',
+        ISBN: "1400031702",
         preview: "https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B00CEGTVGC",
         description: "Under the influence of their charismatic classics professor, a group of clever, eccentric misfits at an elite New England college discover a way of thinking and living that is a world away from the humdrum existence of their contemporaries. But when they go beyond the boundaries of normal morality they slip gradually from obsession to corruption and betrayal, and at last - inexorably - into evil.",
         createdBy: emma
@@ -463,7 +462,7 @@ mongoose.connect(dbURI, (err, db) => {
         releaseYear: 2004,
         genre: "History",
         pg: 544,
-        ISBN: '076790818X',
+        ISBN: "076790818X",
         preview: "https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B0035OC7VI",
         description: "In Bryson's biggest book, he confronts his greatest challenge: to understand—and, if possible, answer—the oldest, biggest questions we have posed about the universe and ourselves. Taking as territory everything from the Big Bang to the rise of civilization, Bryson seeks to understand how we got from there being nothing at all to there being us. To that end, he has attached himself to a host of the world's most advanced (and often obsessed) archaeologists, anthropologists, and mathematicians, travelling to their offices, laboratories, and field camps. He has read (or tried to read) their books, pestered them with questions, apprenticed himself to their powerful minds. A Short History of Nearly Everything is the record of this quest, and it is a sometimes profound, sometimes funny, and always supremely clear and entertaining adventure in the realms of human knowledge, as only Bill Bryson can render it. Science has never been more involving or entertaining.",
         createdBy: emma
@@ -474,7 +473,7 @@ mongoose.connect(dbURI, (err, db) => {
         releaseYear: 2006,
         genre: "History",
         pg: 342,
-        ISBN: '0307346609',
+        ISBN: "0307346609",
         preview: "https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B07H2LC5ZR",
         description: "The Zombie War came unthinkably close to eradicating humanity. Max Brooks, driven by the urgency of preserving the acid-etched first-hand experiences of the survivors from those apocalyptic years, traveled across the United States of America and throughout the world, from decimated cities that once teemed with upwards of thirty million souls to the most remote and",
         createdBy: emma
@@ -794,7 +793,7 @@ mongoose.connect(dbURI, (err, db) => {
         releaseYear: 2019,
         genre: "Romance",
         pg: 320,
-        ISBN: 1793307504,
+        ISBN: "1793307504",
         preview: "https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B07MLR5WY6",
         description: "They say your first kiss should be earned. Mine was stolen by a devil in a masquerade mask under the black Chicago sky. They say the vows you take on your wedding day are sacred. Mine were broken before we left church. They say your heart only beats for one man. Mine split and bled for two rivals who fought for it until the bitter end. I was promised to Angelo Bandini, the heir to one of the most powerful families in the Chicago Outfit. Then taken by Senator Wolfe Keaton, who held my father's sins over his head to force me into marriage. They say that all great love stories have a happy ending. I, Francesca Rossi, found myself erasing and rewriting mine until the very last chapter. One kiss. Two men. Three lives. Entwined together. And somewhere between these two men, I had to find my forever.",
         createdBy: emma
@@ -805,7 +804,7 @@ mongoose.connect(dbURI, (err, db) => {
         releaseYear: 2019,
         genre: "Romance",
         pg: 325,
-        ISBN: 1250223598,
+        ISBN: "1250223598",
         preview: "https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B07DCZ7LM4",
         description: "Tiffy Moore and Leon Twomey each have a problem and need a quick fix. Tiffy's been dumped by her cheating boyfriend and urgently needs a new flat. But earning minimum wage at a quirky publishing house means that her choices are limited in London. Leon, a palliative care nurse, is more concerned with other people's welfare than his own. Along with working night shifts looking after the terminally ill, his sole focus is on raising money to fight his brother's unfair imprisonment. Leon has a flat that he only uses 9 to 5. Tiffy works 9 to 5 and needs a place to sleep. The solution to their problems? To share a bed of course...As Leon and Tiffy's unusual arrangement becomes a reality, they start to connect through Post-It notes left for each other around the flat. Can true love blossom even in the unlikeliest of situations. Can true love blossom even if you never see one another? Or does true love blossom when you are least expecting it?",
         createdBy: emma
@@ -816,7 +815,7 @@ mongoose.connect(dbURI, (err, db) => {
         releaseYear: 2019,
         genre: "Romance",
         pg: 320,
-        ISBN: 1250047323,
+        ISBN: "1250047323",
         preview: "https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B07J4WHC78",
         description: "Cassie Hanwell was born for emergencies. As one of the only female firefighters in her Texas firehouse, she's seen her fair share of them, and she's excellent at dealing with other people's tragedies. But when her estranged and ailing mother asks her to uproot her life and move to Boston, it's an emergency of a kind Cassie never anticipated.",
         createdBy: emma
@@ -827,7 +826,7 @@ mongoose.connect(dbURI, (err, db) => {
         releaseYear: 2019,
         genre: "Romance",
         pg: 291,
-        ISBN: 1250200350,
+        ISBN: "1250200350",
         preview: "https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B07J45JR61",
         description: "What if you had a second chance at first love. Annika Rose likes being alone. She feels lost in social situations, saying the wrong thing or acting the wrong way. She just can't read people. She prefers the quiet solitude of books or playing chess to being around others. Apart from Jonathan. She liked being around him, but she hasn't seen him for ten years. Until now that is. And she'll not sure he'll want to see her again after what happened all those years ago. Annika Rose likes being alone.Except that, actually, she doesn't like being alone at all. The Girl He Used to Know is an uplifting novel full of surprising revelations that keep you turning the page. Perfect for fans of Jojo Moyes, Gail Honeyman, Jill Santopolo and Sliding Doors.",
         createdBy: emma
@@ -838,7 +837,7 @@ mongoose.connect(dbURI, (err, db) => {
         releaseYear: 2018,
         genre: "Romance",
         pg: 314,
-        ISBN: 1791392792,
+        ISBN: "1791392792",
         preview: "https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B07HJYTRMD",
         description: "Lowen Ashleigh is a struggling writer on the brink of financial ruin when she accepts the job offer of a lifetime. Jeremy Crawford, husband of bestselling author Verity Crawford, has hired Lowen to complete the remaining books in a successful series his injured wife is unable to finish.",
         createdBy: emma
@@ -849,7 +848,7 @@ mongoose.connect(dbURI, (err, db) => {
         releaseYear: 2019,
         genre: "Romance",
         pg: 423,
-        ISBN: 01250316774,
+        ISBN: "01250316774",
         preview: "https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B07J4LPZRN",
         description: "When his mother became President, Alex Claremont-Diaz was promptly cast as the American equivalent of a young royal. Handsome, charismatic, genius—his image is pure millennial-marketing gold for the White House. There's only one problem: Alex has a beef with the actual prince, Henry, across the",
         createdBy: emma
@@ -871,7 +870,7 @@ mongoose.connect(dbURI, (err, db) => {
         releaseYear: 2019,
         genre: "Romance",
         pg: 400,
-        ISBN: 1501128035,
+        ISBN: "1501128035",
         preview: "https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B07MQSNMQ1",
         description: "Olive is always unlucky: in her career, in love, in…well, everything. Her identical twin sister Ami, on the other hand, is probably the luckiest person in the world. Her meet-cute with her fiancé is something out of a romantic comedy (gag) and she's managed to finance her entire wedding by winning a series of Internet contests (double gag). Worst of all, she's forcing",
         createdBy: emma
@@ -882,7 +881,7 @@ mongoose.connect(dbURI, (err, db) => {
         releaseYear: 2019,
         genre: "Romance",
         pg: 360,
-        ISBN: '1095447416',
+        ISBN: "1095447416",
         preview: "https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B07R9PNH9F",
         description: "Olive is always unlucky: in her career, in love, in…well, everything. Her identical twin sister Ami, on the other hand, is probably the luckiest person in the world. Her meet-cute with her fiancé is something out of a romantic comedy (gag) and she's managed to finance her entire wedding by winning a series of Internet contests (double gag). Worst of all, she's forcing",
         createdBy: emma
@@ -893,7 +892,7 @@ mongoose.connect(dbURI, (err, db) => {
         releaseYear: 2019,
         genre: "Romance",
         pg: 400,
-        ISBN: '0062872842',
+        ISBN: "0062872842",
         preview: "https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B07C1XR6BK",
         description: "Georgette Castle's family runs the best home renovation business in town, but she picked balloons instead of blueprints and they haven't taken her seriously since. Frankly, she's over it. Georgie loves planning children's birthday parties and making people laugh, just not at her own expense.",
         createdBy: emma
@@ -1097,13 +1096,41 @@ mongoose.connect(dbURI, (err, db) => {
     .then(users => {
       const [sean, gabe, emma] = users
       return Story.create([{
-        author: "Oyinkan Braithwaite",
-        title: "My Sister, the Serial Killer",
-        releaseDate: 10 / 11 / 2018,
-        description: "Mistery",
-        story: "This is my story",
+        author: "Karen",
+        title: "Adventures in food and fun X",
+        releaseDate: 23 / 11 / 2013,
+        description: "A new cluster of adventures!",
+        story: "Adventure time, friends! this one will definitely not take up two different writing spaces. we had no special visitors this week, and it was a very chill adventure after our long hard workweeks. but don't despair! there is food and there is fun and there is connor stealing electricity at the movie theater! yeah, he's one of those guys! today we decided to try this place again: you might remember it from a few weeks back, when we were thwarted by this place and its being closed for no good reason and had to go to jazz brunch instead. but we are people who either never learn our lesson, or maybe DO learn our lessons, because this time i called to make sure they would be open, and they assured me they would.now if we could just remember where it was",
+        createdBy: emma
+      }, {
+        author: "Christa",
+        title: "Our New Beginning",
+        releaseDate: 15 / 10 / 2010,
+        description: "Autumn Fernfield and her brother Nicius are sent to live with their dad who she hasn't seen in eight years and her brother has never met. They don't know what to exepect when they get there but Autumn knows what they find isn't it at all.",
+        story: "Chapter 1 — Updated Jun 03, 2010 — 17,879 characters41 comments · 121 likes 'He doesn’t want us you know.” Nicius whispered from his window seat.'Don’t be stupid” I snapped. I didn’t mean to really but ever since the plane took off he had been voicing my worst fears.What if he didn't? Would he keep his promise? He would meet us at the airport right? He wouldn’t abandon us. . . would he? All these question spun in my head leaving me dizzy.'Do you think he’s going to be there?” Nic turned his puppy dog eyes on me. “He never has before. He had no idea how true that was. Dad had never been there for either of us. Well, he had for me when I was still a kid, but never after I turned nine. Once he eloped with his nurse and current wife that had been it. He had left us without a second thought, and as far as Nic and I knew he never looked back. That had been eight years ago. If I had to face rejection I would have rather faced it alone. I've never been good under pressure either and when people were counting on me, well, that just made everything so much worse. It was like the universe was determined I fail and those who believed in me go down because of their faith... That's the reason I was sitting here on this non-stop plane to Texas with my little brother in tow. Because I had failed and he had believed I could get us out safely. That was okay though; I preferred him being with me than the woman who called herself our mother.'Trista doesn’t want us there.” he said solemnly, his big grey eyes were still peering up at me. I knew that he wanted me to lie to him. He wanted me to tell him our step mother adored us and wanted us to come stay with them but I couldn’t lie to him. Our situation was the exact opposite.The woman hated us. She didn’t like Nic because he was a boy and her husbands' only son. She hated me for being his first child, a constant reminder of his first marriage and what they both had done. I remembered it all'She’ll get over it.” I lied, at the same time wrapping my arm around Nicius. He leaned his head on my shoulder again letting me stroke his black curls. Something he hadn’t let me do a lot lately. He was scared. “You should sleep, we both should.” I insisted. We both needed to sleep, neither of us had been able to fall asleep last night in the airport terminal mom had left us in. Our plane tickets had been for 6 o’clock this morning. We were both excited but just for different reasons. Nic press the call button because I knew he loved to do it while I asked for two pillows and blankets. Nic was asleep instantly, leaning his pillow on my shoulder. It was harder for me.Other thoughts spun in my head. Like the fact that nothing would be the same anymore. I could feel that deep in my bones. I was happy to leave my old life. I was more than happy to leave Steve. Thrilled I wouldn’t have to feel his fist on my skin anymore. Happy to leave our small three bedroom house in Nebraska. I was happy with and better off without those things. Now mom could be happy with Steve; he loved, like everyone seemed too. He just didn’t like Nicius and me. The feeling was mutual. I wasn’t worried about Mom, Steve would make her happy. He had always been able to do that better than Nic and I could ever hope to. It was Nic I was worried about. He was only eight and our mother had just dumped us like hot potatoes for a donkey when he was two years old. Not to mention, Nic had been abused by Steve as much as I if not more in his own way.I shuddered, drawing the blanket closer around me. My fingers picked at the stitches on my neck. Never again would another person hurt Nic. Ever. I vowed this one thing to myself. No one would hurt him the way they had. No one would hurt him the way I had. With that promise heavy on my heart I finally drifted. A flight attendant woke us. She was nice enough waking us with a smile and warm southern voice. While I was instantly alert looking about the plane, Nic was slow to wake and “muddled brain” as I called him. He grumbled to himself as I handed him his carry-on before grabbing mine. We were guided off the plane by the same attendant who woke us.'Good luck.” she told us before flouncing off.'She must be reading my thoughts?” I mumbled, guiding Nic to pick up our luggage. Good Luck indeed we would need it. The only thing I would remember about Hobby Airport, was its crowd. Other than that, the airport was unbearably cold. Close enough in temperature to rival the winters back home.'It’s freezing in here.” Nic at my side chattered as we waited for our luggage. I threw my sweatshirt at him which he snatched gratefully. He shrugged into it looking like a little beggar child when he was done. Thee sweat shirt was several sizes to big; even for me it could have been a short dress. On Nic it was huge, he had to roll the sleeves several times before he could grab his bags.",
+        createdBy: emma
+      }, {
+        author: "Sarah",
+        title: "The Entertainment",
+        releaseDate: 2 / 12 / 2010,
+        description: "Everyday there was a new horror, a new conflict to face. I would stand up, face the crowd and do whatever they wanted me to do. If I didn’t, I would die. It was they way things worked. I was an Entertainer.",
+        story: "I had been there all my life. I was one of the many children specifically created for entertainment. They used us as their puppets. We were weak, hungry little things they could make into lost puppies. They would praise and reward us when we did something right. The rewards were always tiny helpings of food and small glasses of water that looked contaminated with a cloudy substance of some sorts. But often, the thirst was overwhelming, so we drank it anyways.And when we failed to satisfy them, they would beat us until hug red lumps would form on our bodies. Or they would take long, skinny whips that sliced our skins with one, quick flick of the wrist. Blood would slide down our backs as we tried not to whimper in pain. If one sound escaped from us, then another whole round of whippings and beatings would come. Sometimes, I could hear the younger children cry at nights because they couldn’t lie down. The cuts and welts would burn when they tried to rest on the cold, icey concrete. Everyday, at a quarter to four in the morning, we would rise after being asleep for six hours. First, we ran through mazes that sharpened our thinking and reflexes. Sometimes, the mazes would be pitch black with dead ends and multiple tunnels. They would be so tight, that we had to lay flat on our bellies and keep our heads down while we slowly squirmed through. On occasion, there would be the small, feeble child to not make it out. And if that happened, then the child would be sent for beatings or to exile. Not many people know what happened to the kids in exile. These punishments went the same for every exercise we did. The exercises varied from running two miles in under five minutes, and dance classes. But these dance classes were different than other, normal ones. If the Instructors told you to stay completely still, then you wouldn’t even dare to breath the punishments would be given. For every little movement out of step, one hit across the face or whip across the back would be given. I had a friend once... One friend of the few I have ever made. It was hard to be friends with people. You never knew if they were going to be there the next day. I had a fear of loss and abandonment. But who didn’t? My friend, Sophie, was premature when she was born. And she was two years younger than me. She was feeble and weak so they put her in the class they thought be most beneficial. She was smart, so naturally they put her in the Intelligence class, year 4. That meant she was four years old. They taught her to spell words such as “technically” and “superficial” that was too hard for her to comprehend. Every time she missed a letter or when she paused, they whipped her. I was six, and we were thrown into the same cell. Her whimpers would fill my head and follow me into my sleep, where there would be crumpled creatures that had the same pitiful sound of her cries. Soon, I had a need to comfort this tiny, helpless child. She seemed to latch onto me and looked to me for protection. One day, she spelled banana wrong, adding an extra “n”. The Instructor pushed her to the ground in fury. “You little pathetic thing!” She screamed. “How am I supposed to teach you to be a anything if you do not cooperate!” She pulled her arm up – the one holding the whip – and sent it flying down five, hard times. Sophie shrieked, and the noise bounced around my eardrums. I squeezed my eyes as tight as they could go. I couldn’t see them drag her away, but I could hear her little voice screaming my name over and over. “Help me! Brooklyn help me! And I could do nothing.",
+        createdBy: emma
+      },{
+        author: "Ashpash",
+        title: "Let's Pretend",
+        releaseDate: 14 / 4 / 2011,
+        description: "Kids always play pretend. Whether it's dress up or cops or acting all grown up, kids love a good game of pretend...But is it ok when you're in the ninth grade and the boy you're pretending to date is a badboy Junior? I don't think so. Carmendy is going to go through alot of changes in her freshmen year that she doesn't even know are coming. The people around her and even herself have to grow up and move on at some point. After all, it's just all in a day's work for a maturing teen girl=) What could go wrong?",
+        story: " 'Dude, you are such a jerk.' Connor shrugged and continued sipping from the school’s cartooned milk. It was the only thing he willed himself to drink from that place. I couldn’t blame him. Something tells me that the sly smiles the lunch ladies slip our way aren’t for nothing. They are definitely spiking our food 'Oh stop being such a girl Carmendy. I’ve had enough bitchiness for today.' Our whole table decided to burst into a round of “Ooooooo” and it was understandable for a bunch of teenage boys that still acted like kindergarteners. “I understand that Connor, but Tara didn’t deserve a break up in front of all of us.”Connor seemed to contemplate my logic as I continued, “Couldn’t you have taken her to a nice secluded and private area for that?'Everyone at our table had already gone back to their previous conversation which usually involved: Football, chicks, Soccer, chicks, Basketball, chicks, Baseball and did I forget to mention…. Chicks? You might be wondering what I’m doing at an all boy table but…. I’ll have to explain later.'No, Carmendy I couldn’t and I wouldn’t. She sure as hell didn’t take Bret Summers to a nice secluded and private area when she was sucking on his face at the party last night. I swear she didn’t even try to hide it!” Connor whisper shouted, looking over my shoulder a couple of times to make sure no one was listening.I didn’t really have an answer to that argument.'Why are you even sticking up for Tara anyway? Am I mistaken? Because I could have sworn she was the one who called you a slut just last week.”I shrugged and gave a nonchalant roll of the eye. “Oh please Connor! Like name calling fazes me anymore. I’ve lost count of how many people have called me that this year.” Then Conner Doberman gave the expression that I had familiarized myself with since middle school. He scrunched up his eyebrows, slumped his shoulder and pressed his lips into a thin line. He was giving up. “Fine. I just don’t get you sometimes. Sticking out my tongue teasingly seemed appropriate at the time. As soon as I walked over the threshold of my town home my book bag went flying into the corner where all of our dirty outside shoes were kept.“CARMENDY!” my mom bellowed, her feet crashing down the stairs in a flurry. She was always worked up about something.“Yes Mother!?” I yelled back, letting a slow smirk smother my face. My mom hated when I called her ‘Mother.’ She said it made her sound like an old house wife from the 80s.“Please do not let me find your book bag thrown on the floor again!”I sighed and bent down to pick up my raggedy old Jansport. I slung it over my shoulder and frowned grudgingly. You could have sworn my mom was a neat freak. The only place she let me and my brother, Trey, wreck a havoc was the basement. “Already on it mom!” I yelled back up to her, heading for the basement as I muttered under my breath, “wouldn’t want you to have a heart attack about it.” The basement was the kind of room you felt invited into. It was that one place you had the freedom to just be a maturing teen. The basement was me and Trey’s teen get away and we, or you could say he, brought his friends over whenever he got the chance. It’s not that I don’t have friends, they’re just not girl friends, and there is no way my dad is letting a bunch of rowdy boys stay with me in a basement. Alone… It’s kind of frustrating though when my mom secretly checks my cell to see nothing but boy’s names in the contact list. I shouldn’t have been surprised when I came home one day from school to see her pop up from under my bed like a ground hog looking for its shadow. She finally confessed that she was snooping around because of her concern for me. Apparently I’m not “carrying myself like a young lady” and it wasn’t “healthy for me to be surrounding myself with hormonal boys all day.”If only my mom knew that practically every girl in that school despised me because they probably would never be able to be as close to their boyfriends as I was. Unless they had to ask me for the “Inside scoop” on where their boyfriends were going that night or if their “hubbies” had been cheating, they would have never spoken a word my way.To them I was the occasional: Slut, Whore, Bitch, Man-Stealer, Cock-blocker and possibly any other name you could think of. So when I walked down the cement stairs, that had been lazily covered with an old rug, I wasn’t surprised to hear Trey and his buddies laughing it up and clinking bottles. I stopped at the last step for a second and sighed. Did I want to intrude? I mean Trey was my older senior brother and he was never the type to tell me I couldn’t hang with his friends once in a while. Actually the seniors were probably the only ones in the entire school that adored me. Which is probably why I’m hated by all freshmen, sophomore and Junior girls.Me being a freshman myself, I just didn’t feel like hanging with the “big kids” today. 'Yo Carmen!'Oops, already spotted. I gave a lopsided grin and wasn’t surprised when I was crushed into the embrace of Keith Samuels. He was always a big hugger and found it “cute” when I called him a giant teddy bear. I always liked the fact that he didn’t call me “Carmendy” but “Carmen” instead. It made me sound less girly and innocent.'What’s up Teddy?” I asked, trying to catch my breath. Keith’s hugs left you feeling like you ran a marathon. He always chuckled at the nickname I gave him and murmured “Cute” before answering, “Nothing much. Your bro invited us over for a horror flick. Wanna join us?”I gave a contemplating “hmmm” and peered behind Keith to see Kathryn Smith sitting on the floor with a bowl of popcorn, her dirty blond hair in a lopsided ponytail. Joney Carter was putting in the DVD and laughing at some joke Kathryn was telling her while Eliza McCarthy sat on the tattered old futon next to my brother. I was surprised that none of the other guys came. It almost seemed like a girl’s night. Eliza spotted me across the room and waved me over, a big smile on her face. I always thought of her like the sister I never had. She was Trey’s best friend and sometimes it felt like she was my best friend too, but I had Connor for that. “So are you going to join us?” Keith asked, nudging me towards the futon. I looked down at my black cargo pants and plain white tank top that simply read “Screwed Twice Over.” The tank was a little too tight for school and not to mention the words it so proudly displayed, but I was able to sneak past my mom in a black jacket. “Ya, I think I can use a good scare.” He grinned and jogged over to the group throwing a “Little Trey’s going to join us guys!” their way. They all called me over and made room as the movie began and I quickly joined them, loving the feeling of just being accepted. I thought about the nickname most of the seniors called me “Little Trey” which got me thinking about the fact that I have a lot of nicknames. Carmen, Little Trey, CJ (my middle name starts with a J) and Karma (one of my favorites). Personally, if you even attempt to call me “Car” I’ll go ballistic on you. Do I look like an automobile?! I took a seat on the futon, squishing myself between Keith and Eliza while Joney and Kathryn huddled together for support through the gore. Eliza’s cherry red hair tickled my cheek and I smiled. I felt right at home.",
+        createdBy: emma
+      },{
+        author: "Jazmin",
+        title: "Heading Back Home",
+        releaseDate: 5 / 6 / 2011,
+        description: "Tracey: Throughout the ride, I couldn't stop thinking about my stay there. I know it was my home but it's been three years since I've been there. I pulled out my iPhone and started texting Allison and Jen to tell them I was leaving: After awhile of texting them and explaining them what had happened, I got frustrated and turned off my phone. I couldn't stand the thought that I was going back home. Sure I missed my parents and family, but I didn't want to go back, my new life was back in N  story:'Beautiful Darling! One more!' I kept my pose until Vaughn took the picture. 'That's a wrap' He called out as he walked over to me, 'Marvelous,  'Thank you. I can change now, right?' In all honestly, I didn't want to change; the dress was beautiful, and it obviously looked gr  'Yes, darling.' Vaughn's British accent echoed as he walked away, swaying his hips as 'Tracey, honey, that was fab! I'll get a confirmation on tomorrow's photo shoot and Friday's fashion show for you and let you know tonight.' My godmother/agent hugged me briefly and let go. She used to model, but now she was ma  Since my parents still had my younger brother and sister to raise, they couldn't let me go off without knowing I would be in good hands, and having been the one to bring this career choice on, my godmother thought it would be best that she fit that position (with her experien  'I'm having lunch with my friends, ok.' I didn't bother asking, she'd let me   She nodded without looking at me and w  I quickly changed and waited outside for Marco, my chauffeur. It felt like forever until he finally pulled up   He quickly got out and opened the back door of the li  I climbed in and waited for Marco to h  'You're late. I told you to never be late; I waste time waitin  Marco looked at me from the rear view mirror, 'I'm right on time, miss, you just got o  I checked my iPhone, and dang he was right. I, of course, was not going to admit that I was wrong so I just rolle  He simply replied by chuckling softly.  He soon dropped me off at the restaurant where I was meeting Alliso  'Don't bother picking me up, I'm going to ride with Allison.' I didn't wait for his response, so I just walked off and entered the r  'Tracey Morgan.' I told the receptionist at the front desk. He checked the list and escorted me to  Allison and Jen were already seated, 'He  'I was just telling Allison about my make-out session with one of the guys from the camera crew.' Jen took a sip of water before continuing with the very explicit details. Although we were similar in personalities, our appearance could not have been any different. Being the tallest, Jen styled a boy cut with long bangs; her eyes were light brown. With every smile she flashed, a deep set of dimples appeared. Allison on the other hand had shoulder length hair, which by the way was a brilliant shade of red that girls would die for, and her eyes were a dark shade   She laughed, 'Yeah, I know but he  'Tracey, you shouldn't say stuff like that. It shouldn't even matter.' Allison  'Whatever.' It didn't matter to Allison, but it mattered to me. Once you reach the supermodel status, you cannot lower yourself with people who don't matter, and most importantly, to those that  'Are you ladies ready to order?' A waitress asked us with a note-pad and a pe  I didn't bother checking the menu, 'I'll have the usual, but with the Lemon Iced Tea t  She took note of that and moved on to Jen, 'Same goe  'And I'll have the Lasagna Special and a coke.' Allison smiled and handed her the   'Thank you, let me know if you need anything else,' and with that our se  'Allison, that's a lot of fat and carbs.' I reminded her, not that it would change her mind or anything. She always ate like that. I know she didn't do it on purpose, but it bothered me that to maintain a body like hers we had to hit the gym and watch what we ate. Absolut  'Just because we're models doesn't mean we can't enjoy food. But hey, how'd the photo shoot go?' Allison asked   It went great, as usual. In fact I have another photo shoot tomorrow and a fashion show this Fri. He 'How's everythi  'Great! I have another photo shoot for tomorrow and a fashion show set up this Friday.' I waited for my mother's praise, but she remain  'Oh...um, yes. Tracey, honey, I have something to t  'What is it?' I started getting a bi  'Your father and I have been talking about this for awhile and we decided it's time for you to take a small break from modeling and come back home  'What?!? No!' I don't want to go back home!! I don't need a break! I love it here! There's no way I'  'I know it's hard for you honey, but it's been hard on us. W haven't seen you in almost a year, you hardly call anymore. Your brother and sister don't know who you are  'Look I get it, I haven't stopped by, but I will, next weekend, but don't make me drop everything now. This is my life now, mom, I'm not going to   'Honey, you're not leaving forever just for a couple   'Yeah, well a couple of weeks add up and will feel like an eternity. I don't want to go!' I could hear my mother starti  'You're 17! You can't be off on your own, you need to be with us. We all miss you. Your sister is already a sophomore, and your brother is in the third grade and did you know tha   'Firstly mom, I'm not on my own, my godmother is here with me. And secondly, you know I have a lot of work here, so you know it's hard to make time to talk to you, what makes you think I have enough time to talk  'That's my point! You're so busy being over there, that you don't have time for us. And hon, you think I'm stupid not to realize it's not just work your busy with, but with the after parties too? Sometimes, I regret the decision we made to let you go, but you're coming and that  'Don't raise your voice with me! You're underage so you will do as we say. And don't worry about your little photo shoot, it's been canceled, and I'm sure they can get another model for the fash  'What?' My voic  'I asked your godmother to do it. Start packing and I'll see you tomorrow in the afternoon.' And with that she hung up. I ran out of my room and into the living room, looking for my godmother, and sure enough she was on the couch eating popcorn and watchin  'I guess your mother told   'Yeah, and I can't believe you agre  'They're your parents; they have every right to see you, so I suggest you start packing and go to bed. We're leaving at 7:30am, to hopefully get there in the a  I sighed and walked back to my room. I had no other choice. I started packing my clothes, heels, and my beauty products.",
         createdBy: emma
       }
+
       ])
     })
 

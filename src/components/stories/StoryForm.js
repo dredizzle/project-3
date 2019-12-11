@@ -1,6 +1,7 @@
 import React from 'react'
 import { withRouter } from 'react-router-dom'
 
+
 const Form = ({ handleChange, handleSubmit, data, errors }) => {
   return (
     <section className="section is-white">

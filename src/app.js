@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import { HashRouter, Switch, Route } from 'react-router-dom'
 
 
 import SecureRoute from './components/common/SecureRoute'
@@ -48,7 +48,7 @@ class App extends React.Component {
   }
   render() {
     return (
-      <BrowserRouter>
+      <HashRouter>
         <Navbar />
         <FlashMessages />
         <Switch>
@@ -78,7 +78,7 @@ class App extends React.Component {
           <Route path="/team" component={Team} />
           <Route path="/" component={Home} />
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
     )
   }
 }

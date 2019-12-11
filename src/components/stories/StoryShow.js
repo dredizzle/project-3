@@ -58,9 +58,9 @@ class Show extends React.Component {
     })
       .then(() => this.props.history.push('/stories'))
   }
-  // canModify() {
-  //   return Auth.isAuthenticated() && Auth.getPayload().sub === this.state.book.createdBy._id
-  // }
+  canModify() {
+    return Auth.isAuthenticated() && Auth.getPayload().sub === this.state.story.createdBy._id
+  }
   render() {
     console.log(this.state.story)
     if (!this.state.story) return <Loading />
@@ -84,12 +84,12 @@ class Show extends React.Component {
                     <button className="button is-light a1">Add to Wish List</button>
                   </Link>
                 }
-                {/* {this.canModify() &&
+                {this.canModify() &&
                   <div className="level-right is-gapless edit2">
-                    <Link to={`/books/${this.state.book._id}/edit`} className="button is-light e1">Edit</Link>
+                    <Link to={`/stories/${this.state.story._id}/edit`} className="button is-light e1">Edit</Link>
                     <button className="button is-light d2" onClick={this.handleDelete}>Delete</button>
                   </div>
-                } */}
+                }
               </div>
             </div>
           </div>
@@ -130,7 +130,7 @@ class Show extends React.Component {
                   </nav>
                 </div>
               </article>
-              {/* {this.state.book.comments.map(comment =>
+              {this.state.story.comments.map(comment =>
                 <article key={comment._id} className="media">
                   <figure className="media-left">
                     <p className="image is-64x64">
@@ -165,7 +165,7 @@ class Show extends React.Component {
                     <button id={comment._id} value={comment.user._id} className="delete" onClick={this.handleDeleteComments}></button>
                   </div>
                 </article>
-              )} */}
+              )}
             </div>
           </div>
           {/* <div className="column is-one-fifth-desktop is-half-tablet is-full-mobile">

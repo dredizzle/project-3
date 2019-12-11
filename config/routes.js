@@ -16,6 +16,7 @@ router.post('/stories', secureRoute, storiesController.create)
 router.get('/books/:id', booksController.show)
 
 router.get('/stories', storiesController.index)
+router.get('/stories/:id', storiesController.show)
 router.post('/stories', secureRoute, storiesController.create)
 
 router.put('/books/:id', secureRoute, booksController.update)
