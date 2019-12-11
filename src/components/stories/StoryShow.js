@@ -60,9 +60,9 @@ class Show extends React.Component {
     })
       .then(() => this.props.history.push('/stories'))
   }
-  canModify() {
-    return Auth.isAuthenticated() && Auth.getPayload().sub === this.state.story.createdBy._id
-  }
+  // canModify() {
+  //   return Auth.isAuthenticated() && Auth.getPayload().sub === this.state.story.createdBy._id
+  // }
   render() {
     console.log(this.state.story)
     if (!this.state.story) return <Loading />
@@ -86,12 +86,12 @@ class Show extends React.Component {
                     <button className="button is-light a1">Add to Wish List</button>
                   </Link>
                 }
-                {this.canModify() &&
+                {/* {this.canModify() &&
                   <div className="level-right is-gapless edit2">
                     <Link to={`/stories/${this.state.story._id}/edit`} className="button is-light e1">Edit</Link>
                     <button className="button is-light d2" onClick={this.handleDelete}>Delete</button>
                   </div>
-                }
+                } */}
               </div>
             </div>
           </div>
