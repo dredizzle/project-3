@@ -65,12 +65,12 @@ class Show extends React.Component {
                     <br></br>
                     <div className="level-left">
                       <Link to={`/users/${_id}/edit`}
-                        className="button  is-light is-fullwidth">All Users</Link>
+                        className="button  is-light is-fullwidth">All Users(Coming Soon)</Link>
                     </div>
                     <br></br>
                     <div className="level-left">
                       <Link to={`/users/${_id}/edit`}
-                        className="button  is-light is-fullwidth">Messages</Link>
+                        className="button  is-light is-fullwidth">Messages(Coming Soon)</Link>
                     </div>
                   </div>
                 </article>
