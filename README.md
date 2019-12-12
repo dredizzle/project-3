@@ -137,10 +137,18 @@ Once we'd decided on the theme for our project, we created a group Trello board 
 
 ### Final Product: 
 
-!['Prewiew'](https://i.imgur.com/zrP6wPJ.gif)
+!['Prewiew'](https://i.imgur.com/6DDqmBc.gif)
+---
+!['Prewiew'](https://i.imgur.com/r5SKle8.png)
+---
+!['Prewiew'](https://i.imgur.com/AcCM82B.gif)
 ---
 !['Prewiew'](https://i.imgur.com/G9aFD4u.png)
-!['Prewiew'](https://i.imgur.com/r5SKle8.png)
+---
+!['Prewiew'](https://i.imgur.com/UIf3oN3.gif)
+---
+
+!['Sign-Up-Flow'](https://i.imgur.com/JKZJWdY.gif )
 ---
 
 ---
