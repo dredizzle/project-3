@@ -117,17 +117,17 @@ class Show extends React.Component {
                 </article>
               </div>
             </div>
-            <div className="tile is-parent">
-              <article className="tile is-child notification is-your-stories">
-                {/* STORY COLLECTION EDIT  */}
-                <div className="column is-fifth">
+            {/* <div className="tile is-parent">
+              <article className="tile is-child notification is-your-stories"> */}
+            {/* STORY COLLECTION EDIT  */}
+            {/* <div className="column is-fifth">
                   <div className="bookCollection box">
                     <h3 className="subtitle ">Your Stories</h3>
                     <div className="columns is-multiline">
-                      {this.state.user.books.map(book =>
-                        <div key={book._id} className="column is-one-fifth">
-                          <Link to={`/books/${book._id}`}>
-                            <img src={book.image} alt={book.title} />
+                      {this.state.user.stories.map(story =>
+                        <div key={story._id} className="column is-one-fifth">
+                          <Link to={`/stories/${story._id}`}>
+                            <img src={story.image} alt={story.title} />
                           </Link>
                         </div>
                       )}
@@ -135,26 +135,28 @@ class Show extends React.Component {
                   </div>
                 </div>
               </article>
-            </div>
+            </div> */}
           </div>
-          <div className="tile is-parent">
+
+          {/* <div className="tile is-parent">
             <article id="DescriptionShowBook" className="tile is-child notification">
-              <div className="content">
-                {/* Wish List */}
-                <h3 className="subtitle ">Book Wish List</h3>
-                <div className="columns is-multiline">
-                  {this.state.user.bookWish.map(book =>
-                    <div key={book._id} className="column is-half">
-                      <Link to={`/books/${book._id}`}>
-                        <img src={book.image} alt={book.title} />
-                      </Link>
-                      <p>{book.title}</p>
-                    </div>
-                  )}
-                </div>
+              <div className="content"> */}
+          {/* Wish List */}
+          {/* <h3 className="subtitle ">Book Wish List</h3>
+          <div className="columns is-multiline">
+            {this.state.user.bookWish.map(book =>
+              <div key={book._id} className="column is-half">
+                <Link to={`/books/${book._id}`}>
+                  <img src={book.image} alt={book.title} />
+                </Link>
+                <p>{book.title}</p>
               </div>
-            </article>
+            )}
           </div>
+        </div>
+            </article> */}
+          {/* </div > */}
+
           <div className="tile is-parent">
             <article id="DescriptionShowBook" className="tile is-child notification">
               <div className="content">
@@ -162,7 +164,7 @@ class Show extends React.Component {
                 <h3 className="subtitle ">Book Wish List</h3>
                 <div className="columns is-multiline">
                   {this.state.user.bookWish.map(book =>
-                    <div key={book._id} className="column is-half">
+                    <div key={book._id} className="column is-quater">
                       <Link to={`/books/${book._id}`}>
                         <img src={book.image} alt={book.title} />
                       </Link>
@@ -173,7 +175,7 @@ class Show extends React.Component {
               </div>
             </article>
           </div>
-        </div>
+        </div >
       </section >
     )
   }

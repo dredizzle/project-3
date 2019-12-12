@@ -100,6 +100,8 @@ class Show extends React.Component {
                   <p className="text is-5">{this.state.book.description}</p>
 
 
+
+
                   <div>
                     <div className="buttons is-gapless is-thirdwidth">
                       {Auth.isAuthenticated() &&
@@ -113,6 +115,10 @@ class Show extends React.Component {
                         </Link>
 
                       }
+
+                      <a href={this.state.book.amazon} target="blank"> <button className="button is-dark">Buy on Amazon</button></a>
+                      <a href={this.state.book.preview} > <button className="button is-dark">Preview</button></a>
+
                       {this.canModify() &&
                         <div className="level-right is-gapless edit2">
                           <Link to={`/books/${this.state.book._id}/edit`} className="button is-light e1">Edit</Link>
@@ -120,7 +126,7 @@ class Show extends React.Component {
                         </div>
                       }
                     </div>
-                    <button className="button is-dark is-thirdwidth">Buy on Amazon</button>
+
                   </div>
                   <div className="show-content-comments subheading-show">
                     Comments
@@ -210,7 +216,7 @@ class Show extends React.Component {
             </article>
           </div>
 
-        </div>
+        </div >
 
       </section >
     )

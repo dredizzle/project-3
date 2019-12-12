@@ -93,7 +93,7 @@ class Show extends React.Component {
             <h2 className="text is-4 is-italic show"><span>Date released:</span> {this.state.story.releaseDate}</h2>
             <div className="container edit">
 
-              <div className="buttons is-gapless">
+              {/* <div className="buttons is-gapless">
                 {Auth.isAuthenticated() &&
                   <Link to={{
                     pathname: `/users/${Auth.getPayload().sub}`,
@@ -109,7 +109,7 @@ class Show extends React.Component {
 
                 </div>
 
-              </div>
+              </div> */}
 
 
             </div>
