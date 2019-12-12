@@ -60,7 +60,6 @@ class Index extends React.Component {
                 onChange={this.handleChange}
               />
             </div>
-
           </div>
           <div className="columns is-multiline">
             {this.searchBook().map(book =>

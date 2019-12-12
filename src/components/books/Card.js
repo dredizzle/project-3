@@ -17,11 +17,6 @@ const Card = ({ image, title, author }) => {
         </div>
       </div >
     </div >
-
-
-
-
-
   )
 }
 

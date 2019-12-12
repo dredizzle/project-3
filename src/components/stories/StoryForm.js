@@ -41,7 +41,6 @@ const Form = ({ handleChange, handleSubmit, data, errors }) => {
                   {errors.title && <div className="help is-danger">{errors.title}</div>}
                 </div>
                 {/* ******************* */}
-
               </div>
               <div className="column">
                 {/* ******************* */}

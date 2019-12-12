@@ -154,7 +154,7 @@ Once we'd decided on the theme for our project, we created a group Trello board 
 ---
 ---
 
-# Modifiations:
+# Modifications:
 
 ### Messaging:
 

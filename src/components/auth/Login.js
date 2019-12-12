@@ -68,10 +68,8 @@ class Login extends React.Component {
                         onChange={this.handleChange}
                       />
                     </div>
-
                     {this.state.error && <div className="help is-danger">{this.state.error}</div>}
                   </div>
-
                   <button className="button is-dark">Submit</button>
                 </form>
               </div>

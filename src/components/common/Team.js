@@ -15,9 +15,9 @@ const Team = () => {
               <div className="media-content">
                 <div className="content">
                   <p>
-                    <strong>Andre Urbani</strong> <small>111@gmail.com</small>
+                    <strong>Andre Urbani</strong>  <br /> <small>111@gmail.com</small>
                     <br />
-                    Git Master
+                    <img id="github-logo" src="https://i.imgur.com/fxRC7Y0.png" />
                   </p>
                 </div>
               </div>
@@ -35,9 +35,10 @@ const Team = () => {
               <div className="media-content">
                 <div className="content">
                   <p>
-                    <strong>Ustin Vaskin</strong> <small>111@gmail.com</small>
+                    <strong>Ustin Vaskin</strong>
+                    <br /> <small>ustin.vaskin2011@gmail.com</small>
                     <br />
-                    Style nerd
+                    <img id="github-logo" src="https://i.imgur.com/fxRC7Y0.png" />
                   </p>
                 </div>
               </div>
@@ -57,9 +58,9 @@ const Team = () => {
               <div className="media-content">
                 <div className="content">
                   <p>
-                    <strong> Denisa Mihaela Tanase </strong> <small>111@gmail.com</small>
+                    <strong> Denisa Mihaela Tanase </strong> <br /> <small>denisa.tanase@icloud.com</small>
                     <br />
-                    API Master
+                    <img id="github-logo" src="https://i.imgur.com/fxRC7Y0.png" />
                   </p>
                 </div>
               </div>
@@ -77,9 +78,9 @@ const Team = () => {
               <div className="media-content">
                 <div className="content">
                   <p>
-                    <strong>Sandor Desi</strong> <small>mr.sandor.desi@gmail.com</small>
+                    <strong>Sandor Desi</strong>  <br /> <small>mr.sandor.desi@gmail.com</small>
                     <br />
-                    Seeder
+                    <img id="github-logo" src="https://i.imgur.com/fxRC7Y0.png" />
                   </p>
                 </div>
               </div>

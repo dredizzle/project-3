@@ -10,7 +10,6 @@ const StoryCard = ({ title, author, description }) => {
             <p className="subtitle is-4 is-size-5">{title}</p>
             <p className=" title is-italic is-6 is-size-7">by {author}</p>
             <p className=" title is-italic is-6 is-size-7"> {description}</p>
-
           </div>
         </div>
       </div >

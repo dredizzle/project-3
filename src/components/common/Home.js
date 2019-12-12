@@ -98,7 +98,9 @@ class Home extends React.Component {
         <footer className="footer">
           <div className="content has-text-centered">
             <p>
-              <strong>BamBook</strong> by <Link to={'/team'}>4 0f a K1nd</Link>
+              <strong>BamBook</strong> by
+              <br />
+              <Link to={'/team'}><img id="logo" src="https://i.imgur.com/fBHmiXy.png" /></Link>
             </p>
           </div>
         </footer>

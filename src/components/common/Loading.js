@@ -4,13 +4,12 @@ const Loading = () => {
 
   return (
     <section className="hero is-fullheight">
-      <div className="hero-body has-text-centered is-vcentered">
-        <div className="container">
-          <figure>
-            {/* <img src="https://tokybook.com/wp-content/uploads/lg.ball-swing-preloader-gif.gif" style alt="loading" /> */}
-          </figure>
-        </div>
-      </div>
+
+      <figure>
+        {/* <img src="https://i.imgur.com/JKZJWdY.gif" style alt="loading" /> */}
+      </figure>
+
+
     </section>
   )
 }

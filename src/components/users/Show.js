@@ -155,7 +155,6 @@ class Show extends React.Component {
         </div>
             </article> */}
           {/* </div > */}
-
           <div className="tile is-parent">
             <article id="DescriptionShowBook" className="tile is-child notification">
               <div className="content">

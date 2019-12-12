@@ -89,34 +89,27 @@ class Show extends React.Component {
                   <p className="subtitle is-7">Pages: {this.state.book.pg}</p>
                   <p className="subtitle is-7">ISBN: {this.state.book.ISBN}</p>
                   <p className="subtitle is-7">buy: {this.state.book.amazon}</p>
-
-
                   <div id="goodreads-widget" className="row is-two-fifths-desktop is-half-tablet is-full-mobile">
                     <div className="title is-5">Goodreads reviews for {this.state.book.title}</div>
                     <iframe id="the_iframe" src={`https://www.goodreads.com/api/reviews_widget_iframe?did=DEVELOPER_ID&format=html&header_text=Goodreads+reviews+for+${this.state.book.title}&isbn=${this.state.book.ISBN}&links=660&review_back=fff&stars=000&text=000`} width="90%" height="50%" frameBorder="0"></iframe>
                   </div>
                 </article>
-
               </div>
               <div className="tile is-parent">
                 <article id="ImgShowBook" className="tile is-child box">
-                <figure className="image is-4by2">
+                  <figure className="image is-4by2">
                     <img src={this.state.book.image} alt={this.state.book.title} />
                   </figure>
                   <p className="title">{this.state.book.title}</p>
                   <p className="subtitle">{this.state.book.author}</p>
-                  
                   <div className="buttons is-gapless">
                     {Auth.isAuthenticated() &&
                       <Link to={{
                         pathname: `/users/${Auth.getPayload().sub}`,
                         state: { book: this.state.book }
                       }}>
-
                         <button className="button is-dark">Add to Wish List</button>
-
                       </Link>
-
                     }
                     {this.canModify() &&
                       <div className="level-right is-gapless edit2">
@@ -126,13 +119,10 @@ class Show extends React.Component {
                     }
                   </div>
                   <button className="button is-dark">Preview</button>
-
                   <button className="button is-dark">Buy on Amazon</button>
-
                 </article>
               </div>
             </div>
-
             <div className="tile is-parent">
               <article className="tile is-child box">
                 <div className="show-content-comments subheading-show">
@@ -200,11 +190,8 @@ class Show extends React.Component {
           </div>
           <div className="tile is-parent">
             <article id="DescriptionShowBook" className="tile is-child box">
-
               <p className="title">Description</p><br />
               <p className="subtitle is-7">{this.state.book.description}</p>
-
-
               <h2 className="title is-5 ">You might also like</h2>
               <div className="simularbooksall">
                 {similar.map(book =>
@@ -215,12 +202,9 @@ class Show extends React.Component {
                   </div>
                 )}
               </div>
-
             </article>
           </div>
-
         </div>
-
       </section >
     )
   }
