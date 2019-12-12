@@ -92,18 +92,12 @@ class Show extends React.Component {
                     <p className="subtitle is-uppercase has-text-weight-bold">{this.state.book.title}</p>
                     <p className="title  is-6 is-size-6 ">{this.state.book.author}</p>
                   </div>
-
                 </article>
-
-
-
-
               </div>
               <div className="tile is-parent">
                 <article id="DescriptionShowBook" className="tile is-child box">
-
                   <p className="title">About the book</p><br />
-                  <p className="subtitle is-5">{this.state.book.description}</p>
+                  <p className="text is-5">{this.state.book.description}</p>
 
 
                   <div>

@@ -77,7 +77,7 @@ const Team = () => {
               <div className="media-content">
                 <div className="content">
                   <p>
-                    <strong>Sandor Desi</strong> <small>111@gmail.com</small>
+                    <strong>Sandor Desi</strong> <small>mr.sandor.desi@gmail.com</small>
                     <br />
                     Seeder
                   </p>

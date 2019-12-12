@@ -478,7 +478,7 @@ flex-direction: row;
 }
 
 #ImgShowBook figure{
-transform: scale(0.7);
+transform: scale(0.8);
 margin-top: -20%;
 }
 
@@ -494,5 +494,9 @@ margin-top: -20%;
 // subtitle
 
 .MainBookInfoShow{
-  margin-top: -17%;
+  margin-top: -14%;
+}
+
+.div.card-content {
+  padding: 0px;
 }
