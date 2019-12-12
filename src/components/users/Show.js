@@ -159,16 +159,16 @@ class Show extends React.Component {
             <article id="DescriptionShowBook" className="tile is-child notification">
               <div className="content">
                 {/* //Favourite Stories (Amend like in Wish list to save and add fav stories ) */}
-                <h3 className="subtitle">Favourite Stories</h3>
+                <h3 className="subtitle ">Book Wish List</h3>
                 <div className="columns is-multiline">
-                  {/* {this.state.user.storyWish.map(story => */}
-                  {/* <div key={story._id} className="column is-half"> */}
-                  {/* <Link to={`/stories/${story._id}`}>
-                      <img src={story.image} alt={story.title} />
-                    </Link>
-                    <p>{story.title}</p>
-                  </div> */}
-                  {/* )} */}
+                  {this.state.user.bookWish.map(book =>
+                    <div key={book._id} className="column is-half">
+                      <Link to={`/books/${book._id}`}>
+                        <img src={book.image} alt={book.title} />
+                      </Link>
+                      <p>{book.title}</p>
+                    </div>
+                  )}
                 </div>
               </div>
             </article>
