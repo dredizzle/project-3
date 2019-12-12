@@ -69,12 +69,12 @@ class Show extends React.Component {
                     }
                     <br></br>
                     <div className="level-left">
-                      <Link to={`/users/${_id}/edit`}
+                      <Link to={`/users/${_id}`}
                         className="button  is-light is-fullwidth">All Users(Coming Soon)</Link>
                     </div>
                     <br></br>
                     <div className="level-left">
-                      <Link to={`/users/${_id}/edit`}
+                      <Link to={`/users/${_id}`}
                         className="button  is-light is-fullwidth">Messages(Coming Soon)</Link>
                     </div>
                   </div>
@@ -137,7 +137,6 @@ class Show extends React.Component {
               </article>
             </div> */}
           </div>
-
           {/* <div className="tile is-parent">
             <article id="DescriptionShowBook" className="tile is-child notification">
               <div className="content"> */}
@@ -164,7 +163,7 @@ class Show extends React.Component {
                 <h3 className="subtitle ">Book Wish List</h3>
                 <div className="columns is-multiline">
                   {this.state.user.bookWish.map(book =>
-                    <div key={book._id} className="column is-quater">
+                    <div key={book._id} className="column is-3">
                       <Link to={`/books/${book._id}`}>
                         <img src={book.image} alt={book.title} />
                       </Link>

@@ -93,15 +93,15 @@ class Show extends React.Component {
             <h2 className="text is-4 is-italic show"><span>Date released:</span> {this.state.story.releaseDate}</h2>
             <div className="container edit">
 
-              {/* <div className="buttons is-gapless">
-                {Auth.isAuthenticated() &&
+              <div className="buttons is-gapless">
+                {/* {Auth.isAuthenticated() &&
                   <Link to={{
                     pathname: `/users/${Auth.getPayload().sub}`,
                     state: { story: this.state.story }
                   }}>
                     <button className="button is-dark">Add to Favourites</button>
                   </Link>
-                }
+                } */}
 
                 <div className="level-right is-gapless edit2">
                   {this.canModify() && <Link to={`/stories/${this.state.story._id}/edit`} className="button is-dark ">Edit</Link>}
@@ -109,7 +109,7 @@ class Show extends React.Component {
 
                 </div>
 
-              </div> */}
+              </div>
 
 
             </div>

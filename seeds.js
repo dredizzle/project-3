@@ -1355,6 +1355,41 @@ mongoose.connect(
           description: "Aurelie Sheehan is the author of three short story collections: Demigods on Speedway (University of Arizona),",
           story: "I had a child, and then more children. A child, head turned and chin lifted, eyes shut in concentration, finding in sleep bounties of peaches and pork chops and Raisinets. A child, baby hawk tucked close to my body, flawless rider. A child, amid dinosaurs and their social graces, murmuring instructions, eyes on her creation. A child, decked out in all manner of scarf. A child, smartly outfitted for Washington, DC, with a stuffed dog in her purse. A child, walking to school, balancing guitar, lunch box, backpack, running clothes, art project. A child, adjusting the mirror in the car. A child, a child—and so many children. She is in her room creating. She is in her room dreaming. She is in her room suffering. The walls of her room have dissolved to nothing.",
           createdBy: user[0]
+        }, {
+          author: "Lynda Davis",
+          title: "ON THE TRAIN",
+          releaseDate: 2019,
+          description: "short stories",
+          story: "We are united, he and I, though strangers, against the two women in front of us talking so steadily and audibly across the aisle to each other. Bad manners.Later in the journey I look over at him (across the aisle) and he is picking his nose. As for me, I am dripping tomato from my sandwich on to my newspaper. Bad habits.I would not report this if I were the one picking my nose.I look again and he is still at it.As for the women, they are now sitting together side by side and quietly reading, clean and tidy, one a magazine, one a book. Blameless.",
+          createdBy: user[0]
+        }, {
+          author: "Kim Addonizio",
+          title: "Man of Sorrows",
+          releaseDate: 2019,
+          description: "short stories",
+          story: "Not enough to get crucified. You've got to be covered with red spots like an anti-vaxxer's kid's measles. Blood everywhere. Like when you clipped the cat's claw too close. A trail across the white comforter. Floor. Expensive white rug. Little fur-lined igloo where it hid, then ran across the rug again. The woodcut was meant to shock the beholder into repentance. That spear—stuck through his neck? –There's a whip, too. You've got to flagellate yourself repeatedly. It's your fault. About the cat and the entire marriage. God, at least, forgives you. As long as you remain really bloody miserable.",
+          createdBy: user[0]
+        }, {
+          author: "Lynda Davis",
+          title: "SUSIE BROWN WILL BE IN TOWN",
+          releaseDate: 2019,
+          description: "short stories",
+          story: "Susie Brown will be in town. She will be in town to sell her things. Susie Brown is moving far away. She would like to sell her queen mattress. Do we want her queen mattress? Do we want her ottoman? Do we want her bath items? It is time to say goodbye to Susie Brown. We have enjoyed her friendship.We have enjoyed her tennis lessons.",
+          createdBy: user[0]
+        }, {
+          author: "Tamara Stanley",
+          title: "Hydrophonic Veggie",
+          releaseDate: 2019,
+          description: "short stories",
+          story: "It is mostly summer now. Above me there are skyscrapers, McMansions, slums; scorched swaths of land, parking lots and airport runways where wheat and corn should be. Mouths to feed. I'm underground, surrounded by earth but growing without soil.There was no urgency to keep me on the surface. I appear in markets as I have for centuries. You can pay digital funds and place me in your reusable bag. Even in a world of virtual reality, nutrition pellets, and lab-grown meat, people still crave the crunch of a salad, just like I can't shake this nostalgia for the sun.",
+          createdBy: user[0]
+        }, {
+          author: "Tamara Stanley",
+          title: "Plan",
+          releaseDate: 2019,
+          description: "short stories",
+          story: "It's hard to get together with his friends because they all like to hibernate. Everyone mostly prefers staying home, so when they make plans with him they often cancel, last-minute; he can't blame them, because he also likes to hibernate, and after the initial annoyance, feeling his friends are unreliable or don't care about him, he's relieved to stay in with books and music and internet, endless shows to binge-watch and plenty of food and whiskey so really, what's the point of going anywhere? He has a number of good, close friends who, of course, he hasn't seen in years.",
+          createdBy: user[0]
         }
         ])
       })
