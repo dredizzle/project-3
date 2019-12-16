@@ -9,13 +9,17 @@ const Team = () => {
             <article className="media">
               <div className="media-left">
                 <figure className="image is-128x128">
-                  <img id="face" className="is-rounded" src="https://i.imgur.com/OgeplkZ.jpg" alt="Image" />
+                  <img id="face" className="is-rounded" src="https://i.imgur.com/hmWv2xk.png" alt="Image" />
                 </figure>
               </div>
               <div className="media-content">
                 <div className="content">
                   <p>
+<<<<<<< HEAD
                     <strong>Andre Urbani</strong>  <br /> <small>111@gmail.com</small>
+=======
+                    <strong>Andre Urbani</strong>  <br /> <small>dredizzle@live.co.uk</small>
+>>>>>>> 35fff83d2716de393315a0788953c228de81996f
                     <br />
                     <img id="github-logo" src="https://i.imgur.com/fxRC7Y0.png" />
                   </p>
@@ -29,7 +33,7 @@ const Team = () => {
             <article className="media">
               <div className="media-left">
                 <figure className="image is-128x128">
-                  <img id="face" className="is-rounded" src="https://i.imgur.com/OgeplkZ.jpg" alt="Image" />
+                  <img id="face" className="is-rounded" src="https://i.imgur.com/2fAAFMD.png" alt="Image" />
                 </figure>
               </div>
               <div className="media-content">
@@ -52,7 +56,7 @@ const Team = () => {
             <article className="media">
               <div className="media-left">
                 <figure className="image is-128x128">
-                  <img id="face" className="is-rounded" src="https://i.imgur.com/OgeplkZ.jpg" alt="Image" />
+                  <img id="face" className="is-rounded" src="https://i.imgur.com/DihSwyE.png" alt="Image" />
                 </figure>
               </div>
               <div className="media-content">
@@ -72,7 +76,7 @@ const Team = () => {
             <article className="media">
               <div className="media-left">
                 <figure className="image is-128x128">
-                  <img id="face" className="is-rounded" src="https://i.imgur.com/OgeplkZ.jpg" alt="Image" />
+                  <img id="face" className="is-rounded" src="https://i.imgur.com/7EXdB0t.png" alt="Image" />
                 </figure>
               </div>
               <div className="media-content">
