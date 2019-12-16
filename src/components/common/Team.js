@@ -15,11 +15,8 @@ const Team = () => {
               <div className="media-content">
                 <div className="content">
                   <p>
-<<<<<<< HEAD
-                    <strong>Andre Urbani</strong>  <br /> <small>111@gmail.com</small>
-=======
                     <strong>Andre Urbani</strong>  <br /> <small>dredizzle@live.co.uk</small>
->>>>>>> 35fff83d2716de393315a0788953c228de81996f
+
                     <br />
                     <img id="github-logo" src="https://i.imgur.com/fxRC7Y0.png" />
                   </p>
