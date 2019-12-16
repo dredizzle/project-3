@@ -48,8 +48,6 @@ class Navbar extends React.Component {
             {Auth.isAuthenticated() && <Link to="/books/new" className="navbar-item">Add a new book</Link>}
             {Auth.isAuthenticated() && <Link to="/stories/new" className="navbar-item">Add a new story</Link>}
             {Auth.isAuthenticated() && <Link to="/feed" className="navbar-item">Feed</Link>}
-
-
           </div>
           <div className="navbar-end">
             {Auth.isAuthenticated() && <Link to={`/users/${Auth.getPayload().sub}`} className="navbar-item">Profile</Link>}

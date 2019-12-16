@@ -53,32 +53,35 @@ class App extends React.Component {
         <Navbar />
         <FlashMessages />
         <Switch>
+
+          {/* User */}
           <SecureRoute path="/users/:id/edit" component={UsersEdit} />
           <SecureRoute path="/users/:id" component={UsersShow} />
+
+          {/* Feed */}
           <SecureRoute path="/feed" component={Feed} />
 
-
+          {/* Books */}
           <SecureRoute path="/books/:id/edit" component={booksEdit} />
-          <SecureRoute path="/stories/:id/edit" component={storiesEdit} />
-
-
-
-
           <SecureRoute path="/books/new" component={booksNew} />
-          <SecureRoute path="/stories/new" component={storiesNew} />
-
-
           <Route path="/books/:id" component={booksShow} />
-          <Route path="/stories/:id" component={storiesShow} />
-
           <Route path="/books/genre" component={booksIndex} />
           <Route path="/books" component={booksIndex} />
+
+          {/* Stories */}
+          <SecureRoute path="/stories/:id/edit" component={storiesEdit} />
+          <SecureRoute path="/stories/new" component={storiesNew} />
+          <Route path="/stories/:id" component={storiesShow} />
           <Route path="/stories" component={storyIndex} />
 
+          {/* Auth */}
           <Route path="/register" component={Register} />
           <Route path="/login" component={Login} />
+
+          {/* Team */}
           <Route path="/team" component={Team} />
 
+          {/* Home */}
           <Route path="/" component={Home} />
         </Switch>
       </HashRouter>

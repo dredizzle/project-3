@@ -40,7 +40,7 @@ mongoose.connect(
           pg: 226,
           ISBN: "0385544235",
           preview: "https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B07D7KJV13",
-          description: "My Sister, the Serial Killer is a blackly comic novel about how blood is thicker - and more difficult to get out of the carpet - than water.When Korede's dinner is interrupted one night by a distress call from her sister, Ayoola, she knows what's expected of her: bleach, rubber gloves, nerves of steel and a strong stomach. This'll be the third boyfriend Ayoola's dispatched in, quote, self-defence and the third mess that her lethal little sibling has left Korede to clear away. She should probably go to the police for the good of the menfolk of Nigeria, but she loves her sister and, as they say, family always comes first. Until, that is, Ayoola starts dating the doctor where Korede works as a nurse. Korede's long been in love with him, and isn't prepared to see him wind up with a knife in his back: but to save one would mean sacrificing the other... ",
+          description: "My Sister, the Serial Killer is a blackly comic novel about how blood is thicker - and more difficult to get out of the carpet - than water..",
           amazon: "https://www.goodreads.com/buy_buttons/13/follow?book_id=38819868&ref=x_gr_w_bb_sin&tag=x_gr_w_bb_sin_uk-21",
           createdBy: user[2]
         }, {
@@ -228,7 +228,7 @@ mongoose.connect(
         },
         {
           author: "America's Test Kitchen",
-          title: "The Side Dish Bible: 1001 Perfect Recipes for Every Vegetable, Rice, Grain, and Bean Dish You Will Ever Need",
+          title: "The Side Dish Bible",
           image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1573121632l/44291121._SX318_.jpg",
           releaseYear: 2019,
           genre: "Cooking",
@@ -256,7 +256,7 @@ mongoose.connect(
 
         }, {
           author: "Samin Nosrat",
-          title: "Salt, Fat, Acid, Heat: Mastering the Elements of Good Cooking",
+          title: "Salt, Fat, Acid, Heat",
           image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1475460859l/30753841._SX318_.jpg",
           releaseYear: 2019,
           genre: "Cooking",
@@ -269,7 +269,7 @@ mongoose.connect(
 
         }, {
           author: "Suzanne Lenzer",
-          title: "Graze: Inspiration for Small Plates and Meandering Meals",
+          title: "Graze",
           image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1492920730l/31450748._SX318_.jpg",
           releaseYear: 2017,
           genre: "Cooking",
@@ -282,7 +282,7 @@ mongoose.connect(
 
 
         }, {
-          author: " Yotam Ottolenghi, Helen Goh",
+          author: "Yotam Ottolenghi, Helen Goh",
           title: "Sweet",
           image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1510017230l/34063669._SX318_.jpg",
           releaseYear: 2017,
@@ -321,7 +321,7 @@ mongoose.connect(
           createdBy: user[0]
         }, {
           author: "Austin Kleon",
-          title: "Steal Like an Artist: 10 Things Nobody Told You About Being Creative",
+          title: "Steal Like an Artist",
           image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1404576602l/13099738.jpg",
           releaseYear: 2012,
           genre: "Art",
@@ -333,7 +333,7 @@ mongoose.connect(
           createdBy: user[0]
         }, {
           author: "David Bayles, Ted Orland",
-          title: "Art and Fear: Observations on the Perils (and Rewards) of Artmaking",
+          title: "Art and Fear",
           image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1442712080l/187633._SY475_.jpg",
           releaseYear: 2001,
           genre: "Art",
@@ -450,7 +450,7 @@ mongoose.connect(
 
         }, {
           author: "David Airey",
-          title: "Logo Design Love: A Guide to Creating Iconic Brand Identities",
+          title: "Logo Design Love",
           image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1347407513l/6728983.jpg",
           releaseYear: 2011,
           genre: "Art",
@@ -514,7 +514,7 @@ mongoose.connect(
           createdBy: user[0]
         }, {
           author: " Max Brooks",
-          title: "World War Z: An Oral History of the Zombie War",
+          title: "World War Z",
           image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1528312647l/8908._SX318_.jpg",
           releaseYear: 2006,
           genre: "History",
@@ -573,16 +573,16 @@ mongoose.connect(
           amazon: "https://www.goodreads.com/buy_buttons/13/follow?book_id=56073&ref=x_gr_w_bb_sin&tag=x_gr_w_bb_sin_uk-21",
           createdBy: user[0]
         }, {
-          author: "William L. Shirer",
-          title: "The Rise and Fall of the Third Reich: A History of Nazi Germany",
-          image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1331223772l/767171.jpg",
-          releaseYear: 1990,
+          author: "Roland Merullo ",
+          title: "Once Night Falls",
+          image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1558373775l/44646726.jpg",
+          releaseYear: 2019,
           genre: "History",
-          pg: 1614,
-          ISBN: "0671728687",
-          preview: "https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B07XD76H41",
-          description: "Hitler boasted that The Third Reich would last a thousand years. It lasted only 12. But those 12 years contained some of the most catastrophic events Western civilization has ever known.No other powerful empire ever bequeathed such mountains of evidence about its birth and destruction as the Third Reich. When the bitter war was over, and before the Nazis could destroy",
-          amazon: "https://www.goodreads.com/buy_buttons/13/follow?book_id=767171&ref=x_gr_w_bb_sin&tag=x_gr_w_bb_sin_uk-21",
+          pg: 366,
+          ISBN: "1542007429",
+          preview: "https://read.amazon.co.uk/nc/?kcrFree=only&tag=x_gr_w_preview_sin_kcr_uk-21&asin=B07PSF95DN",
+          description: "A harrowing historical novel of the extraordinary acts of ordinary people in Nazi-occupied Italy.",
+          amazon: "https://www.goodreads.com/buy_buttons/13/follow?book_id=44646726&ref=x_gr_w_bb_sin&tag=x_gr_w_bb_sin_uk-21",
           createdBy: user[0]
         },
 
@@ -642,7 +642,7 @@ mongoose.connect(
 
         }, {
           author: "Adam Higginbotham",
-          title: "Midnight in Chernobyl: The Untold Story of the World's Greatest Nuclear Disaster",
+          title: "Midnight in Chernobyl",
           image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1545577007l/40538681.jpg",
           releaseYear: 2019,
           genre: "History",
@@ -682,7 +682,7 @@ mongoose.connect(
 
         }, {
           author: "Adam Shoalts",
-          title: "Beyond the Trees: A Journey Alone Across Canada's Arctic",
+          title: "Beyond the Trees",
           image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1565397926l/43671672.jpg",
           releaseYear: 2019,
           genre: "Travel",
@@ -695,7 +695,7 @@ mongoose.connect(
 
         }, {
           author: "Jill Heinerth",
-          title: "Into the Planet: My Life as a Cave Diver",
+          title: "Into the Planet",
           image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1563335080l/43131602.jpg",
           releaseYear: 2019,
           genre: "Travel",
@@ -1164,7 +1164,7 @@ mongoose.connect(
           createdBy: user[0]
         }, {
           author: " Julie Andrews Edwards, Emma Walton Hamilton ",
-          title: "Home Work: A Memoir of My Hollywood Years",
+          title: "Home Work",
           image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1556723540l/44286431.jpg",
           releaseYear: 2019,
           genre: "Biography",
@@ -1217,7 +1217,7 @@ mongoose.connect(
 
         }, {
           author: "Ashlee Vance",
-          title: "Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future",
+          title: "Elon Musk",
           image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1518291452l/25541028.jpg",
           releaseYear: 2019,
           genre: "Biography",
@@ -1230,7 +1230,7 @@ mongoose.connect(
 
         }, {
           author: "Jim Afremow",
-          title: "The Champion's Mind: How Great Athletes Think, Train, and Thrive",
+          title: "The Champion's Mind",
           image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1375932339l/18050010.jpg",
           releaseYear: 2019,
           genre: "Nonfiction",
@@ -1243,7 +1243,7 @@ mongoose.connect(
 
         }, {
           author: "Lawrence Levy ",
-          title: "To Pixar and Beyond: My Unlikely Journey with Steve Jobs to Make Entertainment History",
+          title: "To Pixar and Beyond",
           image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1455172199l/28114529.jpg",
           releaseYear: 2019,
           genre: "Nonfiction",
@@ -1256,7 +1256,7 @@ mongoose.connect(
 
         }, {
           author: "Emmanuel Saez, Gabriel Zucman",
-          title: "The Triumph of Injustice: How the Rich Dodge Taxes and How to Make Them Pay",
+          title: "The Triumph of Injustice",
           image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1569897778l/45894166.jpg",
           releaseYear: 2019,
           genre: "Nonfiction",
@@ -1269,7 +1269,7 @@ mongoose.connect(
 
         }, {
           author: "Emily Guendelsberger ",
-          title: "On the Clock: What Low-Wage Work Did to Me and How It Drives America Insane",
+          title: "On the Clock",
           image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1563869517l/42779084._SY475_.jpg",
           releaseYear: 2019,
           genre: "Nonfiction",
@@ -1282,7 +1282,7 @@ mongoose.connect(
 
         }, {
           author: "Benjamin Sells",
-          title: "The Tunnel under the Lake: The Engineering Marvel That Saved Chicago",
+          title: "The Tunnel under the Lake",
           image: "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1494054283l/32072714.jpg",
           releaseYear: 2019,
           genre: "Nonfiction",
@@ -1354,6 +1354,41 @@ mongoose.connect(
           releaseDate: 2019,
           description: "Aurelie Sheehan is the author of three short story collections: Demigods on Speedway (University of Arizona),",
           story: "I had a child, and then more children. A child, head turned and chin lifted, eyes shut in concentration, finding in sleep bounties of peaches and pork chops and Raisinets. A child, baby hawk tucked close to my body, flawless rider. A child, amid dinosaurs and their social graces, murmuring instructions, eyes on her creation. A child, decked out in all manner of scarf. A child, smartly outfitted for Washington, DC, with a stuffed dog in her purse. A child, walking to school, balancing guitar, lunch box, backpack, running clothes, art project. A child, adjusting the mirror in the car. A child, a child—and so many children. She is in her room creating. She is in her room dreaming. She is in her room suffering. The walls of her room have dissolved to nothing.",
+          createdBy: user[0]
+        }, {
+          author: "Lynda Davis",
+          title: "ON THE TRAIN",
+          releaseDate: 2019,
+          description: "short stories",
+          story: "We are united, he and I, though strangers, against the two women in front of us talking so steadily and audibly across the aisle to each other. Bad manners.Later in the journey I look over at him (across the aisle) and he is picking his nose. As for me, I am dripping tomato from my sandwich on to my newspaper. Bad habits.I would not report this if I were the one picking my nose.I look again and he is still at it.As for the women, they are now sitting together side by side and quietly reading, clean and tidy, one a magazine, one a book. Blameless.",
+          createdBy: user[0]
+        }, {
+          author: "Kim Addonizio",
+          title: "Man of Sorrows",
+          releaseDate: 2019,
+          description: "short stories",
+          story: "Not enough to get crucified. You've got to be covered with red spots like an anti-vaxxer's kid's measles. Blood everywhere. Like when you clipped the cat's claw too close. A trail across the white comforter. Floor. Expensive white rug. Little fur-lined igloo where it hid, then ran across the rug again. The woodcut was meant to shock the beholder into repentance. That spear—stuck through his neck? –There's a whip, too. You've got to flagellate yourself repeatedly. It's your fault. About the cat and the entire marriage. God, at least, forgives you. As long as you remain really bloody miserable.",
+          createdBy: user[0]
+        }, {
+          author: "Lynda Davis",
+          title: "SUSIE BROWN WILL BE IN TOWN",
+          releaseDate: 2019,
+          description: "short stories",
+          story: "Susie Brown will be in town. She will be in town to sell her things. Susie Brown is moving far away. She would like to sell her queen mattress. Do we want her queen mattress? Do we want her ottoman? Do we want her bath items? It is time to say goodbye to Susie Brown. We have enjoyed her friendship.We have enjoyed her tennis lessons.",
+          createdBy: user[0]
+        }, {
+          author: "Tamara Stanley",
+          title: "Hydrophonic Veggie",
+          releaseDate: 2019,
+          description: "short stories",
+          story: "It is mostly summer now. Above me there are skyscrapers, McMansions, slums; scorched swaths of land, parking lots and airport runways where wheat and corn should be. Mouths to feed. I'm underground, surrounded by earth but growing without soil.There was no urgency to keep me on the surface. I appear in markets as I have for centuries. You can pay digital funds and place me in your reusable bag. Even in a world of virtual reality, nutrition pellets, and lab-grown meat, people still crave the crunch of a salad, just like I can't shake this nostalgia for the sun.",
+          createdBy: user[0]
+        }, {
+          author: "Tamara Stanley",
+          title: "Plan",
+          releaseDate: 2019,
+          description: "short stories",
+          story: "It's hard to get together with his friends because they all like to hibernate. Everyone mostly prefers staying home, so when they make plans with him they often cancel, last-minute; he can't blame them, because he also likes to hibernate, and after the initial annoyance, feeling his friends are unreliable or don't care about him, he's relieved to stay in with books and music and internet, endless shows to binge-watch and plenty of food and whiskey so really, what's the point of going anywhere? He has a number of good, close friends who, of course, he hasn't seen in years.",
           createdBy: user[0]
         }
         ])

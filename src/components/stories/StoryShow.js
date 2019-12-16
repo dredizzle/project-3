@@ -76,42 +76,29 @@ class Show extends React.Component {
 
     return (
       <section className="section" id="story-show">
-
-
-
-
         <div className="colum" id="StoryArticle">
-
-
           <div className="AtricleCentered">
             <p className="title is-italic is-6 is-size-5 " id="title-show">{this.state.story.author}</p>
             <p className="subtitle is-4 is-size-6" id="author-show">{this.state.story.title}</p>
-
             <h2 className="text is-4 is-italic show"><span>Description: </span>{this.state.story.description}</h2>
             <h2 className="text is-5 show"><span><br></br> </span>{this.state.story.story}</h2>
             <br></br>
             <h2 className="text is-4 is-italic show"><span>Date released:</span> {this.state.story.releaseDate}</h2>
             <div className="container edit">
-
               <div className="buttons is-gapless">
-                {Auth.isAuthenticated() &&
+                {/* {Auth.isAuthenticated() &&
                   <Link to={{
                     pathname: `/users/${Auth.getPayload().sub}`,
                     state: { story: this.state.story }
                   }}>
                     <button className="button is-dark">Add to Favourites</button>
                   </Link>
-                }
-
+                } */}
                 <div className="level-right is-gapless edit2">
                   {this.canModify() && <Link to={`/stories/${this.state.story._id}/edit`} className="button is-dark ">Edit</Link>}
                   {this.canModify() && <button className="button is-dark" onClick={this.handleDelete}>Delete</button>}
-
                 </div>
-
               </div>
-
-
             </div>
           </div>
           {/* COMMENTS ===================================================*/}
@@ -172,9 +159,7 @@ class Show extends React.Component {
             )}
           </div>
         </div>
-
       </section >
-
     )
   }
 }

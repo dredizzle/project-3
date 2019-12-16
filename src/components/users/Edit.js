@@ -98,7 +98,6 @@ class Edit extends React.Component {
                     />
                   </div>
                   {this.state.errors.bio && <div className="help is-danger">{this.state.errors.bio}</div>}
-
                   <button type="submit" className="button is-black">Submit</button>
                 </form>
               </div>

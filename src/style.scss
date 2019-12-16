@@ -252,7 +252,7 @@ body {
 
 .footer {
     height: 3px;
-    background-color: #dfcdc3;
+    background-color: #fff;
 }
 
 .notification.is-white,
@@ -381,7 +381,6 @@ a {
     }
 }
 
-
   .ShowOneBook{
     margin-top: 90px;
     background-color:#fff;
@@ -478,7 +477,7 @@ flex-direction: row;
 }
 
 #ImgShowBook figure{
-transform: scale(0.7);
+transform: scale(0.8);
 margin-top: -20%;
 }
 
@@ -492,3 +491,23 @@ margin-top: -20%;
   margin-top: 80px;
 }
 // subtitle
+
+.MainBookInfoShow{
+  margin-top: -14%;
+}
+
+.card-content {
+  padding: 0px;
+}
+
+.ShowOneBook a {
+  margin: 0% 2%;
+}
+
+#logo{
+  width: 10%;
+}
+
+#github-logo{
+  width: 10%;
+}

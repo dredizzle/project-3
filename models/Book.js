@@ -56,6 +56,14 @@ const bookSchema = new mongoose.Schema({
     type: String,
     required: false
   },
+  amazon: {
+    type: String,
+    required: false
+  },
+  preview: {
+    type: String,
+    required: false
+  },
   createdBy: {
     type: mongoose.Schema.ObjectId,
     ref: 'User'
